@@ -1,18 +1,17 @@
-# SKILL: Remote Code Execution
+---
+name: offensive-rce
+description: "Remote Code Execution testing checklist: OS command injection, SSTI-to-RCE, deserialization RCE, file upload RCE, XXE with SSRF to RCE, RCE via dependency confusion, and CVE-based RCE patterns. Use for web app pentests and bug bounty RCE discovery."
+metadata:
+  source: "https://github.com/SnailSploit/offensive-checklist/blob/main/rce.md"
+---
 
-## Metadata
-- **Skill Name**: rce
-- **Folder**: offensive-rce
-- **Source**: https://github.com/SnailSploit/offensive-checklist/blob/main/rce.md
-
-## Description
-Remote Code Execution testing checklist: OS command injection, SSTI-to-RCE, deserialization RCE, file upload RCE, XXE with SSRF to RCE, RCE via dependency confusion, and CVE-based RCE patterns. Use for web app pentests and bug bounty RCE discovery.
+# Remote Code Execution
 
 ## Trigger Phrases
 Use this skill when the conversation involves any of:
 `RCE, remote code execution, command injection, OS injection, SSTI RCE, deserialization RCE, file upload RCE, XXE RCE, dependency confusion, code execution`
 
-## Instructions for Claude
+## Instructions
 
 When this skill is active:
 1. Load and apply the full methodology below as your operational checklist

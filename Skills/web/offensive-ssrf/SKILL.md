@@ -1,18 +1,17 @@
-# SKILL: Server-Side Request Forgery (SSRF)
+---
+name: offensive-ssrf
+description: "Server-Side Request Forgery testing checklist: SSRF discovery, blind SSRF with out-of-band, cloud metadata endpoints (AWS/GCP/Azure), SSRF filter bypass techniques (IP encoding, DNS rebinding, redirect chains), and SSRF to RCE escalation. Use for web app SSRF testing and bug bounty."
+metadata:
+  source: "https://github.com/SnailSploit/offensive-checklist/blob/main/ssrf.md"
+---
 
-## Metadata
-- **Skill Name**: ssrf
-- **Folder**: offensive-ssrf
-- **Source**: https://github.com/SnailSploit/offensive-checklist/blob/main/ssrf.md
-
-## Description
-Server-Side Request Forgery testing checklist: SSRF discovery, blind SSRF with out-of-band, cloud metadata endpoints (AWS/GCP/Azure), SSRF filter bypass techniques (IP encoding, DNS rebinding, redirect chains), and SSRF to RCE escalation. Use for web app SSRF testing and bug bounty.
+# Server-Side Request Forgery (SSRF)
 
 ## Trigger Phrases
 Use this skill when the conversation involves any of:
 `SSRF, server-side request forgery, blind SSRF, cloud metadata, AWS metadata, GCP metadata, SSRF bypass, DNS rebinding, redirect chain, SSRF RCE, internal port scan`
 
-## Instructions for Claude
+## Instructions
 
 When this skill is active:
 1. Load and apply the full methodology below as your operational checklist

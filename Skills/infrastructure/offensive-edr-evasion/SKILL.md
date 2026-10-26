@@ -1,18 +1,17 @@
-# SKILL: Endpoint Detection and Response
+---
+name: offensive-edr-evasion
+description: "EDR evasion offensive checklist: hook unhooking (user/kernel), direct syscalls, PPID spoofing, process injection variants, AMSI bypass, ETW patching, memory encryption, and behavior-based evasion. Use when planning EDR bypass during red team engagements or researching AV/EDR evasion techniques."
+metadata:
+  source: "https://github.com/SnailSploit/offensive-checklist/blob/main/edr.md"
+---
 
-## Metadata
-- **Skill Name**: edr-evasion
-- **Folder**: offensive-edr-evasion
-- **Source**: https://github.com/SnailSploit/offensive-checklist/blob/main/edr.md
-
-## Description
-EDR evasion offensive checklist: hook unhooking (user/kernel), direct syscalls, PPID spoofing, process injection variants, AMSI bypass, ETW patching, memory encryption, and behavior-based evasion. Use when planning EDR bypass during red team engagements or researching AV/EDR evasion techniques.
+# Endpoint Detection and Response
 
 ## Trigger Phrases
 Use this skill when the conversation involves any of:
 `EDR evasion, EDR bypass, hook unhooking, direct syscalls, PPID spoofing, process injection, AMSI bypass, ETW patch, memory encryption, AV evasion, behavioral evasion, red team evasion`
 
-## Instructions for Claude
+## Instructions
 
 When this skill is active:
 1. Load and apply the full methodology below as your operational checklist

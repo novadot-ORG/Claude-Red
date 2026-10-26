@@ -1,18 +1,17 @@
-# SKILL: HTTP Request Smuggling
+---
+name: offensive-request-smuggling
+description: "HTTP request smuggling checklist: CL.TE, TE.CL, TE.TE variants, detection with timing and differential responses, WAF bypass, cache poisoning, credential hijacking, and request smuggling via HTTP/2. Use when testing reverse proxy/load balancer configurations."
+metadata:
+  source: "https://github.com/SnailSploit/offensive-checklist/blob/main/req-smuggle.md"
+---
 
-## Metadata
-- **Skill Name**: request-smuggling
-- **Folder**: offensive-request-smuggling
-- **Source**: https://github.com/SnailSploit/offensive-checklist/blob/main/req-smuggle.md
-
-## Description
-HTTP request smuggling checklist: CL.TE, TE.CL, TE.TE variants, detection with timing and differential responses, WAF bypass, cache poisoning, credential hijacking, and request smuggling via HTTP/2. Use when testing reverse proxy/load balancer configurations.
+# HTTP Request Smuggling
 
 ## Trigger Phrases
 Use this skill when the conversation involves any of:
 `request smuggling, HTTP smuggling, CL.TE, TE.CL, TE.TE, HTTP/2 smuggling, cache poisoning, WAF bypass, differential response, smuggling detection, proxy desync`
 
-## Instructions for Claude
+## Instructions
 
 When this skill is active:
 1. Load and apply the full methodology below as your operational checklist

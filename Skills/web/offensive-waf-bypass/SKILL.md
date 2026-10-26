@@ -1,18 +1,17 @@
-# SKILL: WAF Bypass Techniques
+---
+name: offensive-waf-bypass
+description: "WAF bypass techniques checklist: encoding bypass (URL/HTML/Unicode/double encoding), case variation, comment injection, HTTP header manipulation, chunked encoding, IP rotation, timing attacks, and payload obfuscation per WAF vendor. Use when WAF is blocking payloads during web app tests."
+metadata:
+  source: "https://github.com/SnailSploit/offensive-checklist/blob/main/waf-bypass.md"
+---
 
-## Metadata
-- **Skill Name**: waf-bypass
-- **Folder**: offensive-waf-bypass
-- **Source**: https://github.com/SnailSploit/offensive-checklist/blob/main/waf-bypass.md
-
-## Description
-WAF bypass techniques checklist: encoding bypass (URL/HTML/Unicode/double encoding), case variation, comment injection, HTTP header manipulation, chunked encoding, IP rotation, timing attacks, and payload obfuscation per WAF vendor. Use when WAF is blocking payloads during web app tests.
+# WAF Bypass Techniques
 
 ## Trigger Phrases
 Use this skill when the conversation involves any of:
 `WAF bypass, web application firewall bypass, URL encoding, double encoding, Unicode bypass, comment injection, HTTP header bypass, chunked encoding, IP rotation, payload obfuscation, WAF evasion`
 
-## Instructions for Claude
+## Instructions
 
 When this skill is active:
 1. Load and apply the full methodology below as your operational checklist

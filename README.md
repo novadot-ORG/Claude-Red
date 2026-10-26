@@ -1,71 +1,95 @@
-![claude-red banner](/assets/banner.png)
+# Codex Red
 
-<div align="center">
-
-# claude-red
-
-**Offensive security skills for Claude — drop-in `SKILL.md` files that turn Claude into a context-aware red team operator.**
+**79 security assessment skills across 23 categories, adapted for OpenAI Codex.**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-78-red.svg)](#skill-index)
+[![Skills](https://img.shields.io/badge/skills-79-red.svg)](#skill-index)
 [![Categories](https://img.shields.io/badge/categories-23-orange.svg)](#categories)
-[![Stars](https://img.shields.io/github/stars/SnailSploit/claude-red?style=social)](https://github.com/SnailSploit/claude-red)
-[![Forks](https://img.shields.io/github/forks/SnailSploit/claude-red?style=social)](https://github.com/SnailSploit/claude-red/network/members)
-<a href="https://trendshift.io/repositories/40579?utm_source=trendshift-badge&amp;utm_medium=badge&amp;utm_campaign=badge-trendshift-40579" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/trendshift/repositories/40579/weekly?language=Python" alt="SnailSploit%2FClaude-Red | Trendshift" width="250" height="55"/></a>
 
-[Overview](#overview) &bull; [Quickstart](#quickstart) &bull; [Categories](#categories) &bull; [Skill Index](#skill-index) &bull; [Roadmap](#roadmap) &bull; [Contributing](#contributing)
+NovaDot's Codex-compatible fork of [SnailSploit/Claude-Red](https://github.com/SnailSploit/Claude-Red). The original authors and MIT licence are retained. This is a community project, independently maintained from OpenAI.
 
-</div>
-
----
+[Quickstart](#quickstart) · [Categories](#categories) · [Skill Index](#skill-index) · [Validation and Export](#validation-and-export) · [Contributing](CONTRIBUTING.md)
 
 ## Overview
 
-`claude-red` is a curated library of offensive security skills for the [Claude Skills system](https://docs.claude.com). Each skill is a structured `SKILL.md` file that primes Claude with expert-level methodology for a specific attack surface — from SQL injection to shellcode, EDR evasion to ADCS abuse.
+Each skill is a `SKILL.md` file containing discovery metadata and a domain-specific methodology. Codex reads the name and description first, then loads the instructions when a task matches or you invoke the skill explicitly.
 
-Drop a skill into your Claude environment and it behaves like a domain specialist: it knows the techniques, the tooling, the edge cases, and the escalation paths. Skills load on demand based on conversational triggers — you don't pay context for skills you aren't using.
+The library covers authorized security assessments, code review, research, CTF training and professional reporting. Consult [SECURITY.md](SECURITY.md) for intended use. Installing a skill supplies instructions; it does not install the third-party tools mentioned in its methodology.
 
-**Use cases:** authorized red team engagements, bug bounty triage, security research, CTF preparation, operator training, and methodical attack surface exploration.
-
-**for our actual research using skills -> https://snailsploit.com**
----
+This fork targets the local skill format used by Codex CLI, its IDE extension and desktop app. It contains no OpenAI API client and requires no API key of its own. Codex handles authentication and model access. For an API application, your application must load the instructions and provide its own tools and execution controls.
 
 ## Quickstart
 
-### Claude Skills System (Recommended)
+Requirements: **Codex** and **Python 3.10 or later**. The installer uses only Python's standard library and works through Bash on macOS and Linux.
+
+Clone with your configured NovaDot SSH alias:
 
 ```bash
-git clone https://github.com/SnailSploit/claude-red ~/.claude/skills/claude-red
+git clone git@github-novadot:novadot-ORG/Claude-Red.git
+cd Claude-Red
 ```
 
-Claude auto-loads matching skills based on conversational triggers (e.g., mentioning SQL injection loads `offensive-sqli`).
+For HTTPS access, use `https://github.com/novadot-ORG/Claude-Red.git` instead.
 
-To install a single category:
+### Install selected skills
+
+Preview and install one skill for your user account:
 
 ```bash
-git clone --filter=blob:none --sparse https://github.com/SnailSploit/claude-red
-cd claude-red && git sparse-checkout set Skills/web Skills/active-directory
+./install.sh --skill offensive-reporting --dry-run
+./install.sh --skill offensive-reporting
 ```
 
-### Claude Code
+By default, this creates `~/.agents/skills/offensive-reporting/SKILL.md`. Skills are installed directly under the discovery root, with their bundled references, scripts and assets. Category folders remain in this source repository for navigation.
+
+Other selections:
 
 ```bash
-cat Skills/web/offensive-sqli/SKILL.md | claude --system-file -
-
-cat Skills/active-directory/**/SKILL.md | claude --system-file -
+./install.sh --list
+./install.sh --category api --dry-run
+./install.sh --category api
+./install.sh                         # all 79 skills
 ```
 
-### Claude.ai (Manual)
-
-Paste the contents of a `SKILL.md` into a Project's system prompt or prepend it to your conversation.
-
-### Install Script
+For a particular project:
 
 ```bash
-./install.sh                           # interactive
-./install.sh --target ~/.claude/skills # explicit target
-./install.sh --category web            # single category
+./install.sh --target /path/to/project/.agents/skills --skill offensive-reporting
 ```
+
+The installer checks the complete selection before copying. It refuses to overwrite existing skill folders or symlinks. To update an installed skill, review and remove that specific installed folder before installing its replacement. Use a fresh target directory when comparing versions.
+
+### Use a skill
+
+In Codex CLI or the IDE extension, select a skill with `/skills` or invoke one explicitly:
+
+```text
+$offensive-reporting Turn these existing findings into a report with evidence and remediation.
+```
+
+Codex can also select skills from their descriptions. If newly installed skills do not appear, restart Codex. Official guidance: [Build skills](https://learn.chatgpt.com/docs/build-skills), including discovery locations and invocation.
+
+## Validation and Export
+
+Development tools use PyYAML in a project-local environment:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements-dev.txt
+python tools/build_manifest.py --check
+python -m unittest discover -s tests -v
+```
+
+`codex-skills.json` is a generated inventory for maintainers; Codex discovers the installed `SKILL.md` files directly. To regenerate the inventory after editing skills, run `python tools/build_manifest.py`.
+
+Export flat skill folders, optionally with one ZIP per skill:
+
+```bash
+python convert_skills.py --output build/codex-skills --zip-dir build/skill-zips
+```
+
+Each ZIP contains `<skill-name>/SKILL.md` and the skill's resources. Both destinations must be new directories. Export copies the already-converted content without rewriting methodology or installing dependencies. The flat folders can be copied into a Codex skills root; ZIPs are portable archives, not an automatic API integration.
 
 ---
 
@@ -75,7 +99,7 @@ Paste the contents of a `SKILL.md` into a Project's system prompt or prepend it 
 |---|---:|---|
 | [Web Application](#web-application) | 16 | OWASP Top 10, business logic, advanced web vulnerability classes |
 | [Auth & Identity](#auth--identity) | 2 | JWT exploitation, OAuth/OIDC abuse |
-| [Active Directory](#active-directory) | 1 | On-prem AD attack methodology |
+| [Active Directory](#active-directory) | 2 | On-prem AD attack methodology |
 | [Wireless](#wireless) | 14 | 802.11, WPA2/3, EAP, WPS, evil-twin, BLE, Zigbee, Z-Wave, LoRa, sub-GHz |
 | [Cloud](#cloud) | 1 | AWS, Azure, GCP attack paths |
 | [Mobile](#mobile) | 1 | Android and iOS application testing |
@@ -140,6 +164,7 @@ Paste the contents of a `SKILL.md` into a Project's system prompt or prepend it 
 | Skill | Description |
 |---|---|
 | [`offensive-active-directory`](Skills/active-directory/offensive-active-directory/SKILL.md) | AD methodology — Kerberoast, ASREProast, ACL abuse, ADCS ESC1-15, delegation, hybrid AAD |
+| [`offensive-netexec`](Skills/active-directory/offensive-netexec/SKILL.md) | NetExec protocol, module and Active Directory assessment reference |
 
 ### Wireless
 
@@ -344,44 +369,16 @@ Paste the contents of a `SKILL.md` into a Project's system prompt or prepend it 
 
 ## Roadmap
 
-The library is being expanded across multiple phases. See [CHANGELOG.md](CHANGELOG.md) for release history.
-
-| Phase | Focus | Skills | Status |
-|---|---|---:|---|
-| 1 | Internal AD/Windows — split into focused skills | +16 | Planned |
-| 2 | Cloud Identity — Entra, ADFS, Okta, M365 | +10 | Planned |
-| 3 | Wireless — WPA2/3, EAP, BLE, Zigbee, Z-Wave, LoRa, sub-GHz | +12 | Complete |
-| 4 | IoT — UART/JTAG, flash extraction, fault injection, RTOS, ICS | +10 | Planned |
-| 5 | Web Fundamentals — recon, auth bypass, access control, CSRF, CORS | +8 | Planned |
-| 6 | Web Advanced — proto pollution, SAML, OIDC, WebSocket, SSI/ESI | +10 | Planned |
-| 7 | Documentation and tooling polish | — | Complete |
-| 8 | New categories — 10 new domains with 20 skills | +20 | Complete |
-| 9 | Deep rewrites — deserialization, GraphQL, advanced red team, SSTI | — | Complete |
-
-Target: ~130 skills across 23+ categories.
-
----
+The inherited upstream roadmap covers deeper topic splits and new assessment domains. This fork's current focus is Codex compatibility, reliable packaging and inventory validation. See [CHANGELOG.md](CHANGELOG.md) for the conversion and upstream history.
 
 ## Contributing
 
-Contributions welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for the skill template, frontmatter standard, and review process. Focused, single-surface skills are preferred over monolithic overviews.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the skill format and validation workflow. Preserve skill identifiers and source attribution when updating content.
 
-## License
+## License and Attribution
 
-[MIT](LICENSE) — use freely, attribution appreciated.
+[MIT](LICENSE). Original copyright and permission notice are preserved.
 
-## Acknowledgements
-
-- **Author:** [Kai Aizen](https://snailsploit.com) (SnailSploit) — GenAI security research
-- **Original Checklists:** [Sahar Shlichov](https://github.com/sahar042/offensive-checklist) — the offensive checklist collection that many of these skills build on
-- **Community:** Pull requests and feedback that keep the library aligned with the evolving threat landscape
-
----
-
-<div align="center">
-
-*Give Claude the right skill and it stops being a chatbot — it becomes an operator.*
-
-[snailsploit.com](https://snailsploit.com) &bull; [GitHub](https://github.com/SnailSploit) &bull; [Research](https://snailsploit.com/research) &bull; [X](https://x.com/SnailSploit)
-
-</div>
+- **Original library:** [Kai Aizen / SnailSploit](https://github.com/SnailSploit/Claude-Red)
+- **Original checklists:** [Sahar Shlichov](https://github.com/sahar042/offensive-checklist)
+- **Codex adaptation:** [NovaDot](https://github.com/novadot-ORG/Claude-Red)

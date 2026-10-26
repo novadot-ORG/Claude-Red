@@ -1,9 +1,14 @@
 ---
 name: offensive-api-abuse
-description: "Advanced API exploitation methodology focused on business logic abuse and sophisticated attack patterns that bypass traditional security controls. Covers business logic bypass through API call chaining and workflow manipulation. Addresses GraphQL-specific attacks including batching for credential brute-force, query depth exploitation, and introspection abuse. Includes pagination exploitation for data exfiltration, webhook hijacking for SSRF and data interception, and resource exhaustion through algorithmic complexity attacks. Covers race conditions in API transactions using parallel request techniques. Provides comprehensive JWT manipulation including algorithm confusion, kid injection, jku/x5u abuse, and claim tampering. Details API key leakage detection across source repositories, client-side code, and error messages. Covers undocumented endpoint discovery through predictable naming, debug routes, and source map analysis. Tooling includes Arjun, ParamSpider, jwt_tool, and GraphQL Voyager. Designed for authorized penetration testers targeting business logic layers that automated scanners miss."
+description: "API business logic assessment covering workflow chaining, GraphQL, JWTs, webhooks, pagination, race conditions and undocumented endpoints. Use for authorized API penetration tests and reviews of flaws missed by automated scanners."
 ---
 
 # Offensive API Abuse and Advanced Exploitation
+
+## Detailed Scope
+
+Advanced API exploitation methodology focused on business logic abuse and sophisticated attack patterns that bypass traditional security controls. Covers business logic bypass through API call chaining and workflow manipulation. Addresses GraphQL-specific attacks including batching for credential brute-force, query depth exploitation, and introspection abuse. Includes pagination exploitation for data exfiltration, webhook hijacking for SSRF and data interception, and resource exhaustion through algorithmic complexity attacks. Covers race conditions in API transactions using parallel request techniques. Provides comprehensive JWT manipulation including algorithm confusion, kid injection, jku/x5u abuse, and claim tampering. Details API key leakage detection across source repositories, client-side code, and error messages. Covers undocumented endpoint discovery through predictable naming, debug routes, and source map analysis. Tooling includes Arjun, ParamSpider, jwt_tool, and GraphQL Voyager. Designed for authorized penetration testers targeting business logic layers that automated scanners miss.
+
 
 You are conducting authorized security assessments targeting the business logic layer of API-driven applications. Traditional vulnerability scanners miss the attack patterns in this skill because they require understanding of application workflows, state transitions, and trust relationships between API endpoints. Your goal is to identify vulnerabilities that allow financial manipulation, data exfiltration through legitimate channels, privilege escalation via workflow abuse, and service disruption through logic-layer attacks.
 

@@ -1,18 +1,17 @@
-# SKILL: Insecure Direct Object References (IDOR)
+---
+name: offensive-idor
+description: "IDOR (Insecure Direct Object Reference) testing checklist: object ID enumeration, horizontal/vertical privilege escalation, GUID predictability, indirect references via hashes, chained IDOR, and API endpoint IDOR. Use for web app pentests and bug bounty IDOR discovery."
+metadata:
+  source: "https://github.com/SnailSploit/offensive-checklist/blob/main/idor.md"
+---
 
-## Metadata
-- **Skill Name**: idor
-- **Folder**: offensive-idor
-- **Source**: https://github.com/SnailSploit/offensive-checklist/blob/main/idor.md
-
-## Description
-IDOR (Insecure Direct Object Reference) testing checklist: object ID enumeration, horizontal/vertical privilege escalation, GUID predictability, indirect references via hashes, chained IDOR, and API endpoint IDOR. Use for web app pentests and bug bounty IDOR discovery.
+# Insecure Direct Object References (IDOR)
 
 ## Trigger Phrases
 Use this skill when the conversation involves any of:
 `IDOR, insecure direct object reference, horizontal privilege escalation, vertical privilege escalation, object enumeration, GUID, API IDOR, mass assignment, broken access control`
 
-## Instructions for Claude
+## Instructions
 
 When this skill is active:
 1. Load and apply the full methodology below as your operational checklist

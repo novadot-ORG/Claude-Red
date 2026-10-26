@@ -1,18 +1,17 @@
-# SKILL: Week 6: Understanding Windows Mitigations
+---
+name: offensive-windows-mitigations
+description: "Deep-dive on Windows exploit mitigations: ASLR, DEP/NX, CFG, CET/Shadow Stack, SEHOP, Heap Guard, ACG, Arbitrary Code Guard. Covers both the protection mechanism and known bypass techniques. Use when researching Windows exploit mitigations, planning bypass strategies, or understanding protection depth."
+metadata:
+  source: "https://github.com/SnailSploit/offensive-checklist/blob/main/6-windows-mitigations.md"
+---
 
-## Metadata
-- **Skill Name**: windows-mitigations
-- **Folder**: offensive-windows-mitigations
-- **Source**: https://github.com/SnailSploit/offensive-checklist/blob/main/6-windows-mitigations.md
-
-## Description
-Deep-dive on Windows exploit mitigations: ASLR, DEP/NX, CFG, CET/Shadow Stack, SEHOP, Heap Guard, ACG, Arbitrary Code Guard. Covers both the protection mechanism and known bypass techniques. Use when researching Windows exploit mitigations, planning bypass strategies, or understanding protection depth.
+# Week 6: Understanding Windows Mitigations
 
 ## Trigger Phrases
 Use this skill when the conversation involves any of:
 `Windows mitigations, ASLR, DEP, NX, CFG, CET, shadow stack, SEHOP, heap guard, ACG, mitigation bypass, exploit mitigation, Windows hardening`
 
-## Instructions for Claude
+## Instructions
 
 When this skill is active:
 1. Load and apply the full methodology below as your operational checklist

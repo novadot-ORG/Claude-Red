@@ -1,18 +1,17 @@
-# SKILL: HTTP Parameter Pollution (HPP)
+---
+name: offensive-parameter-pollution
+description: "HTTP parameter pollution (HPP) checklist: duplicate parameter injection, backend vs frontend parsing differences, WAF bypass via HPP, server-side vs client-side HPP, and practical exploitation patterns. Use when testing web applications for parameter handling flaws."
+metadata:
+  source: "https://github.com/SnailSploit/offensive-checklist/blob/main/parameter-pollution.md"
+---
 
-## Metadata
-- **Skill Name**: parameter-pollution
-- **Folder**: offensive-parameter-pollution
-- **Source**: https://github.com/SnailSploit/offensive-checklist/blob/main/parameter-pollution.md
-
-## Description
-HTTP parameter pollution (HPP) checklist: duplicate parameter injection, backend vs frontend parsing differences, WAF bypass via HPP, server-side vs client-side HPP, and practical exploitation patterns. Use when testing web applications for parameter handling flaws.
+# HTTP Parameter Pollution (HPP)
 
 ## Trigger Phrases
 Use this skill when the conversation involves any of:
 `parameter pollution, HTTP parameter pollution, HPP, duplicate parameter, WAF bypass, parsing differences, server-side HPP, client-side HPP, parameter injection`
 
-## Instructions for Claude
+## Instructions
 
 When this skill is active:
 1. Load and apply the full methodology below as your operational checklist

@@ -1,8 +1,24 @@
 # Changelog
 
-All notable changes to `claude-red` are documented here. The library follows a phased roadmap (see [README.md](README.md#roadmap)). Versions follow [Semantic Versioning](https://semver.org/) where breaking changes mean skill renames, removals, or category restructures.
+All notable changes to `codex-red` (forked from `claude-red`) are documented here. The library follows a phased roadmap (see [README.md](README.md#roadmap)). Versions follow [Semantic Versioning](https://semver.org/) where breaking changes mean skill renames, removals, or category restructures.
 
 ## [Unreleased]
+
+### Added — Codex compatibility (NovaDot fork, 2026-10-26)
+
+- OpenAI Codex quickstart, user/project installation paths and explicit invocation examples.
+- Flat skill installer with category/skill selection, dry runs and refusal to overwrite existing destinations.
+- `codex-skills.json`: validated inventory of all 79 skills across 23 categories, including NetExec.
+- Packaging regression tests and an inventory validation workflow.
+
+### Changed — Codex packaging
+
+- Added YAML discovery metadata to 28 legacy skills and made their generic instruction headings provider-neutral.
+- Shortened 18 discovery descriptions to fit the 1,024-character limit; retained their full descriptions in the skill bodies.
+- Replaced the legacy converter with a validated folder/ZIP exporter that preserves methodology and resources.
+- Replaced `claude-skills.json` with `codex-skills.json`; original skill identifiers, methodology, licence and attribution are retained.
+- Python tooling now declares development dependencies instead of installing packages globally.
+
 
 ### Changed
 

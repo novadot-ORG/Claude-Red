@@ -1,140 +1,64 @@
-# Contributing to claude-red
+# Contributing to Codex Red
 
-Thanks for contributing. This guide explains the skill format, the review process, and the conventions to keep the library coherent as it grows.
+This fork adapts [Claude-Red](https://github.com/SnailSploit/Claude-Red) for OpenAI Codex. Keep original source attribution and the MIT licence intact.
 
-## Quick Rules
+## Skill format
 
-1. **One skill, one surface.** Prefer focused skills (`offensive-kerberoasting`) over monolithic overviews (`offensive-active-directory`).
-2. **YAML frontmatter is required.** Skills without it won't load via the Claude Skills system.
-3. **Cite sources.** Every technique should be attributable. Link CVEs, advisories, original research.
-4. **No unauthorized targeting.** Don't include hardcoded victim domains, real customer data, or credentials.
-5. **Use code blocks with language tags.** It's how Claude (and humans) parse them best.
-
----
-
-## Skill Format
-
-A skill lives at:
-
-```
-Skills/<category>/<skill-folder>/SKILL.md
-```
-
-The folder name **must** match the `name:` field in the frontmatter.
-
-### Frontmatter (required)
+A skill lives at `Skills/<category>/<skill-name>/SKILL.md`. The category is for repository navigation; installation places `<skill-name>/` directly in a Codex skills root.
 
 ```yaml
 ---
-name: offensive-<bug-class-or-domain>
-description: "One paragraph (50–500 words). State the surface, the techniques covered, and when to use this skill. Claude uses this for trigger matching — be specific about scenarios, tools, and sub-topics."
+name: assessment-topic
+description: "Explain the task this skill supports and when Codex should use it."
+metadata:
+  source: "https://example.com/original-reference"
 ---
 ```
 
-The `description` is what Claude matches against. Make it dense with relevant terms an operator would mention. Avoid marketing language.
+The `name` must match the folder, use lowercase letters, digits and single hyphens, and contain at most 64 characters. Names must be unique across categories. Preserve existing names; renames are breaking changes.
 
-### Body Structure (recommended)
+The `description` must be a nonempty string of at most 1,024 characters without angle brackets. Keep it concise and specific enough to distinguish the skill from neighboring topics. Put detailed coverage, commands and references in the body. Optional `metadata.source` records the original source of inherited material.
 
-```markdown
-# <Short Skill Title>
+Use provider-neutral instruction headings. Retain product names where the content actually concerns that product. A skill can bundle `scripts/`, `references/` and `assets/`; installation and export must preserve these resources.
 
-<One-paragraph framing. Why this matters, what makes it distinct.>
+See the official OpenAI [skill authoring guide](https://learn.chatgpt.com/docs/build-skills). Optional `agents/openai.yaml` may be added when a skill needs UI metadata or declared tool dependencies.
 
-## Quick Workflow
+## Content conventions
 
-1. <Numbered, ordered steps an operator follows in the field>
+- Prefer one focused workflow or attack surface per skill.
+- Cite original research, vendor advisories and relevant CWE, OWASP or MITRE references.
+- Keep methodology clear, with ordered steps where sequence matters and language tags on code blocks.
+- Do not hardcode victim infrastructure, real client data or credentials.
+- Preserve documented scope, authorization boundaries, evidence handling and remediation guidance.
+- Review AI-generated technical content before accepting it.
 
----
+## Local checks
 
-## <Section per phase or technique cluster>
+Use Python 3.10 or later and a local virtual environment:
 
-<Concrete, copy-paste commands or code blocks. Annotate the why.>
-
----
-
-## Detection / Defender View
-
-<Optional but valuable — what defenders will see, common evasions.>
-
----
-
-## Engagement Cheatsheet
-
-<A short copy-paste-ready sequence summarizing the methodology.>
-
----
-
-## Key References
-
-- MITRE ATT&CK / CWE / OWASP IDs
-- Canonical research papers, conference talks
-- Tool docs, advisory URLs
-- Source: link to upstream checklist if applicable
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements-dev.txt
+python tools/build_manifest.py
+python tools/build_manifest.py --check
+python -m unittest discover -s tests -v
+./install.sh --skill offensive-reporting --dry-run
 ```
 
-### Style Guide
+The inventory builder rejects missing, invalid or duplicate YAML metadata, mismatched names, duplicate skill identifiers and invalid descriptions. `--check` verifies the checked-in inventory without rewriting it. Tests exercise packaging with isolated fixtures; they do not run security techniques or contact targets.
 
-- **Voice:** technical, second-person ("you"), present tense
-- **Length:** 200–800 lines is typical; aim for depth in one surface, not breadth across many
-- **Code blocks:** always specify the language (`bash`, `python`, `c`, `powershell`, `sql`, `yaml`, `http`)
-- **Tables:** use for compact reference (CVE → exploitation, capability → escape, etc.)
-- **No emoji** unless used as visual markers in tables (✓ ✗ ⚠) and only sparingly
+## Adding or changing a skill
 
----
+1. Create or update its `SKILL.md` and any required resources.
+2. Preserve the identifier and attribution for existing skills.
+3. Update the README index, category counts and MINDMAP when adding or reorganizing skills.
+4. Note material changes in CHANGELOG.
+5. Regenerate `codex-skills.json` and run the local checks above.
+6. Review the diff for technical accuracy, resource preservation and unintended changes.
 
-## Adding a New Skill
+Keep pull requests focused. When splitting a broad skill, retain its existing identifier as an overview that links to the focused skills, and update the inventory and navigation.
 
-1. Pick the right category folder. If none fits, propose a new one in your PR description.
-2. Create `Skills/<category>/<skill-name>/SKILL.md`.
-3. Write the frontmatter and body following the structure above.
-4. Update [`README.md`](README.md) — add the skill to the relevant category table.
-5. Update [`CHANGELOG.md`](CHANGELOG.md) under the next version.
-6. Update [`claude-skills.json`](claude-skills.json) if it exists (run `python tools/build_manifest.py` if available).
-7. Run any local lint:
-   ```bash
-   ./tools/check-skill.sh Skills/<category>/<skill-name>/SKILL.md
-   ```
+## Review
 
-## Modifying an Existing Skill
-
-- Preserve the `name:` field (it's a public identifier; renames are breaking changes)
-- Note the edit briefly in CHANGELOG.md
-- For substantive rewrites, link the prior version's SHA so reviewers can diff
-
-## Splitting a Monolithic Skill
-
-When a skill grows beyond one surface (e.g. `offensive-wifi` covering WPA2, WPA3, BLE, Zigbee), split it:
-
-1. Keep the original as a brief overview that points to the new focused skills
-2. Move detailed content into new per-surface skills
-3. Update README, CHANGELOG, and the manifest
-
-The roadmap in README tracks current splits.
-
-## Review Process
-
-Pull requests are reviewed for:
-
-- Technical accuracy (does this work? is it current?)
-- Clarity (would a competent operator understand and execute?)
-- Scope (one surface, not three)
-- Attribution (sources cited?)
-- Safety (no real targets, no live secrets, no malicious helpers)
-
-Expect one round of review. Maintainers may request edits before merging.
-
----
-
-## What We Won't Accept
-
-- Skills that hardcode real victim infrastructure
-- Tooling that has destructive defaults without warnings
-- Bypasses for vendor-mandated security telemetry without legitimate red team context
-- Content under non-MIT-compatible licenses
-- AI-generated skills without operator review (use Claude to draft, then verify and edit)
-
----
-
-## Questions
-
-Open a GitHub Discussion before a large PR so the maintainers can confirm the direction. For sensitive findings (a leaked credential in an example, etc.), see [SECURITY.md](SECURITY.md).
+Reviewers check technical accuracy, clear scope, evidence and references, compatible metadata, and safe installation behavior. Content with destructive defaults, malicious helpers, unlicensed copying or unreviewed technical claims should be revised before merging. Report sensitive repository issues privately as described in [SECURITY.md](SECURITY.md).

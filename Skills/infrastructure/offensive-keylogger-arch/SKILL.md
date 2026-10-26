@@ -1,18 +1,17 @@
-# SKILL: Novel research
+---
+name: offensive-keylogger-arch
+description: "Low-level keylogger architecture design: kernel driver hooks (WH_KEYBOARD_LL, SetWindowsHookEx), ETW-based input capture, user-mode vs kernel-mode approaches, stealth techniques, and data exfiltration. Use for understanding input capture mechanisms, EDR evasion research, or malware architecture analysis."
+metadata:
+  source: "https://github.com/SnailSploit/offensive-checklist/blob/main/Low-level%20Keylogger%20architecture_.md"
+---
 
-## Metadata
-- **Skill Name**: keylogger-architecture
-- **Folder**: offensive-keylogger-arch
-- **Source**: https://github.com/SnailSploit/offensive-checklist/blob/main/Low-level%20Keylogger%20architecture_.md
-
-## Description
-Low-level keylogger architecture design: kernel driver hooks (WH_KEYBOARD_LL, SetWindowsHookEx), ETW-based input capture, user-mode vs kernel-mode approaches, stealth techniques, and data exfiltration. Use for understanding input capture mechanisms, EDR evasion research, or malware architecture analysis.
+# Novel research
 
 ## Trigger Phrases
 Use this skill when the conversation involves any of:
 `keylogger, keyboard hook, WH_KEYBOARD_LL, SetWindowsHookEx, ETW, kernel driver, input capture, low-level keylogger, malware architecture, stealth, exfiltration`
 
-## Instructions for Claude
+## Instructions
 
 When this skill is active:
 1. Load and apply the full methodology below as your operational checklist
