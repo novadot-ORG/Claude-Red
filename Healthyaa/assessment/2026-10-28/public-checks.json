@@ -1,0 +1,134 @@
+[
+  {
+    "path": "/",
+    "timestamp_utc": "2026-10-28T10:58:40.424655+00:00",
+    "status": 200,
+    "bytes_read": 512220,
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Location": null,
+      "Strict-Transport-Security": null,
+      "Content-Security-Policy": null,
+      "X-Frame-Options": null,
+      "X-Content-Type-Options": "nosniff",
+      "Referrer-Policy": null,
+      "Cache-Control": null,
+      "Access-Control-Allow-Origin": null
+    },
+    "cookie_names": []
+  },
+  {
+    "path": "/wp-admin/plugins.php",
+    "timestamp_utc": "2026-10-28T10:58:46.671209+00:00",
+    "status": 302,
+    "bytes_read": 0,
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Location": "https://healthyaa.co.uk/wp-login.php?redirect_to=https%3A%2F%2Fhealthyaa.co.uk%2Fwp-admin%2Fplugins.php&reauth=1",
+      "Strict-Transport-Security": null,
+      "Content-Security-Policy": null,
+      "X-Frame-Options": null,
+      "X-Content-Type-Options": null,
+      "Referrer-Policy": null,
+      "Cache-Control": "no-cache, must-revalidate, max-age=0, no-store, private",
+      "Access-Control-Allow-Origin": null
+    },
+    "cookie_names": []
+  },
+  {
+    "path": "/wp-json/wp/v2/settings",
+    "timestamp_utc": "2026-10-28T10:58:52.515209+00:00",
+    "status": 401,
+    "bytes_read": 98,
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8",
+      "Location": null,
+      "Strict-Transport-Security": null,
+      "Content-Security-Policy": null,
+      "X-Frame-Options": null,
+      "X-Content-Type-Options": "nosniff",
+      "Referrer-Policy": null,
+      "Cache-Control": null,
+      "Access-Control-Allow-Origin": null
+    },
+    "cookie_names": [],
+    "error_code": "rest_forbidden",
+    "error_status": 401
+  },
+  {
+    "path": "/wp-json/wp/v2/users?context=edit&per_page=1",
+    "timestamp_utc": "2026-10-28T10:58:58.523142+00:00",
+    "status": 401,
+    "bytes_read": 109,
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8",
+      "Location": null,
+      "Strict-Transport-Security": null,
+      "Content-Security-Policy": null,
+      "X-Frame-Options": null,
+      "X-Content-Type-Options": "nosniff",
+      "Referrer-Policy": null,
+      "Cache-Control": null,
+      "Access-Control-Allow-Origin": null
+    },
+    "cookie_names": [],
+    "error_code": "rest_forbidden_context",
+    "error_status": 401
+  },
+  {
+    "path": "/wp-json/wc/v3/settings",
+    "timestamp_utc": "2026-10-28T10:59:04.228821+00:00",
+    "status": 401,
+    "bytes_read": 107,
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8",
+      "Location": null,
+      "Strict-Transport-Security": null,
+      "Content-Security-Policy": null,
+      "X-Frame-Options": null,
+      "X-Content-Type-Options": "nosniff",
+      "Referrer-Policy": null,
+      "Cache-Control": null,
+      "Access-Control-Allow-Origin": null
+    },
+    "cookie_names": [],
+    "error_code": "woocommerce_rest_cannot_view",
+    "error_status": 401
+  },
+  {
+    "path": "/demo-security-review-nonexistent-20261028",
+    "timestamp_utc": "2026-10-28T10:59:10.407907+00:00",
+    "status": 404,
+    "bytes_read": 287138,
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Location": null,
+      "Strict-Transport-Security": null,
+      "Content-Security-Policy": null,
+      "X-Frame-Options": null,
+      "X-Content-Type-Options": "nosniff",
+      "Referrer-Policy": null,
+      "Cache-Control": "no-cache, must-revalidate, max-age=0, no-store, private",
+      "Access-Control-Allow-Origin": null
+    },
+    "cookie_names": []
+  },
+  {
+    "path": "/wp-json/",
+    "timestamp_utc": "2026-10-28T10:59:16.572716+00:00",
+    "status": 200,
+    "bytes_read": 1500000,
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8",
+      "Location": null,
+      "Strict-Transport-Security": null,
+      "Content-Security-Policy": null,
+      "X-Frame-Options": null,
+      "X-Content-Type-Options": "nosniff",
+      "Referrer-Policy": null,
+      "Cache-Control": null,
+      "Access-Control-Allow-Origin": null
+    },
+    "cookie_names": []
+  }
+]

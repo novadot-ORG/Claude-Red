@@ -1,0 +1,12 @@
+{
+  "url": "https://healthyaa.co.uk/wp-json/wctr-api/v1/tyrules/fetch",
+  "timestamp": "2026-10-28T11:27:43.827274+00:00",
+  "status": 200,
+  "shape": {
+    "data": {
+      "type": "list",
+      "length": 0,
+      "first_item_shape": null
+    }
+  }
+}

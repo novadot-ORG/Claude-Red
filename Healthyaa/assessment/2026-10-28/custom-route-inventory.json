@@ -1,0 +1,81 @@
+{
+  "timestamp": "2026-10-28T11:00:24.799504+00:00",
+  "status": 200,
+  "bytes": 1843247,
+  "routes": [
+    {
+      "path": "/healthyaa/v1",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "path": "/healthyaa/v1/abandoned-carts",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "path": "/healthyaa-ai/v1",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "path": "/healthyaa-ai/v1/chat",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "path": "/wctr-api",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "path": "/wctr-api/v1/tyrules/save",
+      "methods": [
+        "POST",
+        "PUT",
+        "PATCH"
+      ]
+    },
+    {
+      "path": "/wctr-api/v1/tyrules/fetch",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "path": "/wctr-api/v1/tyrules/search-product",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "path": "/wctr-api/v1/tyrules/search-category",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "path": "/wctr-api/v1/tyrules/search-tag",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "path": "/wctr-api/v1/tyrules/products/details",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "path": "/wctr-api/v1/tyrules/post/terms",
+      "methods": [
+        "POST"
+      ]
+    }
+  ]
+}

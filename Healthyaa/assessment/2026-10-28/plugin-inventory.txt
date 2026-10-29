@@ -1,0 +1,171 @@
+							32 link Description: Deactivate FluentSMTP
+										73 text Select all
+											79 text Select Advanced Order Export For WooCommerce
+												90 link Description: Deactivate Advanced Order Export For WooCommerce, ID: deactivate-woo-order-export-lite
+												94 text Version 4.1.2 | By 
+												103 text There is a new version of Advanced Order Export For WooCommerce available. 
+											110 text Select AI Agent by SiteGround
+											114 link Description: Deactivate AI Agent by SiteGround, ID: deactivate-sg-ai-studio
+												118 text Version 1.3.1 | By 
+											126 text Select Bookly
+												131 link Description: Activate Bookly, ID: activate-bookly-responsive-appointment-booking-tool
+												137 text Version 28.5 | By 
+												146 text There is a new version of Bookly available. 
+											153 text Select Bookly Cart (Add-on)
+												158 link Description: Activate Bookly Cart (Add-on), ID: activate-bookly-cart-add-on
+												164 text Version 3.2 | By 
+											170 text Select Bookly Custom Fields (Add-on)
+												175 link Description: Activate Bookly Custom Fields (Add-on), ID: activate-bookly-custom-fields-add-on
+												181 text Version 4.5 | By 
+											187 text Select Bookly Custom Statuses (Add-on)
+												192 link Description: Activate Bookly Custom Statuses (Add-on), ID: activate-bookly-custom-statuses-add-on
+												198 text Version 2.5 | By 
+											204 text Select Bookly Deposit Payments (Add-on)
+												209 link Description: Activate Bookly Deposit Payments (Add-on), ID: activate-bookly-deposit-payments-add-on
+												215 text Version 3.7 | By 
+											221 text Select Bookly Invoices (Add-on)
+												226 link Description: Activate Bookly Invoices (Add-on), ID: activate-bookly-invoices-add-on
+												232 text Version 5.1 | By 
+											238 text Select Bookly Pro (Add-on)
+												243 link Description: Activate Bookly Pro (Add-on), ID: activate-bookly-pro-add-on
+												249 text Version 8.5 | By 
+											255 text Select Bookly Stripe (Add-on)
+												260 link Description: Activate Bookly Stripe (Add-on), ID: activate-bookly-stripe-add-on
+												266 text Version 4.7 | By 
+											272 text Select Bookly Tasks (Add-on)
+												277 link Description: Activate Bookly Tasks (Add-on), ID: activate-bookly-tasks-add-on
+												283 text Version 2.4 | By 
+											289 text Select Click to Chat
+												296 link Description: Deactivate Click to Chat, ID: deactivate-click-to-chat-for-whatsapp
+												304 text Version 4.45 | By 
+											312 text Select Contact Form 7
+												319 link Description: Deactivate Contact Form 7, ID: deactivate-contact-form-7
+												323 text Version 6.1.7 | By 
+												332 text There is a new version of Contact Form 7 available, but it does not work with your version of PHP. 
+											339 text Select CookieYes | GDPR Cookie Consent
+												350 link Description: Deactivate CookieYes | GDPR Cookie Consent, ID: deactivate-cookie-law-info
+												354 text Version 3.5.6 | By 
+												363 text There is a new version of CookieYes | GDPR Cookie Consent available. 
+											376 text Select Duplicate Page
+												385 link Description: Deactivate Duplicate Page, ID: deactivate-duplicate-page
+												389 text Version 4.5.9 | By 
+											397 text Select Elementor
+												408 text Version 4.3.4 | By 
+												424 text There is a new version of Elementor available. 
+											431 text Select ElementsKit Lite
+												436 link Description: Deactivate ElementsKit Lite, ID: deactivate-elementskit-lite
+												444 text Version 4.0.7 | By 
+												459 text There is a new version of ElementsKit Lite available. 
+											466 text Select Envato Elements
+											470 link Description: Deactivate Envato Elements, ID: deactivate-envato-elements
+												474 text Version 2.0.16 | By 
+											478 text Select Essential Addons for Elementor
+												483 link Description: Deactivate Essential Addons for Elementor, ID: deactivate-essential-addons-for-elementor-lite
+												491 text Version 6.8.5 | By 
+												504 text There is a new version of Essential Addons for Elementor available. 
+											511 text Select FiboSearch - AJAX Search for WooCommerce
+												518 link Description: Deactivate FiboSearch - AJAX Search for WooCommerce, ID: deactivate-ajax-search-for-woocommerce
+												522 text Version 1.34.2 | By 
+												534 text There is a new version of FiboSearch - AJAX Search for WooCommerce available. 
+											541 text Select FluentSMTP
+												546 link Description: Deactivate FluentSMTP, ID: deactivate-fluent-smtp
+												552 text Version 2.4.1 | By 
+											560 text Select Healthyaa AI Assistant
+												565 link Description: Activate Healthyaa AI Assistant, ID: activate-healthyaa-ai-assistant
+											570 text Version 0.5.1 | By Novadot
+											573 text Select Healthyaa AI Assistant
+												578 link Description: Activate Healthyaa AI Assistant, ID: activate-healthyaa-ai-assistant-2
+											583 text Version 0.5.2 | By Novadot
+											586 text Select Healthyaa AI Assistant
+											590 link Description: Deactivate Healthyaa AI Assistant, ID: deactivate-healthyaa-ai-assistant-3
+											593 text Version 0.5.3 | By Novadot
+											596 text Select Healthyaa AI Assistant
+												601 link Description: Activate Healthyaa AI Assistant, ID: activate-healthyaa-ai-assistant-4
+											606 text Version 0.5.0 | By Novadot
+											609 text Select Healthyaa AI Assistant
+												614 link Description: Activate Healthyaa AI Assistant, ID: activate-healthyaa-ai-assistant-5
+											619 text Version 0.3.1 | By Novadot
+											622 text Select Jeg Kit for Elementor
+												629 link Description: Deactivate Jeg Kit for Elementor, ID: deactivate-jeg-elementor-kit
+												635 text Version 3.2.20 | By 
+											656 text Select Login & Register Customizer – Forms, Popup, Profile & WooCommerce
+												667 link Description: Deactivate Login & Register Customizer – Forms, Popup, Profile & WooCommerce, ID: deactivate-easy-login-woocommerce
+												671 text Version 4.0.4 | By 
+											679 text Select MetForm
+												684 link Description: Deactivate MetForm, ID: deactivate-metform
+												692 text Version 4.3.2 | By 
+												707 text There is a new version of MetForm available. 
+											714 text Select NovaDot Site Scanner
+												721 link Description: Deactivate NovaDot Site Scanner, ID: deactivate-novadot-site-scanner
+											724 text Version 0.4.5 | By NovaDot
+											727 text Select Ocean Extra
+											731 link Description: Deactivate Ocean Extra, ID: deactivate-ocean-extra
+												735 text Version 2.6.2 | By 
+												744 text There is a new version of Ocean Extra available. 
+											794 text Select Order Export & Order Import for WooCommerce
+												799 link Description: Activate Order Export & Order Import for WooCommerce, ID: activate-order-import-export-for-woocommerce
+												805 text Version 2.7.8 | By 
+												814 text There is a new version of Order Export & Order Import for WooCommerce available. 
+											821 text Select Pages with category and tag
+											825 link Description: Deactivate Pages with category and tag, ID: deactivate-pages-with-category-and-tag
+												829 text Version 0.9.0 | By 
+											837 text Select Popup Builder - Create highly converting, mobile friendly marketing popups.
+												848 link Description: Deactivate Popup Builder - Create highly converting, mobile friendly marketing popups., ID: deactivate-popup-builder
+												852 text Version 4.4.5 | By 
+												865 text There is a new version of Popup Builder - Create highly converting, mobile friendly marketing popups. available. 
+											872 text Select Post SMTP
+												885 link Description: Deactivate Post SMTP, ID: deactivate-post-smtp
+												889 text Version 4.0.2 | By 
+											897 text Select Qi Addons for Elementor
+												902 link Description: Deactivate Qi Addons for Elementor, ID: deactivate-qi-addons-for-elementor
+												908 text Version 1.11.1 | By 
+												921 text There is a new version of Qi Addons for Elementor available. 
+											928 text Select Rank Math SEO
+												935 link Description: Deactivate Rank Math SEO, ID: deactivate-seo-by-rank-math
+												943 text Version 1.0.280 | By 
+											955 text Select Security Optimizer
+											959 link Description: Deactivate Security Optimizer, ID: deactivate-sg-security
+												963 text Version 1.6.8 | By 
+												972 text There is a new version of Security Optimizer available. 
+											979 text Select ShopEngine
+												986 link Description: Deactivate ShopEngine, ID: deactivate-shopengine
+												992 text Version 4.9.7 | By 
+											1000 text Select Smart Coupons For WooCommerce Coupons
+												1007 link Description: Deactivate Smart Coupons For WooCommerce Coupons, ID: deactivate-wt-smart-coupons-for-woocommerce
+												1015 text Version 2.3.2 | By 
+												1031 text There is a new version of Smart Coupons For WooCommerce Coupons available. 
+											1038 text Select Speed Optimizer
+											1042 link Description: Deactivate Speed Optimizer, ID: deactivate-sg-cachepress
+												1046 text Version 7.8.5 | By 
+											1054 text Select Template Kit Import
+											1058 link Description: Deactivate Template Kit Import, ID: deactivate-template-kit-import
+												1062 text Version 1.0.16 | By 
+												1071 text There is a new version of Template Kit Import available, but it does not work with your version of PHP. 
+											1078 text Select Thank You Page for WooCommerce
+												1095 link Description: Deactivate Thank You Page for WooCommerce, ID: deactivate-wc-thanks-redirect
+												1099 text Version 4.3.3 | By 
+												1108 text There is a new version of Thank You Page for WooCommerce available. 
+											1115 text Select Ultimate Addons for Elementor (UAE)
+												1122 link Description: Deactivate Ultimate Addons for Elementor (UAE), ID: deactivate-header-footer-elementor
+												1128 text Version 2.9.5 | By 
+											1138 text Select UpdraftPlus - Backup/Restore
+												1147 link Description: Deactivate UpdraftPlus - Backup/Restore, ID: deactivate-updraftplus
+												1151 text Version 1.26.13 | By 
+												1160 text There is a new version of UpdraftPlus - Backup/Restore available. 
+											1167 text Select WooCommerce
+												1177 text Version 11.1.2 | By 
+												1195 text There is a new version of WooCommerce available. 
+											1206 text Select WooCommerce Stripe Gateway
+												1213 link Description: Deactivate WooCommerce Stripe Gateway, ID: deactivate-woocommerce-gateway-stripe
+												1217 text Version 11.0.1 | By 
+												1233 text There is a new version of WooCommerce Stripe Gateway available. 
+											1240 text Select WooPayments
+												1247 link Description: Deactivate WooPayments, ID: deactivate-woocommerce-payments
+												1251 text Version 11.1.0 | By 
+												1263 text There is a new version of WooPayments available. 
+											1270 text Select WP Crontrol
+												1281 link Description: Deactivate WP Crontrol, ID: deactivate-wp-crontrol
+												1285 text Version 1.21.2 | By 
+												1296 text There is a new version of WP Crontrol available. 
+										1304 text Select all
+								1308 text Select bulk action

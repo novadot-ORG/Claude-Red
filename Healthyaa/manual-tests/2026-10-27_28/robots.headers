@@ -1,0 +1,19 @@
+HTTP/2 200 
+server: nginx
+date: Tue, 27 Oct 2026 20:23:13 GMT
+content-type: text/plain; charset=utf-8
+vary: Accept-Encoding
+x-cache-enabled: False
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+x-ua-compatible: IE=edge
+cache-control: no-cache, must-revalidate, max-age=0, no-store, private
+link: <https://healthyaa.co.uk/wp-json/>; rel="https://api.w.org/"
+x-httpd-modphp: 1
+x-cdn-c: static
+x-sg-cdn: 1
+x-ce: europe-west2-8ssq
+x-proxy-cache: MISS
+x-proxy-cache-info: W NC:000000 UP:
+host-header: 8441280b0c35cbc1147f8ba998a563a7
+

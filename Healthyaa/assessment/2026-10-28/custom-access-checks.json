@@ -1,0 +1,22 @@
+[
+  {
+    "path": "/wp-json/healthyaa/v1/abandoned-carts",
+    "status": 403,
+    "timestamp": "2026-10-28T11:00:44.426007+00:00",
+    "content_type": "application/json; charset=UTF-8",
+    "error_code": "healthyaa_rest_forbidden"
+  },
+  {
+    "path": "/wp-json/wctr-api/v1/tyrules/fetch",
+    "status": 200,
+    "timestamp": "2026-10-28T11:00:50.343908+00:00",
+    "content_type": "application/json; charset=UTF-8",
+    "body_not_read": "Successful response body not collected to avoid customer-data retrieval"
+  },
+  {
+    "path": "/xmlrpc.php",
+    "status": 403,
+    "timestamp": "2026-10-28T11:00:55.551441+00:00",
+    "content_type": "text/html"
+  }
+]

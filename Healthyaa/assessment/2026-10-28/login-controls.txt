@@ -1,0 +1,49 @@
+Browser tab: 2, Title: "Security Optimizer - Login Security ‹ Healthyaa — WordPress", URL: "https://healthyaa.co.uk/wp-admin/admin.php?page=login-settings".
+1 AXWebArea Security Optimizer - Login Security ‹ Healthyaa — WordPress, URL: healthyaa.co.uk/wp-admin/admin.php?page=login-settings
+	2 container
+		3 container wpwrap
+			4 container Description: Main menu, ID: adminmenumain
+				5 link Description: Skip to main content, Value: healthyaa.co.uk/wp-admin/admin.php?page=login-settings#wpbody-content
+			6 container wpcontent
+				7 container Description: Toolbar, ID: wp-toolbar
+					8 menu wp-admin-bar-root-default
+						9 (collapsed) Menu, Secondary Actions: Expand
+						10 (collapsed) Healthyaa, Secondary Actions: Expand
+						11 ⌘K Open command palette
+						12 (collapsed) New, Secondary Actions: Expand
+					13 menu wp-admin-bar-top-secondary
+						14 (collapsed) Hi, user, Secondary Actions: Expand
+				15 container
+					16 heading Security Optimizer - Login Security, Value: 1
+						17 text Security Optimizer - Login Security
+					18 text Login security is paramount for keeping your site and data secure. Use the tools we have compiled to protect your WordPress wp-admin from unauthorised visitors, bots and other human or automated attacks.
+					19 heading Login Settings, Value: 4
+						20 text Login Settings
+					21 heading Custom Login URL, Value: 4
+						22 text Custom Login URL
+					23 text RECOMMENDED
+					24 text Attackers often try exploits on /wp-admin as a default login URL for WordPress. Change it to avoid these attacks and have an easily memorisable login URL.
+					25 button CONFIGURE
+						26 text CONFIGURE
+					27 heading Login Access, Value: 4
+						28 text Login Access
+					29 text By default your WordPress login can be accessed by any IP. You can use this feature to allow login only for specific IPs or range of IPs in order to prevent brute-force attacks or malicious login attempts.
+					30 button CONFIGURE
+						31 text CONFIGURE
+					32 heading Two-factor Authentication for Admin & Editors Users, Value: 4
+						33 text Two-factor Authentication for Admin & Editors Users
+					34 text RECOMMENDED
+					35 container
+						36 text Two-factor authentication forces admin users to login only after providing a token, generated from the Google Authenticator application. When you enable this option,  all admin & editor users will be asked to configure their two-factor authentication in the Authenticator app on their next login.
+					37 switch 0
+					38 heading Disable Common Usernames, Value: 4
+						39 text Disable Common Usernames
+					40 text Using common usernames like 'admin' is a security threat that often results in unauthorised access. By enabling this option we will disable the creation of common usernames and if you already have one or more users with a weak username, we'll ask you to provide new one(s).
+					41 switch 1
+					42 heading Limit Login Attempts, Value: 4
+						43 text Limit Login Attempts
+					44 text Limit the number of times a given user can attempt to log in to your wp-admin with incorrect credentials. Once the login attempt limit is reached, the IP from which the attempts have originated will be blocked first for 1 hour. If the attempts continue after the first hour, the limit will then be triggered for 24 hours and then for 7 days.
+					45 pop up button (collapsed) 5, Secondary Actions: Expand
+						46 text 5
+
+The focused UI element is 1 AXWebArea Security Optimizer - Login Security ‹ Healthyaa — WordPress, URL: healthyaa.co.uk/wp-admin/admin.php?page=login-settings
