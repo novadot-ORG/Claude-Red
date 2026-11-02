@@ -1,0 +1,70 @@
+{
+  "updated_at": "2026-11-02T18:36:13.676181+00:00",
+  "authorization": "User approved one labelled Contact and one Events email test and will confirm receipt. User requires Computer Use; do not use Playwright.",
+  "destination": "hello@novadot.co.uk",
+  "status": "passed_user_confirmed_both_delivered_once",
+  "blocker": null,
+  "tests": [
+    {
+      "id": "ND-MAIL-20261102-CONTACT-01",
+      "page": "https://novadot.co.uk/contact/",
+      "status": "passed_user_confirmed_delivery_once",
+      "expected_subject": "NovaDot website: project enquiry",
+      "observed_at": "2026-11-02T18:31:51.876618+00:00",
+      "submit_clicks": 1,
+      "visible_result": "Enquiry submitted. Thank you — we will review your message and get back to you.",
+      "form_cleared": true,
+      "inbox_receipt": "confirmed by user",
+      "browser": "Google Chrome",
+      "submitted_fields": {
+        "name": "NovaDot Website Test",
+        "email": "website-test@example.com",
+        "organisation": "NovaDot - authorised website QA",
+        "problem": "ND-MAIL-20261102-CONTACT-01 — Authorised contact-form email delivery test. This is synthetic test data, not a real project enquiry. Please confirm receipt and the displayed fields to the website owner. No reply or callback is requested.",
+        "preference": "email",
+        "privacy_acknowledgement": true
+      },
+      "inbox_count_reported_by_user": 1
+    },
+    {
+      "id": "ND-MAIL-20261102-EVENT-01",
+      "page": "https://novadot.co.uk/events/",
+      "status": "passed_user_confirmed_delivery_once",
+      "expected_subject": "NovaDot website: event enquiry",
+      "observed_at": "2026-11-02T18:35:33.289858+00:00",
+      "browser": "Brave Browser",
+      "submit_clicks": 1,
+      "visible_result": "Enquiry submitted. Thank you — we will review your message and get back to you. This does not confirm a booking; suitability and availability must be agreed separately.",
+      "form_cleared": true,
+      "inbox_receipt": "confirmed by user",
+      "submitted_fields": {
+        "name": "NovaDot Website Test",
+        "email": "website-test@example.com",
+        "organisation": "NovaDot - authorised website QA",
+        "details": "ND-MAIL-20261102-EVENT-01 — Authorised event-form email delivery test. This is synthetic test data, not a booking, attendance request or real event enquiry. Please confirm receipt and the displayed fields to the website owner. No reply is requested.",
+        "request_label": "Register interest for an upcoming topic",
+        "space_label": "Meeting & Presentation Space",
+        "attendees": "0 - delivery test only",
+        "targetDate": "No date requested - delivery test only",
+        "privacy_acknowledgement": true
+      },
+      "inbox_count_reported_by_user": 1
+    }
+  ],
+  "notes": [
+    "Synthetic reserved example.com Reply-To is for field verification only; do not send a reply.",
+    "Submit once per form and inspect visible outcome. Do not blindly repeat after an ambiguous result.",
+    "Earlier Computer Use access blockers were resolved before submission.",
+    "A Chrome Events draft was filled but not submitted; the single Events submission occurred in Brave after Chrome switched windows. Do not submit the old Chrome draft.",
+    "Website success messages were observed directly; backend response codes, generated request UUIDs and inbox contents were not accessed in this UI-only test.",
+    "User confirmed both messages arrived once. Mailbox contents, individual field rendering and actual Reply-To headers were not independently inspected."
+  ],
+  "method": "Native Computer Use: Contact in Google Chrome; Events in Brave. No Playwright submission or direct API submission.",
+  "local_date": "2026-11-03",
+  "folder_date_basis": "UTC test-session date and original test identifiers",
+  "user_confirmation": {
+    "recorded_at": "2026-11-02T18:36:13.676181+00:00",
+    "statement": "Both arrived once",
+    "scope": "Receipt of both labelled Contact and Events test emails exactly once, as reported by the user."
+  }
+}
