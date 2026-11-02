@@ -19,6 +19,10 @@
 
 ---
 
+## Client testing branch
+
+Client testing work belongs on `Client-Website-Test`; shared OpenAI-compatible skill development belongs on `codex/openai-compatibility`. **Create a separate top-level folder for every new client.** See the [client testing workflow and index](CLIENT-WEBSITE-TESTS.md) for onboarding and folder structure. The [Novadot workspace](novadot/README.md) is ready for scope definition.
+
 ## Overview
 
 `claude-red` is a curated library of offensive security skills for the [Claude Skills system](https://docs.claude.com). Each skill is a structured `SKILL.md` file that primes Claude with expert-level methodology for a specific attack surface — from SQL injection to shellcode, EDR evasion to ADCS abuse.
