@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T18:36:13.676181+00:00",
+  "updated_at": "2026-11-02T18:38:25.111547+00:00",
   "authorization": "User approved one labelled Contact and one Events email test and will confirm receipt. User requires Computer Use; do not use Playwright.",
   "destination": "hello@novadot.co.uk",
   "status": "passed_user_confirmed_both_delivered_once",
@@ -24,7 +24,19 @@
         "preference": "email",
         "privacy_acknowledgement": true
       },
-      "inbox_count_reported_by_user": 1
+      "inbox_count_reported_by_user": 1,
+      "screenshot_evidence": {
+        "path": "evidence/contact-received.png",
+        "sha256": "3544d3a0381c85e52fda6bbc6cc4dd8a1d669eb603c33590453743efd12e3f93",
+        "provenance": "User-supplied screenshot, copied without modification; visible content reviewed.",
+        "visible_subject": "NovaDot website: project enquiry",
+        "visible_sender": "Hello <hello@novadot.co.uk>",
+        "visible_recipient_label": "Hello",
+        "visible_received_time": "Today at 00:01",
+        "reference": "582738aa-3551-40c3-ad76-43348a5d207f",
+        "body_verification": "Visible name, email, organisation, test marker, submitted message/fields and privacy acknowledgement match the test.",
+        "header_limit": "Actual Reply-To header and expanded recipient address are not visible."
+      }
     },
     {
       "id": "ND-MAIL-20261102-EVENT-01",
@@ -48,7 +60,19 @@
         "targetDate": "No date requested - delivery test only",
         "privacy_acknowledgement": true
       },
-      "inbox_count_reported_by_user": 1
+      "inbox_count_reported_by_user": 1,
+      "screenshot_evidence": {
+        "path": "evidence/event-received.png",
+        "sha256": "fdc57fa7ed1a3a02120203a9f5668c3fd3a553165ff9f3e5a013913c05178e8c",
+        "provenance": "User-supplied screenshot, copied without modification; visible content reviewed.",
+        "visible_subject": "NovaDot website: event enquiry",
+        "visible_sender": "Hello <hello@novadot.co.uk>",
+        "visible_recipient_label": "Hello",
+        "visible_received_time": "Today at 00:04",
+        "reference": "504253dd-1979-4635-9643-600fc6fb5351",
+        "body_verification": "Visible name, email, organisation, test marker, submitted message/fields and privacy acknowledgement match the test.",
+        "header_limit": "Actual Reply-To header and expanded recipient address are not visible."
+      }
     }
   ],
   "notes": [
@@ -56,8 +80,8 @@
     "Submit once per form and inspect visible outcome. Do not blindly repeat after an ambiguous result.",
     "Earlier Computer Use access blockers were resolved before submission.",
     "A Chrome Events draft was filled but not submitted; the single Events submission occurred in Brave after Chrome switched windows. Do not submit the old Chrome draft.",
-    "Website success messages were observed directly; backend response codes, generated request UUIDs and inbox contents were not accessed in this UI-only test.",
-    "User confirmed both messages arrived once. Mailbox contents, individual field rendering and actual Reply-To headers were not independently inspected."
+    "Website success messages were observed directly. User supplied both received-email screenshots; visible subjects, sender and body fields were reviewed and request references recorded.",
+    "User confirmed both messages arrived once. Screenshots establish visible message contents but do not independently establish duplicate count, raw Reply-To headers or email authentication results."
   ],
   "method": "Native Computer Use: Contact in Google Chrome; Events in Brave. No Playwright submission or direct API submission.",
   "local_date": "2026-11-03",
