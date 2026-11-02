@@ -1,0 +1,5 @@
+
+> novadot-website@0.1.0 validate
+> node scripts/validate-site.mjs
+
+Validated 26 source files and the canonical logo asset.

@@ -1,0 +1,35 @@
+[
+  {
+    "label": "source-backend-tests",
+    "command": [
+      "npm",
+      "run",
+      "test:forms"
+    ],
+    "cwd": "/Users/apple/git/novadot_website",
+    "started_at": "2026-11-02T18:14:30.615412+00:00",
+    "exit_code": 0
+  },
+  {
+    "label": "source-validation",
+    "command": [
+      "npm",
+      "run",
+      "validate"
+    ],
+    "cwd": "/Users/apple/git/novadot_website",
+    "started_at": "2026-11-02T18:14:31.820736+00:00",
+    "exit_code": 0
+  },
+  {
+    "label": "source-typecheck",
+    "command": [
+      "npm",
+      "run",
+      "check"
+    ],
+    "cwd": "/Users/apple/git/novadot_website",
+    "started_at": "2026-11-02T18:14:32.269619+00:00",
+    "exit_code": 0
+  }
+]

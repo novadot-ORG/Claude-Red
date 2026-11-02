@@ -1,0 +1,6 @@
+
+> novadot-website@0.1.0 test:forms
+> php -l public/api/enquiry.php && php tests/forms/backend.php
+
+No syntax errors detected in public/api/enquiry.php
+Passed 51 backend checks; all Microsoft calls mocked, no email sent.

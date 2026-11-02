@@ -3,7 +3,7 @@
   "target": "https://novadot.co.uk",
   "assessment_type": "limited black-box read-only baseline",
   "skills_ref": "codex/openai-compatibility@32c3386c8c72d4120563bfbf2fed2718d9ff840f",
-  "recorded_get_responses": 20,
+  "recorded_get_responses": 21,
   "html_pages": 11,
   "same_origin_js_assets": 4,
   "sitemap_urls": [
@@ -281,6 +281,24 @@
       "captured_at": "2026-11-02T18:08:25.928395+00:00",
       "curl_exit": 0,
       "error": ""
+    },
+    {
+      "evidence": "enquiry-api-browser-agent.json",
+      "url_effective": "https://novadot.co.uk/api/enquiry.php",
+      "http_code": 200,
+      "content_type": "application/json; charset=utf-8",
+      "captured_at": "2026-11-02T18:13:25.493986+00:00",
+      "method": "GET",
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+        "Accept": "application/json",
+        "Referer": "https://novadot.co.uk/contact/",
+        "Sec-Fetch-Site": "same-origin",
+        "Sec-Fetch-Mode": "cors",
+        "Sec-Fetch-Dest": "empty"
+      },
+      "body_storage": "shape only; values not retained",
+      "cookie_values": "redacted"
     }
   ],
   "html_headers": {
@@ -390,9 +408,9 @@
   "findings": [
     {
       "id": "ND-OBS-001",
-      "category": "operational follow-up",
-      "status": "two HTTP GET observations; end-to-end impact unverified",
-      "title": "Enquiry preparation endpoint returns HTTP 403 from assessment environment"
+      "category": "resolved assessment discrepancy",
+      "status": "browser user agent returned HTTP 200 and expected token shape; no outage established",
+      "title": "Initial Python-user-agent 403 responses are context-dependent"
     },
     {
       "id": "ND-HARD-001",

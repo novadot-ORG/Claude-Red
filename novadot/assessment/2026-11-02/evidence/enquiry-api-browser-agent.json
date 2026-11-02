@@ -1,0 +1,17 @@
+{
+  "url_effective": "https://novadot.co.uk/api/enquiry.php",
+  "http_code": 200,
+  "content_type": "application/json; charset=utf-8",
+  "captured_at": "2026-11-02T18:13:25.493986+00:00",
+  "method": "GET",
+  "request_headers": {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "Accept": "application/json",
+    "Referer": "https://novadot.co.uk/contact/",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Dest": "empty"
+  },
+  "body_storage": "shape only; values not retained",
+  "cookie_values": "redacted"
+}

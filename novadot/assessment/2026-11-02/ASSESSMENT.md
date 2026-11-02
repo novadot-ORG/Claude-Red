@@ -1,37 +1,35 @@
 # Novadot website — initial black-box assessment
 
-Date: 2026-11-02. Evidence captured between 18:07 and 18:10 UTC.
+Date: 2026-11-02. Initial evidence captured between 18:07 and 18:10 UTC; user-agent follow-up at 18:13 UTC. See the subsequent [source review](SOURCE-REVIEW.md).
 Target: `https://novadot.co.uk/`, with one HTTP request to check the HTTPS redirect.
 
 ## Result
 
-The 11 public pages listed in the sitemap returned HTTP 200 and consistently supplied useful browser protections. HTTPS certificate verification succeeded and a normal handshake negotiated TLS 1.3. This limited review identified one confirmed security-hardening issue and one operational concern requiring follow-up. It does not establish that the website is free of vulnerabilities.
+The 11 public pages listed in the sitemap returned HTTP 200 and consistently supplied useful browser protections. HTTPS certificate verification succeeded and a normal handshake negotiated TLS 1.3. This limited review identified one confirmed security-hardening issue. An initial API availability concern was cleared by the user-agent follow-up below. It does not establish that the website is free of vulnerabilities.
 
-The site serves Astro-generated assets, but it is not exclusively static: the contact and event forms depend on `/api/enquiry.php`. Both recorded GET requests to this endpoint returned HTTP 403 with HTML rather than the JSON token expected by the browser code. Check this path before treating enquiries as working.
+The site serves Astro-generated assets, and its contact and event workflows depend on `/api/enquiry.php`. Initial requests using Python’s default user agent received HTTP 403; repeating the contextual request with a browser user agent returned HTTP 200 and a nonempty JSON token. An endpoint outage was not established. Actual email delivery remains untested.
 
 ## Scope and method
 
-The user identified Novadot as their employer, supplied this website and requested testing. This phase covered ordinary public GET requests, response headers, linked JavaScript inspection and one certificate-validating TLS handshake. There were 20 recorded GET responses: 11 HTML pages, four JavaScript assets, robots.txt, sitemap.xml, the HTTP homepage and two enquiry preparation requests. A web reader also consulted the public homepage; the evidence count covers the direct captures only.
+The user identified Novadot as their employer, supplied this website and requested testing. This phase covered ordinary public GET requests, response headers, linked JavaScript inspection and one certificate-validating TLS handshake. There were 21 recorded GET responses: 11 HTML pages, four JavaScript assets, robots.txt, sitemap.xml, the HTTP homepage and three enquiry preparation requests. A web reader also consulted the public homepage; the evidence count covers the direct captures only.
 
-No forms were submitted, emails sent, accounts accessed, payloads injected or load tests performed. No source repository, hosting configuration or server logs were supplied. The separate `scanner.novadot.co.uk` service was identified from the site's markup but was not requested or assessed. JavaScript was inspected as text; no browser execution or end-to-end delivery test occurred.
+No forms were submitted, emails sent, accounts accessed, payloads injected or load tests performed. No source repository, hosting configuration or server logs were available for the initial public phase. The user subsequently supplied the local website source; its review is recorded separately. The separate `scanner.novadot.co.uk` service was identified from the site's markup but was not requested or assessed. JavaScript was inspected as text; no browser execution or end-to-end delivery test occurred.
 
 Selected methodology: public-surface mapping from `offensive-fast-checking`, certificate/transport observations from `offensive-tls-attacks`, and evidence/severity guidance from `offensive-reporting`. Reference version: `codex/openai-compatibility` at `32c3386c8c72d4120563bfbf2fed2718d9ff840f`. Only applicable parts were used; these skills were read from Git without installing them or merging branches.
 
-## ND-OBS-001 — Enquiry preparation endpoint returned HTTP 403
+## ND-OBS-001 — Initial enquiry 403 responses were request-context dependent
 
-**Classification:** Operational follow-up; security severity not assigned. **Status:** Response confirmed; cause and customer impact unverified.
+**Classification:** Resolved assessment discrepancy, not a confirmed outage or security vulnerability.
 
 **Affected flows:** `/contact/` and `/events/`.
 
-The public bundles for both pages import `enquiry-form.BeFRChKr.js`. After client-side validation, that module sends a GET to `/api/enquiry.php` and expects a successful JSON response with a nonempty `token`. Only then does it POST the enquiry. Both the basic JSON GET and a second GET with the contact Referer and same-origin Fetch Metadata headers returned HTTP 403, `Content-Type: text/html`, with 52-byte bodies.
+Both public form bundles import `enquiry-form.BeFRChKr.js`. After client-side validation, it requests a token with GET `/api/enquiry.php`, then POSTs the enquiry. Two Python-urllib GETs returned HTTP 403 HTML, including one with the contact Referer and same-origin Fetch Metadata headers.
 
-**Impact:** If real visitors receive these responses, form preparation fails and enquiries cannot be submitted. The script handles this with an unavailable/error message. The result could instead depend on request context, user agent, network filtering or hosting rules; this assessment did not reproduce the failure in an actual browser. It is not evidence of an authentication bypass, data exposure or an exploitable PHP flaw.
+After the source handoff identified historical user-agent filtering, the contextual request was repeated with only the User-Agent changed to a browser value. It returned HTTP 200, JSON with a nonempty string token, no-store caching and security headers. This supports request-context filtering rather than a demonstrated outage; the precise filtering layer was not inspected. No controls were changed or bypassed to access protected data: the response is the normal public form-preparation token.
 
-**Evidence:** [shared form code](evidence/enquiry-form-js.body), [first response](evidence/enquiry-api.headers), [contextual request metadata](evidence/enquiry-api-context.json), [second response](evidence/enquiry-api-context.headers). Response values were not retained; [shape records](evidence/enquiry-api-context-shape.json) capture format and length only.
+**Evidence:** [shared form code](evidence/enquiry-form-js.body), [initial request](evidence/enquiry-api-context.json), [initial response](evidence/enquiry-api-context.headers), [browser-agent request](evidence/enquiry-api-browser-agent.json), [successful response headers](evidence/enquiry-api-browser-agent.headers), and [redacted token shape](evidence/enquiry-api-browser-agent-shape.json). Token values were not retained.
 
-**Next action:** Inspect the handler and its hosting/access rules, then correlate the two UTC timestamps with server logs. In an approved browser test, inspect the preparation GET before testing delivery. Confirm it returns the expected JSON and appropriate cache/session controls. Do not relax access controls indiscriminately to remove the 403. Use a designated test recipient or staging environment for a later submission test.
-
-**Retest:** Verify successful preparation in a supported browser, then separately verify one agreed test enquiry reaches its destination and duplicate/error handling works. Server-side validation, anti-spam controls, token validation and rate limiting remain untested.
+**Remaining limit:** A successful preparation GET does not prove email acceptance or inbox delivery. A later agreed submission test still needs a designated test recipient or staging environment. Retain the original 403 evidence to explain the corrected interpretation.
 
 ## ND-HARD-001 — Content security policy can be tightened
 
@@ -66,7 +64,7 @@ The privacy page describes server-side enquiry handling and retention. These are
 
 For this site, focus on web/DOM safety, the enquiry API, transport, dependencies and reporting. Login, JWT, OAuth and account-isolation tests are not currently indicated by the observed public surface. Wireless, Active Directory and infrastructure exploitation are outside this website baseline.
 
-Next, obtain the website source repository and confirm whether it includes the PHP handler. Review its validation, email construction, token/session handling, duplicate controls and abuse protections, plus the Astro build and hosting policy. Select additional skills based on that code. Testing the separate analytics service requires adding that service to scope.
+The user supplied `/Users/apple/git/novadot_website`, which includes the PHP handler; see the [source review and dependency findings](SOURCE-REVIEW.md). Testing the separate analytics service still requires adding that service to scope.
 
 ## Evidence and reproduction
 

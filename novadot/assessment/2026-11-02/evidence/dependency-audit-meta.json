@@ -1,0 +1,6 @@
+{
+  "captured_at": "2026-11-02T18:14:35.160729+00:00",
+  "exit_code": 1,
+  "stderr": "",
+  "command": "npm audit --package-lock-only --ignore-scripts --json"
+}

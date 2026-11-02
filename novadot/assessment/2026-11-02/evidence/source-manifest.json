@@ -1,0 +1,23 @@
+{
+  "captured_at": "2026-11-02T18:15:32.650107+00:00",
+  "source_root": "/Users/apple/git/novadot_website",
+  "branch": "agent/porcelain-ledger-website",
+  "head": "6148cee25534a80cc039d02c6e9710fc1e743cae",
+  "worktree": "Pre-existing tracked modifications and untracked implementation; reviewed working files, not HEAD alone. No website implementation changes made by this assessment.",
+  "sha256": {
+    "AGENTS.md": "d715ae0a7e192933aff592f7b036ee23822076aa34093c22abd12da48731d88e",
+    "package.json": "426a91ac5db5dec40cf1743b9ff1202263c4c605a9fd6779ba280ac9a13a2d73",
+    "package-lock.json": "4271a4f69a4c8610bee46603f2736cb913429cadc9cee1c92448d37b3f6e7d1e",
+    "astro.config.mjs": "2cf5738b4e540bebc0dbaf9579888de71052e6e80ba7569533300ba3965308a4",
+    "public/.htaccess": "6a605c9877fb5d0a0288c5b46b508feeb5e68c4844bd360df64a477ccee117ea",
+    "public/api/.htaccess": "0be1c16434837b107c04e9b60ae65aad2309f4345aa2679462099bcc83e19f7c",
+    "public/api/enquiry.php": "53ce1f17e7bbfa5a69b88612aff3ddc77315fb7c35cba5c6160f63086c34f3b8",
+    "src/scripts/enquiry-form.ts": "8abf0a0ccb2005eea874071a60002df9aa956f3c32a90e8df1d9ea2a3116ccec",
+    "src/layouts/BaseLayout.astro": "36f3d893ba5f66f52e246e17bdb57a0eca20a97721a2930b17f2305224bbbed0",
+    "src/pages/contact.astro": "3ffce36de70dddba06d3e7e89db939d1a3a5dfbac9d81bc0bd592a3759d7ae54",
+    "src/pages/events/index.astro": "ffaa74296265608ffd6886c6a493e6feb1c6ac14893b9492cb8461a8a46e1ef2",
+    "src/components/ProblemDiagnostic.astro": "8dc9907625ca1e3bc6d75c6022cf766465e7d104aedb9c98f1d3d3de44981d1d",
+    "tests/forms/backend.php": "9cdcc1c0369f5600e0ec29fabb79487800d4172353fe2f601d4d60165c78d77f",
+    "scripts/finalize-build.mjs": "4551c91b64c99eea8abaa0357cd1c278bb9b54d9c1c9e4a2d56faf1e856ced47"
+  }
+}

@@ -9,7 +9,7 @@ Develop shared skills on `codex/openai-compatibility`. Keep client-specific test
 | Client | Target | Records | Status |
 |---|---|---|---|
 | Healthyaa | https://healthyaa.co.uk/ | [Healthyaa](Healthyaa/README.md) | Assessment in progress |
-| Novadot | https://novadot.co.uk/ | [novadot](novadot/README.md) | Initial read-only baseline complete; follow-up pending |
+| Novadot | https://novadot.co.uk/ | [novadot](novadot/README.md) | Public/source reviews complete; remediation and delivery testing pending |
 
 ## Adding another client
 

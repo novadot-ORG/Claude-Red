@@ -1,0 +1,154 @@
+{
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 1,
+      "high": 9,
+      "critical": 1,
+      "total": 11
+    },
+    "dependencies": {
+      "prod": 3,
+      "dev": 375,
+      "optional": 105,
+      "peer": 0,
+      "peerOptional": 0,
+      "total": 377
+    }
+  },
+  "packages": [
+    {
+      "name": "astro",
+      "severity": "critical",
+      "fix_available": true,
+      "nodes": [
+        {
+          "path": "node_modules/astro",
+          "version": "7.2.2",
+          "dev": true
+        }
+      ]
+    },
+    {
+      "name": "devalue",
+      "severity": "high",
+      "fix_available": true,
+      "nodes": [
+        {
+          "path": "node_modules/devalue",
+          "version": "5.9.0",
+          "dev": true
+        }
+      ]
+    },
+    {
+      "name": "fast-uri",
+      "severity": "high",
+      "fix_available": true,
+      "nodes": [
+        {
+          "path": "node_modules/fast-uri",
+          "version": "3.1.5",
+          "dev": true
+        }
+      ]
+    },
+    {
+      "name": "js-yaml",
+      "severity": "high",
+      "fix_available": true,
+      "nodes": [
+        {
+          "path": "node_modules/js-yaml",
+          "version": "4.3.1",
+          "dev": true
+        }
+      ]
+    },
+    {
+      "name": "sharp",
+      "severity": "high",
+      "fix_available": true,
+      "nodes": [
+        {
+          "path": "node_modules/sharp",
+          "version": "0.35.3",
+          "dev": true
+        }
+      ]
+    },
+    {
+      "name": "smol-toml",
+      "severity": "moderate",
+      "fix_available": true,
+      "nodes": [
+        {
+          "path": "node_modules/smol-toml",
+          "version": "1.8.0",
+          "dev": true
+        }
+      ]
+    },
+    {
+      "name": "source-map-js",
+      "severity": "high",
+      "fix_available": true,
+      "nodes": [
+        {
+          "path": "node_modules/source-map-js",
+          "version": "1.2.1",
+          "dev": true
+        }
+      ]
+    },
+    {
+      "name": "svgo",
+      "severity": "high",
+      "fix_available": true,
+      "nodes": [
+        {
+          "path": "node_modules/svgo",
+          "version": "4.0.2",
+          "dev": true
+        }
+      ]
+    },
+    {
+      "name": "undici",
+      "severity": "high",
+      "fix_available": true,
+      "nodes": [
+        {
+          "path": "node_modules/undici",
+          "version": "8.10.0",
+          "dev": true
+        }
+      ]
+    },
+    {
+      "name": "vite",
+      "severity": "high",
+      "fix_available": true,
+      "nodes": [
+        {
+          "path": "node_modules/vite",
+          "version": "8.2.1",
+          "dev": true
+        }
+      ]
+    },
+    {
+      "name": "zod",
+      "severity": "high",
+      "fix_available": true,
+      "nodes": [
+        {
+          "path": "node_modules/zod",
+          "version": "4.4.3",
+          "dev": true
+        }
+      ]
+    }
+  ]
+}

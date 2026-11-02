@@ -1,0 +1,10 @@
+
+> novadot-website@0.1.0 check
+> astro check
+
+23:44:35 [types] Generated 92ms
+23:44:35 [check] Getting diagnostics for Astro files in /Users/apple/git/novadot_website...
+Result (34 files):
+- 0 errors
+- 0 warnings
+- 0 hints
