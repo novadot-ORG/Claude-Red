@@ -1,15 +1,15 @@
 # Novadot website — source and dependency review
 
-Date: 2026-11-02. Source: `/Users/apple/git/novadot_website`, explicitly supplied by the user. Branch: `agent/porcelain-ledger-website`; HEAD: `6148cee25534a80cc039d02c6e9710fc1e743cae`.
+Date: 2026-11-02; follow-up status updated 2026-11-03. Source: `/Users/apple/git/novadot_website`, explicitly supplied by the user. Branch: `agent/porcelain-ledger-website`; HEAD: `6148cee25534a80cc039d02c6e9710fc1e743cae`.
 
-The source already contained tracked changes and untracked implementation. This review examined the current working files, whose [SHA-256 manifest](evidence/source-manifest.json) identifies the exact versions; HEAD alone does not reproduce them. Existing implementation and dependencies were preserved. No website fixes, production changes, private credential access, SSH connections or live mail submissions were made. The local handoff was updated separately.
+The source already contained tracked changes and untracked implementation. This review examined the current working files, whose [SHA-256 manifest](evidence/source-manifest.json) identifies the exact versions; HEAD alone does not reproduce them. Existing implementation and dependencies were preserved. During the source-review phase, no website fixes, production changes, private credential access, SSH connections or live mail submissions were made. Later authorised browser submissions and confirmed receipt are recorded in the [email test report](../../manual-tests/2026-11-02/EMAIL-DELIVERY.md). The local handoff was updated separately.
 
 ## Result and priority
 
 1. **Prioritise dependency maintenance:** the lockfile audit flags 11 packages, including a critical Astro advisory. Package vulnerability presence is confirmed; live website exploitability is not established.
 2. **Harden CSP:** the live inline-script allowance is also present in `public/.htaccess:7`. Follow [ND-HARD-001](ASSESSMENT.md#nd-hard-001--content-security-policy-can-be-tightened).
 3. **Reconcile source with production:** live pages include an analytics script absent from the supplied layout/build source; do not assume rebuilding this checkout exactly reproduces production.
-4. **Complete delivery verification later:** form preparation returned HTTP 200 with a browser user agent. All 51 mocked backend checks passed, but no email was sent and inbox receipt remains unverified.
+4. **Delivery verification complete for both test submissions:** Contact and Events each showed success, and the user confirmed receipt exactly once each. Received-email screenshots verify the visible contents; Events reply-recipient selection matches the submitted visitor email. See the [delivery and reply evidence](../../manual-tests/2026-11-02/EMAIL-DELIVERY.md). The 51 mocked backend checks remain separate source-level evidence.
 
 ## ND-DEP-001 — Locked development dependencies have published advisories
 
@@ -56,7 +56,7 @@ An independent read-only security review of `public/api/enquiry.php` and `tests/
 - `src/scripts/enquiry-form.ts`: feedback uses `textContent`, enquiry data is kept in memory, and uncertain attempts reuse their identifier instead of blindly resending.
 - `src/pages/contact.astro:199–203`: query text goes into a textarea value. `ProblemDiagnostic.astro:331` builds markup from bundled constant choices. `BaseLayout.astro:57` serialises source-owned site metadata. No attacker-controlled route into these HTML-rendering contexts was established.
 
-These are source observations, not verification of the deployed PHP bytes or private configuration. Remaining gaps include real multiprocess concurrency, every quota/expiry boundary, HTTP entrypoint serialization, actual proxy-to-`REMOTE_ADDR` mapping, Microsoft mailbox permission scope and end-to-end delivery. Origin checks and public tokens constrain browser requests but do not authenticate arbitrary non-browser clients; abuse resistance also depends on rate limits and hosting controls.
+These are source observations, not verification of the deployed PHP bytes or private configuration. Remaining gaps include real multiprocess concurrency, every quota/expiry boundary, HTTP entrypoint serialization, actual proxy-to-`REMOTE_ADDR` mapping and Microsoft mailbox permission scope. End-to-end delivery for the two authorised submissions was subsequently confirmed; Events reply-recipient selection was also verified in Outlook. Origin checks and public tokens constrain browser requests but do not authenticate arbitrary non-browser clients; abuse resistance also depends on rate limits and hosting controls.
 
 ## Validation performed
 
@@ -66,8 +66,10 @@ These are source observations, not verification of the deployed PHP bytes or pri
 | Source validation | 26 source files and canonical logo passed | [validation output](evidence/source-validation.txt) |
 | Astro checking | 34 files; zero errors, warnings or hints | [typecheck output](evidence/source-typecheck.txt) |
 | Dependency audit | 11 flagged packages; audit exit 1 reflects findings | [audit metadata](evidence/dependency-audit-meta.json) |
+| Authorised Contact and Events submissions (follow-up) | Both showed success; user confirmed each arrived once; received-email screenshots supplied | [delivery record](../../manual-tests/2026-11-02/EMAIL-DELIVERY.md) |
+| Events Reply selection (follow-up) | Outlook selected the submitted visitor email; expanded recipient card confirms address | [reply evidence](../../manual-tests/2026-11-02/EMAIL-DELIVERY.md#events-reply-address-check--passed) |
 | Public preparation GET, browser user agent | HTTP 200, nonempty token shape, no-store headers | [request](evidence/enquiry-api-browser-agent.json) and [shape](evidence/enquiry-api-browser-agent-shape.json) |
 
 Commands and exit codes are saved in [source-checks.json](evidence/source-checks.json). Saved diagnostic text has trailing whitespace normalized. The full build/verify chain was not run: no website code was changed, and generated-build validation is required again when remediation changes are made. The test fixture used synthetic credentials in a temporary `.release/form-tests-*` directory and cleaned up after itself.
 
-Next owner action: choose a dependency/CSP remediation change, reconcile the analytics build source, and arrange a controlled delivery test. Preserve the current source worktree and the historical assessment evidence.
+Next owner action: continue the broader NovaDot assessment, with website remediation deferred as requested by the user. Keep dependency maintenance, CSP hardening and analytics-source reconciliation open for the remediation phase. Delivery tests are complete; do not resend them. Preserve the current source worktree and the historical assessment evidence.

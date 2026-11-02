@@ -1,19 +1,19 @@
 # Novadot website — initial black-box assessment
 
-Date: 2026-11-02. Initial evidence captured between 18:07 and 18:10 UTC; user-agent follow-up at 18:13 UTC. See the subsequent [source review](SOURCE-REVIEW.md).
+Date: 2026-11-02. Initial evidence captured between 18:07 and 18:10 UTC; user-agent follow-up at 18:13 UTC. Updated 2026-11-03 with the subsequent [source review](SOURCE-REVIEW.md) and [completed email tests](../../manual-tests/2026-11-02/EMAIL-DELIVERY.md).
 Target: `https://novadot.co.uk/`, with one HTTP request to check the HTTPS redirect.
 
 ## Result
 
 The 11 public pages listed in the sitemap returned HTTP 200 and consistently supplied useful browser protections. HTTPS certificate verification succeeded and a normal handshake negotiated TLS 1.3. This limited review identified one confirmed security-hardening issue. An initial API availability concern was cleared by the user-agent follow-up below. It does not establish that the website is free of vulnerabilities.
 
-The site serves Astro-generated assets, and its contact and event workflows depend on `/api/enquiry.php`. Initial requests using Python’s default user agent received HTTP 403; repeating the contextual request with a browser user agent returned HTTP 200 and a nonempty JSON token. An endpoint outage was not established. Actual email delivery remains untested.
+The site serves Astro-generated assets, and its contact and event workflows depend on `/api/enquiry.php`. Initial requests using Python’s default user agent received HTTP 403; repeating the contextual request with a browser user agent returned HTTP 200 and a nonempty JSON token. An endpoint outage was not established. Subsequent authorised Contact and Events submissions both showed success, and the user confirmed each email arrived exactly once. Received-email screenshots support the contents, and Events reply-recipient selection is verified; see the [delivery and reply evidence](../../manual-tests/2026-11-02/EMAIL-DELIVERY.md).
 
 ## Scope and method
 
 The user identified Novadot as their employer, supplied this website and requested testing. This phase covered ordinary public GET requests, response headers, linked JavaScript inspection and one certificate-validating TLS handshake. There were 21 recorded GET responses: 11 HTML pages, four JavaScript assets, robots.txt, sitemap.xml, the HTTP homepage and three enquiry preparation requests. A web reader also consulted the public homepage; the evidence count covers the direct captures only.
 
-No forms were submitted, emails sent, accounts accessed, payloads injected or load tests performed. No source repository, hosting configuration or server logs were available for the initial public phase. The user subsequently supplied the local website source; its review is recorded separately. The separate `scanner.novadot.co.uk` service was identified from the site's markup but was not requested or assessed. JavaScript was inspected as text; no browser execution or end-to-end delivery test occurred.
+During the initial GET-only phase, no forms were submitted, emails sent, accounts accessed, payloads injected or load tests performed. No source repository, hosting configuration or server logs were available for the initial public phase. The user subsequently supplied the local website source; its review is recorded separately. The separate `scanner.novadot.co.uk` service was identified from the site's markup but was not requested or assessed. JavaScript was inspected as text during that phase. The later user-authorised follow-up used native Computer Use to submit one Contact and one Events enquiry; both deliveries were confirmed. No Playwright was used for those submissions. The analytics service was not separately assessed during the browser follow-up.
 
 Selected methodology: public-surface mapping from `offensive-fast-checking`, certificate/transport observations from `offensive-tls-attacks`, and evidence/severity guidance from `offensive-reporting`. Reference version: `codex/openai-compatibility` at `32c3386c8c72d4120563bfbf2fed2718d9ff840f`. Only applicable parts were used; these skills were read from Git without installing them or merging branches.
 
@@ -29,7 +29,7 @@ After the source handoff identified historical user-agent filtering, the context
 
 **Evidence:** [shared form code](evidence/enquiry-form-js.body), [initial request](evidence/enquiry-api-context.json), [initial response](evidence/enquiry-api-context.headers), [browser-agent request](evidence/enquiry-api-browser-agent.json), [successful response headers](evidence/enquiry-api-browser-agent.headers), and [redacted token shape](evidence/enquiry-api-browser-agent-shape.json). Token values were not retained.
 
-**Remaining limit:** A successful preparation GET does not prove email acceptance or inbox delivery. A later agreed submission test still needs a designated test recipient or staging environment. Retain the original 403 evidence to explain the corrected interpretation.
+**Follow-up verification — passed (2026-11-03 local date):** The later authorised Contact and Events submissions each displayed “Enquiry submitted”; the user confirmed **“Both arrived once.”** Received-email screenshots show the expected test contents. Events reply-composer and expanded-recipient screenshots verify that Reply selects `website-test@example.com`, the submitted visitor address. See the [completed delivery and reply checks](../../manual-tests/2026-11-02/EMAIL-DELIVERY.md). The earlier delivery limitation is closed for these two submissions; no repeat submission is needed. Original 403 evidence is retained to explain the corrected interpretation. Contact reply selection was not separately exercised; the Events check establishes address selection, not delivery to the synthetic reply address.
 
 ## ND-HARD-001 — Content security policy can be tightened
 
