@@ -1,0 +1,315 @@
+{
+  "about": [
+    {
+      "attributes": {
+        "type": "application/ld+json"
+      },
+      "code": "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"NovaDot\",\"legalName\":\"NOVADOT LTD\",\"url\":\"https://novadot.co.uk\",\"logo\":\"https://novadot.co.uk/brand/novadot-full-logo-hires.png\",\"description\":\"NovaDot helps UK organisations plan, build, improve and support software, systems and digital services.\",\"email\":\"hello@novadot.co.uk\",\"telephone\":\"+44 (0)116 436 1235\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"First Floor, 18B Tithe Street\",\"addressLocality\":\"Leicester\",\"addressRegion\":\"Leicestershire\",\"postalCode\":\"LE5 4BN\",\"addressCountry\":\"GB\"}}"
+    },
+    {
+      "attributes": {
+        "defer": null,
+        "src": "https://scanner.novadot.co.uk/novadot-analytics.v1.072ff0e7fc53.js",
+        "integrity": "sha384-5sIvO4uGVSOkyWi+5uhod+c65rFwppXlcnGxsJSiig2jKQ2Vvn8YtmfbDYCnz1CG",
+        "crossorigin": "anonymous",
+        "referrerpolicy": "no-referrer",
+        "data-site": "nd_ne8NN6cbqgvgMTNvcC_zIfoY47NW8pSs",
+        "data-routes": "%2F,%2Fabout,%2Fcontact"
+      },
+      "code": ""
+    },
+    {
+      "attributes": {
+        "type": "module"
+      },
+      "code": "var e=document.querySelector(`[data-menu-toggle]`),t=document.querySelector(`[data-mobile-nav]`);if(e instanceof HTMLButtonElement&&t instanceof HTMLElement){let n=[document.querySelector(`.skip-link`),document.querySelector(`main`),document.querySelector(`footer`)].filter(e=>e instanceof HTMLElement),r=e=>{n.forEach(t=>{t.inert=e})},i=(n=!1)=>{let i=e.getAttribute(`aria-expanded`)===`true`;e.setAttribute(`aria-expanded`,`false`),e.setAttribute(`aria-label`,`Open navigation menu`),t.hidden=!0,document.body.classList.remove(`menu-open`),r(!1),n&&i&&e.focus()};e.addEventListener(`click`,()=>{let n=e.getAttribute(`aria-expanded`)!==`true`;e.setAttribute(`aria-expanded`,String(n)),e.setAttribute(`aria-label`,n?`Close navigation menu`:`Open navigation menu`),t.hidden=!n,document.body.classList.toggle(`menu-open`,n),r(n)}),t.querySelectorAll(`a`).forEach(e=>e.addEventListener(`click`,()=>i())),document.addEventListener(`keydown`,n=>{if(n.key===`Escape`&&i(!0),n.key===`Tab`&&e.getAttribute(`aria-expanded`)===`true`){let r=[e,...t.querySelectorAll(`a`)],i=r[0],a=r.at(-1);n.shiftKey&&document.activeElement===i?(n.preventDefault(),a?.focus()):!n.shiftKey&&document.activeElement===a&&(n.preventDefault(),i.focus())}}),window.matchMedia(`(min-width: 960px)`).addEventListener(`change`,e=>{e.matches&&i()})}"
+    }
+  ],
+  "contact": [
+    {
+      "attributes": {
+        "type": "application/ld+json"
+      },
+      "code": "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"NovaDot\",\"legalName\":\"NOVADOT LTD\",\"url\":\"https://novadot.co.uk\",\"logo\":\"https://novadot.co.uk/brand/novadot-full-logo-hires.png\",\"description\":\"NovaDot helps UK organisations plan, build, improve and support software, systems and digital services.\",\"email\":\"hello@novadot.co.uk\",\"telephone\":\"+44 (0)116 436 1235\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"First Floor, 18B Tithe Street\",\"addressLocality\":\"Leicester\",\"addressRegion\":\"Leicestershire\",\"postalCode\":\"LE5 4BN\",\"addressCountry\":\"GB\"}}"
+    },
+    {
+      "attributes": {
+        "defer": null,
+        "src": "https://scanner.novadot.co.uk/novadot-analytics.v1.072ff0e7fc53.js",
+        "integrity": "sha384-5sIvO4uGVSOkyWi+5uhod+c65rFwppXlcnGxsJSiig2jKQ2Vvn8YtmfbDYCnz1CG",
+        "crossorigin": "anonymous",
+        "referrerpolicy": "no-referrer",
+        "data-site": "nd_ne8NN6cbqgvgMTNvcC_zIfoY47NW8pSs",
+        "data-routes": "%2F,%2Fabout,%2Fcontact"
+      },
+      "code": ""
+    },
+    {
+      "attributes": {
+        "type": "module"
+      },
+      "code": "var e=document.querySelector(`[data-menu-toggle]`),t=document.querySelector(`[data-mobile-nav]`);if(e instanceof HTMLButtonElement&&t instanceof HTMLElement){let n=[document.querySelector(`.skip-link`),document.querySelector(`main`),document.querySelector(`footer`)].filter(e=>e instanceof HTMLElement),r=e=>{n.forEach(t=>{t.inert=e})},i=(n=!1)=>{let i=e.getAttribute(`aria-expanded`)===`true`;e.setAttribute(`aria-expanded`,`false`),e.setAttribute(`aria-label`,`Open navigation menu`),t.hidden=!0,document.body.classList.remove(`menu-open`),r(!1),n&&i&&e.focus()};e.addEventListener(`click`,()=>{let n=e.getAttribute(`aria-expanded`)!==`true`;e.setAttribute(`aria-expanded`,String(n)),e.setAttribute(`aria-label`,n?`Close navigation menu`:`Open navigation menu`),t.hidden=!n,document.body.classList.toggle(`menu-open`,n),r(n)}),t.querySelectorAll(`a`).forEach(e=>e.addEventListener(`click`,()=>i())),document.addEventListener(`keydown`,n=>{if(n.key===`Escape`&&i(!0),n.key===`Tab`&&e.getAttribute(`aria-expanded`)===`true`){let r=[e,...t.querySelectorAll(`a`)],i=r[0],a=r.at(-1);n.shiftKey&&document.activeElement===i?(n.preventDefault(),a?.focus()):!n.shiftKey&&document.activeElement===a&&(n.preventDefault(),i.focus())}}),window.matchMedia(`(min-width: 960px)`).addEventListener(`change`,e=>{e.matches&&i()})}"
+    },
+    {
+      "attributes": {
+        "type": "module",
+        "src": "/_astro/contact.astro_astro_type_script_index_0_lang._QOMaRgG.js"
+      },
+      "code": ""
+    }
+  ],
+  "events": [
+    {
+      "attributes": {
+        "type": "application/ld+json"
+      },
+      "code": "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"NovaDot\",\"legalName\":\"NOVADOT LTD\",\"url\":\"https://novadot.co.uk\",\"logo\":\"https://novadot.co.uk/brand/novadot-full-logo-hires.png\",\"description\":\"NovaDot helps UK organisations plan, build, improve and support software, systems and digital services.\",\"email\":\"hello@novadot.co.uk\",\"telephone\":\"+44 (0)116 436 1235\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"First Floor, 18B Tithe Street\",\"addressLocality\":\"Leicester\",\"addressRegion\":\"Leicestershire\",\"postalCode\":\"LE5 4BN\",\"addressCountry\":\"GB\"}}"
+    },
+    {
+      "attributes": {
+        "defer": null,
+        "src": "https://scanner.novadot.co.uk/novadot-analytics.v1.072ff0e7fc53.js",
+        "integrity": "sha384-5sIvO4uGVSOkyWi+5uhod+c65rFwppXlcnGxsJSiig2jKQ2Vvn8YtmfbDYCnz1CG",
+        "crossorigin": "anonymous",
+        "referrerpolicy": "no-referrer",
+        "data-site": "nd_ne8NN6cbqgvgMTNvcC_zIfoY47NW8pSs",
+        "data-routes": "%2F,%2Fabout,%2Fcontact"
+      },
+      "code": ""
+    },
+    {
+      "attributes": {
+        "type": "module"
+      },
+      "code": "var e=document.querySelector(`[data-menu-toggle]`),t=document.querySelector(`[data-mobile-nav]`);if(e instanceof HTMLButtonElement&&t instanceof HTMLElement){let n=[document.querySelector(`.skip-link`),document.querySelector(`main`),document.querySelector(`footer`)].filter(e=>e instanceof HTMLElement),r=e=>{n.forEach(t=>{t.inert=e})},i=(n=!1)=>{let i=e.getAttribute(`aria-expanded`)===`true`;e.setAttribute(`aria-expanded`,`false`),e.setAttribute(`aria-label`,`Open navigation menu`),t.hidden=!0,document.body.classList.remove(`menu-open`),r(!1),n&&i&&e.focus()};e.addEventListener(`click`,()=>{let n=e.getAttribute(`aria-expanded`)!==`true`;e.setAttribute(`aria-expanded`,String(n)),e.setAttribute(`aria-label`,n?`Close navigation menu`:`Open navigation menu`),t.hidden=!n,document.body.classList.toggle(`menu-open`,n),r(n)}),t.querySelectorAll(`a`).forEach(e=>e.addEventListener(`click`,()=>i())),document.addEventListener(`keydown`,n=>{if(n.key===`Escape`&&i(!0),n.key===`Tab`&&e.getAttribute(`aria-expanded`)===`true`){let r=[e,...t.querySelectorAll(`a`)],i=r[0],a=r.at(-1);n.shiftKey&&document.activeElement===i?(n.preventDefault(),a?.focus()):!n.shiftKey&&document.activeElement===a&&(n.preventDefault(),i.focus())}}),window.matchMedia(`(min-width: 960px)`).addEventListener(`change`,e=>{e.matches&&i()})}"
+    },
+    {
+      "attributes": {
+        "type": "module",
+        "src": "/_astro/index.astro_astro_type_script_index_0_lang.tGDcAizy.js"
+      },
+      "code": ""
+    }
+  ],
+  "home": [
+    {
+      "attributes": {
+        "type": "application/ld+json"
+      },
+      "code": "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"NovaDot\",\"legalName\":\"NOVADOT LTD\",\"url\":\"https://novadot.co.uk\",\"logo\":\"https://novadot.co.uk/brand/novadot-full-logo-hires.png\",\"description\":\"NovaDot helps UK organisations plan, build, improve and support software, systems and digital services.\",\"email\":\"hello@novadot.co.uk\",\"telephone\":\"+44 (0)116 436 1235\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"First Floor, 18B Tithe Street\",\"addressLocality\":\"Leicester\",\"addressRegion\":\"Leicestershire\",\"postalCode\":\"LE5 4BN\",\"addressCountry\":\"GB\"}}"
+    },
+    {
+      "attributes": {
+        "defer": null,
+        "src": "https://scanner.novadot.co.uk/novadot-analytics.v1.072ff0e7fc53.js",
+        "integrity": "sha384-5sIvO4uGVSOkyWi+5uhod+c65rFwppXlcnGxsJSiig2jKQ2Vvn8YtmfbDYCnz1CG",
+        "crossorigin": "anonymous",
+        "referrerpolicy": "no-referrer",
+        "data-site": "nd_ne8NN6cbqgvgMTNvcC_zIfoY47NW8pSs",
+        "data-routes": "%2F,%2Fabout,%2Fcontact"
+      },
+      "code": ""
+    },
+    {
+      "attributes": {
+        "type": "module"
+      },
+      "code": "var e=document.querySelector(`[data-menu-toggle]`),t=document.querySelector(`[data-mobile-nav]`);if(e instanceof HTMLButtonElement&&t instanceof HTMLElement){let n=[document.querySelector(`.skip-link`),document.querySelector(`main`),document.querySelector(`footer`)].filter(e=>e instanceof HTMLElement),r=e=>{n.forEach(t=>{t.inert=e})},i=(n=!1)=>{let i=e.getAttribute(`aria-expanded`)===`true`;e.setAttribute(`aria-expanded`,`false`),e.setAttribute(`aria-label`,`Open navigation menu`),t.hidden=!0,document.body.classList.remove(`menu-open`),r(!1),n&&i&&e.focus()};e.addEventListener(`click`,()=>{let n=e.getAttribute(`aria-expanded`)!==`true`;e.setAttribute(`aria-expanded`,String(n)),e.setAttribute(`aria-label`,n?`Close navigation menu`:`Open navigation menu`),t.hidden=!n,document.body.classList.toggle(`menu-open`,n),r(n)}),t.querySelectorAll(`a`).forEach(e=>e.addEventListener(`click`,()=>i())),document.addEventListener(`keydown`,n=>{if(n.key===`Escape`&&i(!0),n.key===`Tab`&&e.getAttribute(`aria-expanded`)===`true`){let r=[e,...t.querySelectorAll(`a`)],i=r[0],a=r.at(-1);n.shiftKey&&document.activeElement===i?(n.preventDefault(),a?.focus()):!n.shiftKey&&document.activeElement===a&&(n.preventDefault(),i.focus())}}),window.matchMedia(`(min-width: 960px)`).addEventListener(`change`,e=>{e.matches&&i()})}"
+    },
+    {
+      "attributes": {
+        "type": "module",
+        "src": "/_astro/ProblemDiagnostic.astro_astro_type_script_index_0_lang.D7Z4G84q.js"
+      },
+      "code": ""
+    }
+  ],
+  "how-we-work": [
+    {
+      "attributes": {
+        "type": "application/ld+json"
+      },
+      "code": "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"NovaDot\",\"legalName\":\"NOVADOT LTD\",\"url\":\"https://novadot.co.uk\",\"logo\":\"https://novadot.co.uk/brand/novadot-full-logo-hires.png\",\"description\":\"NovaDot helps UK organisations plan, build, improve and support software, systems and digital services.\",\"email\":\"hello@novadot.co.uk\",\"telephone\":\"+44 (0)116 436 1235\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"First Floor, 18B Tithe Street\",\"addressLocality\":\"Leicester\",\"addressRegion\":\"Leicestershire\",\"postalCode\":\"LE5 4BN\",\"addressCountry\":\"GB\"}}"
+    },
+    {
+      "attributes": {
+        "defer": null,
+        "src": "https://scanner.novadot.co.uk/novadot-analytics.v1.072ff0e7fc53.js",
+        "integrity": "sha384-5sIvO4uGVSOkyWi+5uhod+c65rFwppXlcnGxsJSiig2jKQ2Vvn8YtmfbDYCnz1CG",
+        "crossorigin": "anonymous",
+        "referrerpolicy": "no-referrer",
+        "data-site": "nd_ne8NN6cbqgvgMTNvcC_zIfoY47NW8pSs",
+        "data-routes": "%2F,%2Fabout,%2Fcontact"
+      },
+      "code": ""
+    },
+    {
+      "attributes": {
+        "type": "module"
+      },
+      "code": "var e=document.querySelector(`[data-menu-toggle]`),t=document.querySelector(`[data-mobile-nav]`);if(e instanceof HTMLButtonElement&&t instanceof HTMLElement){let n=[document.querySelector(`.skip-link`),document.querySelector(`main`),document.querySelector(`footer`)].filter(e=>e instanceof HTMLElement),r=e=>{n.forEach(t=>{t.inert=e})},i=(n=!1)=>{let i=e.getAttribute(`aria-expanded`)===`true`;e.setAttribute(`aria-expanded`,`false`),e.setAttribute(`aria-label`,`Open navigation menu`),t.hidden=!0,document.body.classList.remove(`menu-open`),r(!1),n&&i&&e.focus()};e.addEventListener(`click`,()=>{let n=e.getAttribute(`aria-expanded`)!==`true`;e.setAttribute(`aria-expanded`,String(n)),e.setAttribute(`aria-label`,n?`Close navigation menu`:`Open navigation menu`),t.hidden=!n,document.body.classList.toggle(`menu-open`,n),r(n)}),t.querySelectorAll(`a`).forEach(e=>e.addEventListener(`click`,()=>i())),document.addEventListener(`keydown`,n=>{if(n.key===`Escape`&&i(!0),n.key===`Tab`&&e.getAttribute(`aria-expanded`)===`true`){let r=[e,...t.querySelectorAll(`a`)],i=r[0],a=r.at(-1);n.shiftKey&&document.activeElement===i?(n.preventDefault(),a?.focus()):!n.shiftKey&&document.activeElement===a&&(n.preventDefault(),i.focus())}}),window.matchMedia(`(min-width: 960px)`).addEventListener(`change`,e=>{e.matches&&i()})}"
+    }
+  ],
+  "privacy-policy": [
+    {
+      "attributes": {
+        "type": "application/ld+json"
+      },
+      "code": "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"NovaDot\",\"legalName\":\"NOVADOT LTD\",\"url\":\"https://novadot.co.uk\",\"logo\":\"https://novadot.co.uk/brand/novadot-full-logo-hires.png\",\"description\":\"NovaDot helps UK organisations plan, build, improve and support software, systems and digital services.\",\"email\":\"hello@novadot.co.uk\",\"telephone\":\"+44 (0)116 436 1235\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"First Floor, 18B Tithe Street\",\"addressLocality\":\"Leicester\",\"addressRegion\":\"Leicestershire\",\"postalCode\":\"LE5 4BN\",\"addressCountry\":\"GB\"}}"
+    },
+    {
+      "attributes": {
+        "defer": null,
+        "src": "https://scanner.novadot.co.uk/novadot-analytics.v1.072ff0e7fc53.js",
+        "integrity": "sha384-5sIvO4uGVSOkyWi+5uhod+c65rFwppXlcnGxsJSiig2jKQ2Vvn8YtmfbDYCnz1CG",
+        "crossorigin": "anonymous",
+        "referrerpolicy": "no-referrer",
+        "data-site": "nd_ne8NN6cbqgvgMTNvcC_zIfoY47NW8pSs",
+        "data-routes": "%2F,%2Fabout,%2Fcontact"
+      },
+      "code": ""
+    },
+    {
+      "attributes": {
+        "type": "module"
+      },
+      "code": "var e=document.querySelector(`[data-menu-toggle]`),t=document.querySelector(`[data-mobile-nav]`);if(e instanceof HTMLButtonElement&&t instanceof HTMLElement){let n=[document.querySelector(`.skip-link`),document.querySelector(`main`),document.querySelector(`footer`)].filter(e=>e instanceof HTMLElement),r=e=>{n.forEach(t=>{t.inert=e})},i=(n=!1)=>{let i=e.getAttribute(`aria-expanded`)===`true`;e.setAttribute(`aria-expanded`,`false`),e.setAttribute(`aria-label`,`Open navigation menu`),t.hidden=!0,document.body.classList.remove(`menu-open`),r(!1),n&&i&&e.focus()};e.addEventListener(`click`,()=>{let n=e.getAttribute(`aria-expanded`)!==`true`;e.setAttribute(`aria-expanded`,String(n)),e.setAttribute(`aria-label`,n?`Close navigation menu`:`Open navigation menu`),t.hidden=!n,document.body.classList.toggle(`menu-open`,n),r(n)}),t.querySelectorAll(`a`).forEach(e=>e.addEventListener(`click`,()=>i())),document.addEventListener(`keydown`,n=>{if(n.key===`Escape`&&i(!0),n.key===`Tab`&&e.getAttribute(`aria-expanded`)===`true`){let r=[e,...t.querySelectorAll(`a`)],i=r[0],a=r.at(-1);n.shiftKey&&document.activeElement===i?(n.preventDefault(),a?.focus()):!n.shiftKey&&document.activeElement===a&&(n.preventDefault(),i.focus())}}),window.matchMedia(`(min-width: 960px)`).addEventListener(`change`,e=>{e.matches&&i()})}"
+    }
+  ],
+  "services--cloud-security-it-operations": [
+    {
+      "attributes": {
+        "type": "application/ld+json"
+      },
+      "code": "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"NovaDot\",\"legalName\":\"NOVADOT LTD\",\"url\":\"https://novadot.co.uk\",\"logo\":\"https://novadot.co.uk/brand/novadot-full-logo-hires.png\",\"description\":\"NovaDot helps UK organisations plan, build, improve and support software, systems and digital services.\",\"email\":\"hello@novadot.co.uk\",\"telephone\":\"+44 (0)116 436 1235\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"First Floor, 18B Tithe Street\",\"addressLocality\":\"Leicester\",\"addressRegion\":\"Leicestershire\",\"postalCode\":\"LE5 4BN\",\"addressCountry\":\"GB\"}}"
+    },
+    {
+      "attributes": {
+        "defer": null,
+        "src": "https://scanner.novadot.co.uk/novadot-analytics.v1.072ff0e7fc53.js",
+        "integrity": "sha384-5sIvO4uGVSOkyWi+5uhod+c65rFwppXlcnGxsJSiig2jKQ2Vvn8YtmfbDYCnz1CG",
+        "crossorigin": "anonymous",
+        "referrerpolicy": "no-referrer",
+        "data-site": "nd_ne8NN6cbqgvgMTNvcC_zIfoY47NW8pSs",
+        "data-routes": "%2F,%2Fabout,%2Fcontact"
+      },
+      "code": ""
+    },
+    {
+      "attributes": {
+        "type": "module"
+      },
+      "code": "var e=document.querySelector(`[data-menu-toggle]`),t=document.querySelector(`[data-mobile-nav]`);if(e instanceof HTMLButtonElement&&t instanceof HTMLElement){let n=[document.querySelector(`.skip-link`),document.querySelector(`main`),document.querySelector(`footer`)].filter(e=>e instanceof HTMLElement),r=e=>{n.forEach(t=>{t.inert=e})},i=(n=!1)=>{let i=e.getAttribute(`aria-expanded`)===`true`;e.setAttribute(`aria-expanded`,`false`),e.setAttribute(`aria-label`,`Open navigation menu`),t.hidden=!0,document.body.classList.remove(`menu-open`),r(!1),n&&i&&e.focus()};e.addEventListener(`click`,()=>{let n=e.getAttribute(`aria-expanded`)!==`true`;e.setAttribute(`aria-expanded`,String(n)),e.setAttribute(`aria-label`,n?`Close navigation menu`:`Open navigation menu`),t.hidden=!n,document.body.classList.toggle(`menu-open`,n),r(n)}),t.querySelectorAll(`a`).forEach(e=>e.addEventListener(`click`,()=>i())),document.addEventListener(`keydown`,n=>{if(n.key===`Escape`&&i(!0),n.key===`Tab`&&e.getAttribute(`aria-expanded`)===`true`){let r=[e,...t.querySelectorAll(`a`)],i=r[0],a=r.at(-1);n.shiftKey&&document.activeElement===i?(n.preventDefault(),a?.focus()):!n.shiftKey&&document.activeElement===a&&(n.preventDefault(),i.focus())}}),window.matchMedia(`(min-width: 960px)`).addEventListener(`change`,e=>{e.matches&&i()})}"
+    }
+  ],
+  "services--software-ai-business-systems": [
+    {
+      "attributes": {
+        "type": "application/ld+json"
+      },
+      "code": "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"NovaDot\",\"legalName\":\"NOVADOT LTD\",\"url\":\"https://novadot.co.uk\",\"logo\":\"https://novadot.co.uk/brand/novadot-full-logo-hires.png\",\"description\":\"NovaDot helps UK organisations plan, build, improve and support software, systems and digital services.\",\"email\":\"hello@novadot.co.uk\",\"telephone\":\"+44 (0)116 436 1235\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"First Floor, 18B Tithe Street\",\"addressLocality\":\"Leicester\",\"addressRegion\":\"Leicestershire\",\"postalCode\":\"LE5 4BN\",\"addressCountry\":\"GB\"}}"
+    },
+    {
+      "attributes": {
+        "defer": null,
+        "src": "https://scanner.novadot.co.uk/novadot-analytics.v1.072ff0e7fc53.js",
+        "integrity": "sha384-5sIvO4uGVSOkyWi+5uhod+c65rFwppXlcnGxsJSiig2jKQ2Vvn8YtmfbDYCnz1CG",
+        "crossorigin": "anonymous",
+        "referrerpolicy": "no-referrer",
+        "data-site": "nd_ne8NN6cbqgvgMTNvcC_zIfoY47NW8pSs",
+        "data-routes": "%2F,%2Fabout,%2Fcontact"
+      },
+      "code": ""
+    },
+    {
+      "attributes": {
+        "type": "module"
+      },
+      "code": "var e=document.querySelector(`[data-menu-toggle]`),t=document.querySelector(`[data-mobile-nav]`);if(e instanceof HTMLButtonElement&&t instanceof HTMLElement){let n=[document.querySelector(`.skip-link`),document.querySelector(`main`),document.querySelector(`footer`)].filter(e=>e instanceof HTMLElement),r=e=>{n.forEach(t=>{t.inert=e})},i=(n=!1)=>{let i=e.getAttribute(`aria-expanded`)===`true`;e.setAttribute(`aria-expanded`,`false`),e.setAttribute(`aria-label`,`Open navigation menu`),t.hidden=!0,document.body.classList.remove(`menu-open`),r(!1),n&&i&&e.focus()};e.addEventListener(`click`,()=>{let n=e.getAttribute(`aria-expanded`)!==`true`;e.setAttribute(`aria-expanded`,String(n)),e.setAttribute(`aria-label`,n?`Close navigation menu`:`Open navigation menu`),t.hidden=!n,document.body.classList.toggle(`menu-open`,n),r(n)}),t.querySelectorAll(`a`).forEach(e=>e.addEventListener(`click`,()=>i())),document.addEventListener(`keydown`,n=>{if(n.key===`Escape`&&i(!0),n.key===`Tab`&&e.getAttribute(`aria-expanded`)===`true`){let r=[e,...t.querySelectorAll(`a`)],i=r[0],a=r.at(-1);n.shiftKey&&document.activeElement===i?(n.preventDefault(),a?.focus()):!n.shiftKey&&document.activeElement===a&&(n.preventDefault(),i.focus())}}),window.matchMedia(`(min-width: 960px)`).addEventListener(`change`,e=>{e.matches&&i()})}"
+    },
+    {
+      "attributes": {
+        "type": "module"
+      },
+      "code": "document.querySelectorAll(`[data-arch-root]`).forEach(e=>{let t=e.querySelectorAll(`[data-state]`),n=e.querySelector(`[data-view=\"before\"]`),r=e.querySelector(`[data-view=\"after\"]`);t.forEach(e=>{e.addEventListener(`click`,()=>{let i=e.getAttribute(`data-state`);t.forEach(t=>{let n=t===e;t.classList.toggle(`active`,n),t.setAttribute(`aria-pressed`,n?`true`:`false`)}),i===`before`?(n&&(n.hidden=!1),r&&(r.hidden=!0)):(n&&(n.hidden=!0),r&&(r.hidden=!1))})})});"
+    }
+  ],
+  "services--web-mobile-digital-growth": [
+    {
+      "attributes": {
+        "type": "application/ld+json"
+      },
+      "code": "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"NovaDot\",\"legalName\":\"NOVADOT LTD\",\"url\":\"https://novadot.co.uk\",\"logo\":\"https://novadot.co.uk/brand/novadot-full-logo-hires.png\",\"description\":\"NovaDot helps UK organisations plan, build, improve and support software, systems and digital services.\",\"email\":\"hello@novadot.co.uk\",\"telephone\":\"+44 (0)116 436 1235\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"First Floor, 18B Tithe Street\",\"addressLocality\":\"Leicester\",\"addressRegion\":\"Leicestershire\",\"postalCode\":\"LE5 4BN\",\"addressCountry\":\"GB\"}}"
+    },
+    {
+      "attributes": {
+        "defer": null,
+        "src": "https://scanner.novadot.co.uk/novadot-analytics.v1.072ff0e7fc53.js",
+        "integrity": "sha384-5sIvO4uGVSOkyWi+5uhod+c65rFwppXlcnGxsJSiig2jKQ2Vvn8YtmfbDYCnz1CG",
+        "crossorigin": "anonymous",
+        "referrerpolicy": "no-referrer",
+        "data-site": "nd_ne8NN6cbqgvgMTNvcC_zIfoY47NW8pSs",
+        "data-routes": "%2F,%2Fabout,%2Fcontact"
+      },
+      "code": ""
+    },
+    {
+      "attributes": {
+        "type": "module"
+      },
+      "code": "var e=document.querySelector(`[data-menu-toggle]`),t=document.querySelector(`[data-mobile-nav]`);if(e instanceof HTMLButtonElement&&t instanceof HTMLElement){let n=[document.querySelector(`.skip-link`),document.querySelector(`main`),document.querySelector(`footer`)].filter(e=>e instanceof HTMLElement),r=e=>{n.forEach(t=>{t.inert=e})},i=(n=!1)=>{let i=e.getAttribute(`aria-expanded`)===`true`;e.setAttribute(`aria-expanded`,`false`),e.setAttribute(`aria-label`,`Open navigation menu`),t.hidden=!0,document.body.classList.remove(`menu-open`),r(!1),n&&i&&e.focus()};e.addEventListener(`click`,()=>{let n=e.getAttribute(`aria-expanded`)!==`true`;e.setAttribute(`aria-expanded`,String(n)),e.setAttribute(`aria-label`,n?`Close navigation menu`:`Open navigation menu`),t.hidden=!n,document.body.classList.toggle(`menu-open`,n),r(n)}),t.querySelectorAll(`a`).forEach(e=>e.addEventListener(`click`,()=>i())),document.addEventListener(`keydown`,n=>{if(n.key===`Escape`&&i(!0),n.key===`Tab`&&e.getAttribute(`aria-expanded`)===`true`){let r=[e,...t.querySelectorAll(`a`)],i=r[0],a=r.at(-1);n.shiftKey&&document.activeElement===i?(n.preventDefault(),a?.focus()):!n.shiftKey&&document.activeElement===a&&(n.preventDefault(),i.focus())}}),window.matchMedia(`(min-width: 960px)`).addEventListener(`change`,e=>{e.matches&&i()})}"
+    }
+  ],
+  "services": [
+    {
+      "attributes": {
+        "type": "application/ld+json"
+      },
+      "code": "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"NovaDot\",\"legalName\":\"NOVADOT LTD\",\"url\":\"https://novadot.co.uk\",\"logo\":\"https://novadot.co.uk/brand/novadot-full-logo-hires.png\",\"description\":\"NovaDot helps UK organisations plan, build, improve and support software, systems and digital services.\",\"email\":\"hello@novadot.co.uk\",\"telephone\":\"+44 (0)116 436 1235\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"First Floor, 18B Tithe Street\",\"addressLocality\":\"Leicester\",\"addressRegion\":\"Leicestershire\",\"postalCode\":\"LE5 4BN\",\"addressCountry\":\"GB\"}}"
+    },
+    {
+      "attributes": {
+        "defer": null,
+        "src": "https://scanner.novadot.co.uk/novadot-analytics.v1.072ff0e7fc53.js",
+        "integrity": "sha384-5sIvO4uGVSOkyWi+5uhod+c65rFwppXlcnGxsJSiig2jKQ2Vvn8YtmfbDYCnz1CG",
+        "crossorigin": "anonymous",
+        "referrerpolicy": "no-referrer",
+        "data-site": "nd_ne8NN6cbqgvgMTNvcC_zIfoY47NW8pSs",
+        "data-routes": "%2F,%2Fabout,%2Fcontact"
+      },
+      "code": ""
+    },
+    {
+      "attributes": {
+        "type": "module"
+      },
+      "code": "var e=document.querySelector(`[data-menu-toggle]`),t=document.querySelector(`[data-mobile-nav]`);if(e instanceof HTMLButtonElement&&t instanceof HTMLElement){let n=[document.querySelector(`.skip-link`),document.querySelector(`main`),document.querySelector(`footer`)].filter(e=>e instanceof HTMLElement),r=e=>{n.forEach(t=>{t.inert=e})},i=(n=!1)=>{let i=e.getAttribute(`aria-expanded`)===`true`;e.setAttribute(`aria-expanded`,`false`),e.setAttribute(`aria-label`,`Open navigation menu`),t.hidden=!0,document.body.classList.remove(`menu-open`),r(!1),n&&i&&e.focus()};e.addEventListener(`click`,()=>{let n=e.getAttribute(`aria-expanded`)!==`true`;e.setAttribute(`aria-expanded`,String(n)),e.setAttribute(`aria-label`,n?`Close navigation menu`:`Open navigation menu`),t.hidden=!n,document.body.classList.toggle(`menu-open`,n),r(n)}),t.querySelectorAll(`a`).forEach(e=>e.addEventListener(`click`,()=>i())),document.addEventListener(`keydown`,n=>{if(n.key===`Escape`&&i(!0),n.key===`Tab`&&e.getAttribute(`aria-expanded`)===`true`){let r=[e,...t.querySelectorAll(`a`)],i=r[0],a=r.at(-1);n.shiftKey&&document.activeElement===i?(n.preventDefault(),a?.focus()):!n.shiftKey&&document.activeElement===a&&(n.preventDefault(),i.focus())}}),window.matchMedia(`(min-width: 960px)`).addEventListener(`change`,e=>{e.matches&&i()})}"
+    }
+  ],
+  "terms": [
+    {
+      "attributes": {
+        "type": "application/ld+json"
+      },
+      "code": "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"NovaDot\",\"legalName\":\"NOVADOT LTD\",\"url\":\"https://novadot.co.uk\",\"logo\":\"https://novadot.co.uk/brand/novadot-full-logo-hires.png\",\"description\":\"NovaDot helps UK organisations plan, build, improve and support software, systems and digital services.\",\"email\":\"hello@novadot.co.uk\",\"telephone\":\"+44 (0)116 436 1235\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"First Floor, 18B Tithe Street\",\"addressLocality\":\"Leicester\",\"addressRegion\":\"Leicestershire\",\"postalCode\":\"LE5 4BN\",\"addressCountry\":\"GB\"}}"
+    },
+    {
+      "attributes": {
+        "defer": null,
+        "src": "https://scanner.novadot.co.uk/novadot-analytics.v1.072ff0e7fc53.js",
+        "integrity": "sha384-5sIvO4uGVSOkyWi+5uhod+c65rFwppXlcnGxsJSiig2jKQ2Vvn8YtmfbDYCnz1CG",
+        "crossorigin": "anonymous",
+        "referrerpolicy": "no-referrer",
+        "data-site": "nd_ne8NN6cbqgvgMTNvcC_zIfoY47NW8pSs",
+        "data-routes": "%2F,%2Fabout,%2Fcontact"
+      },
+      "code": ""
+    },
+    {
+      "attributes": {
+        "type": "module"
+      },
+      "code": "var e=document.querySelector(`[data-menu-toggle]`),t=document.querySelector(`[data-mobile-nav]`);if(e instanceof HTMLButtonElement&&t instanceof HTMLElement){let n=[document.querySelector(`.skip-link`),document.querySelector(`main`),document.querySelector(`footer`)].filter(e=>e instanceof HTMLElement),r=e=>{n.forEach(t=>{t.inert=e})},i=(n=!1)=>{let i=e.getAttribute(`aria-expanded`)===`true`;e.setAttribute(`aria-expanded`,`false`),e.setAttribute(`aria-label`,`Open navigation menu`),t.hidden=!0,document.body.classList.remove(`menu-open`),r(!1),n&&i&&e.focus()};e.addEventListener(`click`,()=>{let n=e.getAttribute(`aria-expanded`)!==`true`;e.setAttribute(`aria-expanded`,String(n)),e.setAttribute(`aria-label`,n?`Close navigation menu`:`Open navigation menu`),t.hidden=!n,document.body.classList.toggle(`menu-open`,n),r(n)}),t.querySelectorAll(`a`).forEach(e=>e.addEventListener(`click`,()=>i())),document.addEventListener(`keydown`,n=>{if(n.key===`Escape`&&i(!0),n.key===`Tab`&&e.getAttribute(`aria-expanded`)===`true`){let r=[e,...t.querySelectorAll(`a`)],i=r[0],a=r.at(-1);n.shiftKey&&document.activeElement===i?(n.preventDefault(),a?.focus()):!n.shiftKey&&document.activeElement===a&&(n.preventDefault(),i.focus())}}),window.matchMedia(`(min-width: 960px)`).addEventListener(`change`,e=>{e.matches&&i()})}"
+    }
+  ]
+}

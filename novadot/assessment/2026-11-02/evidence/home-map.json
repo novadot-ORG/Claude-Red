@@ -1,0 +1,112 @@
+{
+  "links": [
+    "#main-content",
+    "/",
+    "/about/",
+    "/contact/",
+    "/events/",
+    "/how-we-work/",
+    "/how-we-work/#commercial-terms",
+    "/privacy-policy/",
+    "/services/",
+    "/services/cloud-security-it-operations/",
+    "/services/software-ai-business-systems/",
+    "/services/web-mobile-digital-growth/",
+    "/terms/"
+  ],
+  "scripts": [
+    {
+      "type": "application/ld+json"
+    },
+    {
+      "defer": null,
+      "src": "https://scanner.novadot.co.uk/novadot-analytics.v1.072ff0e7fc53.js",
+      "integrity": "sha384-5sIvO4uGVSOkyWi+5uhod+c65rFwppXlcnGxsJSiig2jKQ2Vvn8YtmfbDYCnz1CG",
+      "crossorigin": "anonymous",
+      "referrerpolicy": "no-referrer",
+      "data-site": "nd_ne8NN6cbqgvgMTNvcC_zIfoY47NW8pSs",
+      "data-routes": "%2F,%2Fabout,%2Fcontact"
+    },
+    {
+      "type": "module"
+    },
+    {
+      "type": "module",
+      "src": "/_astro/ProblemDiagnostic.astro_astro_type_script_index_0_lang.D7Z4G84q.js"
+    }
+  ],
+  "forms": [],
+  "meta": [
+    {
+      "charset": "UTF-8"
+    },
+    {
+      "name": "viewport",
+      "content": "width=device-width, initial-scale=1"
+    },
+    {
+      "name": "description",
+      "content": "NovaDot helps UK organisations plan, build, improve and support the software, systems and digital services they rely on."
+    },
+    {
+      "name": "robots",
+      "content": "index, follow"
+    },
+    {
+      "name": "theme-color",
+      "content": "#fcfbf8"
+    },
+    {
+      "property": "og:type",
+      "content": "website"
+    },
+    {
+      "property": "og:title",
+      "content": "NovaDot | Make business technology work better"
+    },
+    {
+      "property": "og:description",
+      "content": "NovaDot helps UK organisations plan, build, improve and support the software, systems and digital services they rely on."
+    },
+    {
+      "property": "og:url",
+      "content": "https://novadot.co.uk/"
+    },
+    {
+      "property": "og:image",
+      "content": "https://novadot.co.uk/brand/novadot-share-preview.png"
+    },
+    {
+      "property": "og:image:width",
+      "content": "1200"
+    },
+    {
+      "property": "og:image:height",
+      "content": "630"
+    },
+    {
+      "property": "og:image:alt",
+      "content": "NovaDot \u2014 Independent systems architecture, custom software, and managed cloud operations"
+    },
+    {
+      "name": "twitter:card",
+      "content": "summary_large_image"
+    },
+    {
+      "name": "twitter:title",
+      "content": "NovaDot | Make business technology work better"
+    },
+    {
+      "name": "twitter:description",
+      "content": "NovaDot helps UK organisations plan, build, improve and support the software, systems and digital services they rely on."
+    },
+    {
+      "name": "twitter:image",
+      "content": "https://novadot.co.uk/brand/novadot-share-preview.png"
+    }
+  ],
+  "inline_scripts": [
+    "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"NovaDot\",\"legalName\":\"NOVADOT LTD\",\"url\":\"https://novadot.co.uk\",\"logo\":\"https://novadot.co.uk/brand/novadot-full-logo-hires.png\",\"description\":\"NovaDot helps UK organisations plan, build, improve and support software, systems and digital services.\",\"email\":\"hello@novadot.co.uk\",\"telephone\":\"+44 (0)116 436 1235\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"First Floor, 18B Tithe Street\",\"addressLocality\":\"Leicester\",\"addressRegion\":\"Leicestershire\",\"postalCode\":\"LE5 4BN\",\"addressCountry\":\"GB\"}}",
+    "var e=document.querySelector(`[data-menu-toggle]`),t=document.querySelector(`[data-mobile-nav]`);if(e instanceof HTMLButtonElement&&t instanceof HTMLElement){let n=[document.querySelector(`.skip-link`),document.querySelector(`main`),document.querySelector(`footer`)].filter(e=>e instanceof HTMLElement),r=e=>{n.forEach(t=>{t.inert=e})},i=(n=!1)=>{let i=e.getAttribute(`aria-expanded`)===`true`;e.setAttribute(`aria-expanded`,`false`),e.setAttribute(`aria-label`,`Open navigation menu`),t.hidden=!0,document.body.classList.remove(`menu-open`),r(!1),n&&i&&e.focus()};e.addEventListener(`click`,()=>{let n=e.getAttribute(`aria-expanded`)!==`true`;e.setAttribute(`aria-expanded`,String(n)),e.setAttribute(`aria-label`,n?`Close navigation menu`:`Open navigation menu`),t.hidden=!n,document.body.classList.toggle(`menu-open`,n),r(n)}),t.querySelectorAll(`a`).forEach(e=>e.addEventListener(`click`,()=>i())),document.addEventListener(`keydown`,n=>{if(n.key===`Escape`&&i(!0),n.key===`Tab`&&e.getAttribute(`aria-expanded`)===`true`){let r=[e,...t.querySelectorAll(`a`)],i=r[0],a=r.at(-1);n.shiftKey&&document.activeElement===i?(n.preventDefault(),a?.focus()):!n.shiftKey&&document.activeElement===a&&(n.preventDefault(),i.focus())}}),window.matchMedia(`(min-width: 960px)`).addEventListener(`change`,e=>{e.matches&&i()})}"
+  ]
+}

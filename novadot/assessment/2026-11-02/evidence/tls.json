@@ -1,0 +1,61 @@
+{
+  "captured_at": "2026-11-02T18:08:27.352514+00:00",
+  "hostname": "novadot.co.uk",
+  "verified": true,
+  "protocol": "TLSv1.3",
+  "cipher": [
+    "TLS_AES_256_GCM_SHA384",
+    "TLSv1.3",
+    256
+  ],
+  "certificate": {
+    "subject": [
+      [
+        [
+          "commonName",
+          "*.novadot.co.uk"
+        ]
+      ]
+    ],
+    "issuer": [
+      [
+        [
+          "countryName",
+          "US"
+        ]
+      ],
+      [
+        [
+          "organizationName",
+          "Let's Encrypt"
+        ]
+      ],
+      [
+        [
+          "commonName",
+          "YR2"
+        ]
+      ]
+    ],
+    "version": 3,
+    "serialNumber": "0585D2CA1CB49BF8BBE6AC2F882999CCCFEA",
+    "notBefore": "Oct  3 00:11:44 2026 GMT",
+    "notAfter": "Jan  1 00:11:43 2027 GMT",
+    "subjectAltName": [
+      [
+        "DNS",
+        "*.novadot.co.uk"
+      ],
+      [
+        "DNS",
+        "novadot.co.uk"
+      ]
+    ],
+    "caIssuers": [
+      "http://yr2.i.lencr.org/"
+    ],
+    "crlDistributionPoints": [
+      "http://yr2.c.lencr.org/107.crl"
+    ]
+  }
+}

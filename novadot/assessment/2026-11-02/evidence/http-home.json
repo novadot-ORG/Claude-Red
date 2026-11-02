@@ -1,0 +1,12 @@
+{
+  "url_effective": "http://novadot.co.uk/",
+  "http_code": 301,
+  "http_version": "1.1",
+  "content_type": "text/plain",
+  "redirect_url": "https://novadot.co.uk/",
+  "ssl_verify_result": 0,
+  "size_download": 24,
+  "captured_at": "2026-11-02T18:07:48.627763+00:00",
+  "curl_exit": 0,
+  "error": ""
+}

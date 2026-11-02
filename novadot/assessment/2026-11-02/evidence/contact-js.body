@@ -1,0 +1,2 @@
+import{t as e}from"./enquiry-form.BeFRChKr.js";var t=document.getElementById(`contact-form`),n=new URLSearchParams(window.location.search).get(`topic`),r=t?.querySelector(`#contact-problem`);n&&r&&!r.value&&(r.value=`Focus area: ${n.replace(/-/g,` `)}`.slice(0,4999)+`
+`),e(t,`contact`);

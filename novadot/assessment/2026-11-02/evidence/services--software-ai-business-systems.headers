@@ -1,0 +1,22 @@
+HTTP/2 200
+server: nginx
+date: Mon, 02 Nov 2026 18:08:23 GMT
+content-type: text/html
+content-length: 28307
+vary: Accept-Encoding
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+referrer-policy: strict-origin-when-cross-origin
+content-security-policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://scanner.novadot.co.uk; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://scanner.novadot.co.uk;
+permissions-policy: camera=(), microphone=(), geolocation=()
+cache-control: no-cache, no-store, must-revalidate
+pragma: no-cache
+expires: 0
+last-modified: Thu, 15 Oct 2026 09:51:11 GMT
+etag: "6e93-65dddfcde6c33"
+accept-ranges: bytes
+x-httpd-modphp: 1
+host-header: 6b7412fb82ca5edfd0917e3957f05d89
+x-proxy-cache: MISS
+x-proxy-cache-info: 0 NC:000000 UP:

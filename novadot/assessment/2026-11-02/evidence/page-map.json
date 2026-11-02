@@ -1,0 +1,711 @@
+{
+  "about": {
+    "url": "https://novadot.co.uk/about/",
+    "links": [
+      "#main-content",
+      "/",
+      "/about/",
+      "/contact/",
+      "/events/",
+      "/how-we-work/",
+      "/privacy-policy/",
+      "/services/",
+      "/services/cloud-security-it-operations/",
+      "/services/software-ai-business-systems/",
+      "/services/web-mobile-digital-growth/",
+      "/terms/"
+    ],
+    "scripts": [
+      {
+        "tag": "script",
+        "type": "application/ld+json"
+      },
+      {
+        "tag": "script",
+        "defer": null,
+        "src": "https://scanner.novadot.co.uk/novadot-analytics.v1.072ff0e7fc53.js",
+        "integrity": "sha384-5sIvO4uGVSOkyWi+5uhod+c65rFwppXlcnGxsJSiig2jKQ2Vvn8YtmfbDYCnz1CG",
+        "crossorigin": "anonymous",
+        "referrerpolicy": "no-referrer",
+        "data-site": "nd_ne8NN6cbqgvgMTNvcC_zIfoY47NW8pSs",
+        "data-routes": "%2F,%2Fabout,%2Fcontact"
+      },
+      {
+        "tag": "script",
+        "type": "module"
+      }
+    ],
+    "iframes": [],
+    "forms": [],
+    "inline_event_handlers": [],
+    "mixed_content_assets": []
+  },
+  "contact": {
+    "url": "https://novadot.co.uk/contact/",
+    "links": [
+      "#main-content",
+      "/",
+      "/about/",
+      "/contact/",
+      "/events/",
+      "/how-we-work/",
+      "/how-we-work/#commercial-terms",
+      "/privacy-policy/",
+      "/services/",
+      "/services/cloud-security-it-operations/",
+      "/services/software-ai-business-systems/",
+      "/services/web-mobile-digital-growth/",
+      "/terms/",
+      "mailto:hello@novadot.co.uk",
+      "tel:+441164361235"
+    ],
+    "scripts": [
+      {
+        "tag": "script",
+        "type": "application/ld+json"
+      },
+      {
+        "tag": "script",
+        "defer": null,
+        "src": "https://scanner.novadot.co.uk/novadot-analytics.v1.072ff0e7fc53.js",
+        "integrity": "sha384-5sIvO4uGVSOkyWi+5uhod+c65rFwppXlcnGxsJSiig2jKQ2Vvn8YtmfbDYCnz1CG",
+        "crossorigin": "anonymous",
+        "referrerpolicy": "no-referrer",
+        "data-site": "nd_ne8NN6cbqgvgMTNvcC_zIfoY47NW8pSs",
+        "data-routes": "%2F,%2Fabout,%2Fcontact"
+      },
+      {
+        "tag": "script",
+        "type": "module"
+      },
+      {
+        "tag": "script",
+        "type": "module",
+        "src": "/_astro/contact.astro_astro_type_script_index_0_lang._QOMaRgG.js"
+      }
+    ],
+    "iframes": [],
+    "forms": [
+      {
+        "tag": "form",
+        "class": "problem-form",
+        "id": "contact-form",
+        "method": "dialog",
+        "novalidate": null,
+        "data-astro-cid-6bfsojfh": null
+      },
+      {
+        "tag": "input",
+        "id": "contact-website",
+        "name": "website",
+        "type": "text",
+        "tabindex": "-1",
+        "autocomplete": "off",
+        "data-astro-cid-6bfsojfh": null
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "id": "contact-name",
+        "name": "name",
+        "required": null,
+        "maxlength": "120",
+        "autocomplete": "name",
+        "placeholder": "First and last name",
+        "data-astro-cid-6bfsojfh": null
+      },
+      {
+        "tag": "input",
+        "type": "email",
+        "id": "contact-email",
+        "name": "email",
+        "required": null,
+        "maxlength": "254",
+        "autocomplete": "email",
+        "placeholder": "name@organisation.co.uk",
+        "data-astro-cid-6bfsojfh": null
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "id": "contact-org",
+        "name": "organisation",
+        "required": null,
+        "maxlength": "200",
+        "autocomplete": "organization",
+        "placeholder": "Company or organisation name",
+        "data-astro-cid-6bfsojfh": null
+      },
+      {
+        "tag": "textarea",
+        "id": "contact-problem",
+        "name": "problem",
+        "rows": "4",
+        "required": null,
+        "maxlength": "5000",
+        "aria-describedby": "problem-help",
+        "placeholder": "e.g. Orders from our website must be manually re-keyed into our accounting system...",
+        "data-astro-cid-6bfsojfh": null
+      },
+      {
+        "tag": "textarea",
+        "id": "contact-consequence",
+        "name": "consequence",
+        "rows": "3",
+        "maxlength": "3000",
+        "aria-describedby": "consequence-help",
+        "placeholder": "e.g. 15 hours lost each week, recurring reconciliation errors at month end...",
+        "data-astro-cid-6bfsojfh": null
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "id": "contact-system",
+        "name": "system",
+        "maxlength": "500",
+        "placeholder": "e.g. Spreadsheets, Odoo, Sage, Custom PHP, AWS",
+        "data-astro-cid-6bfsojfh": null
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "id": "contact-timing",
+        "name": "timing",
+        "maxlength": "200",
+        "placeholder": "e.g. Next quarter, within 30 days",
+        "data-astro-cid-6bfsojfh": null
+      },
+      {
+        "tag": "input",
+        "type": "radio",
+        "name": "preference",
+        "value": "email",
+        "checked": null,
+        "data-astro-cid-6bfsojfh": null
+      },
+      {
+        "tag": "input",
+        "type": "radio",
+        "name": "preference",
+        "value": "phone",
+        "data-astro-cid-6bfsojfh": null
+      },
+      {
+        "tag": "input",
+        "type": "tel",
+        "id": "contact-phone",
+        "name": "phone",
+        "maxlength": "40",
+        "placeholder": "e.g. +44 (0)116 436 1235",
+        "autocomplete": "tel",
+        "data-astro-cid-6bfsojfh": null
+      },
+      {
+        "tag": "input",
+        "type": "checkbox",
+        "id": "contact-privacy",
+        "name": "privacy",
+        "required": null,
+        "data-astro-cid-6bfsojfh": null
+      }
+    ],
+    "inline_event_handlers": [],
+    "mixed_content_assets": []
+  },
+  "events": {
+    "url": "https://novadot.co.uk/events/",
+    "links": [
+      "#community",
+      "#host",
+      "#location",
+      "#main-content",
+      "#rooms",
+      "#upcoming",
+      "/",
+      "/about/",
+      "/contact/",
+      "/events/",
+      "/how-we-work/",
+      "/privacy-policy/",
+      "/services/",
+      "/services/cloud-security-it-operations/",
+      "/services/software-ai-business-systems/",
+      "/services/web-mobile-digital-growth/",
+      "/terms/",
+      "mailto:hello@novadot.co.uk"
+    ],
+    "scripts": [
+      {
+        "tag": "script",
+        "type": "application/ld+json"
+      },
+      {
+        "tag": "script",
+        "defer": null,
+        "src": "https://scanner.novadot.co.uk/novadot-analytics.v1.072ff0e7fc53.js",
+        "integrity": "sha384-5sIvO4uGVSOkyWi+5uhod+c65rFwppXlcnGxsJSiig2jKQ2Vvn8YtmfbDYCnz1CG",
+        "crossorigin": "anonymous",
+        "referrerpolicy": "no-referrer",
+        "data-site": "nd_ne8NN6cbqgvgMTNvcC_zIfoY47NW8pSs",
+        "data-routes": "%2F,%2Fabout,%2Fcontact"
+      },
+      {
+        "tag": "script",
+        "type": "module"
+      },
+      {
+        "tag": "script",
+        "type": "module",
+        "src": "/_astro/index.astro_astro_type_script_index_0_lang.tGDcAizy.js"
+      }
+    ],
+    "iframes": [],
+    "forms": [
+      {
+        "tag": "form",
+        "class": "host-form",
+        "id": "event-request-form",
+        "method": "dialog",
+        "novalidate": null,
+        "data-astro-cid-map3axlu": null
+      },
+      {
+        "tag": "input",
+        "id": "event-website",
+        "name": "website",
+        "type": "text",
+        "tabindex": "-1",
+        "autocomplete": "off",
+        "data-astro-cid-map3axlu": null
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "id": "event-name",
+        "name": "name",
+        "required": null,
+        "maxlength": "120",
+        "placeholder": "First and last name",
+        "autocomplete": "name",
+        "data-astro-cid-map3axlu": null
+      },
+      {
+        "tag": "input",
+        "type": "email",
+        "id": "event-email",
+        "name": "email",
+        "required": null,
+        "maxlength": "254",
+        "placeholder": "name@organisation.co.uk",
+        "autocomplete": "email",
+        "data-astro-cid-map3axlu": null
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "id": "event-org",
+        "name": "organisation",
+        "required": null,
+        "maxlength": "200",
+        "placeholder": "e.g. Leicester Tech Group / Acme Ltd",
+        "data-astro-cid-map3axlu": null
+      },
+      {
+        "tag": "select",
+        "id": "event-intent",
+        "name": "intent",
+        "data-astro-cid-map3axlu": null
+      },
+      {
+        "tag": "select",
+        "id": "event-room",
+        "name": "room",
+        "data-astro-cid-map3axlu": null
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "id": "event-attendees",
+        "name": "attendees",
+        "maxlength": "200",
+        "placeholder": "e.g. 10\u201320 people",
+        "data-astro-cid-map3axlu": null
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "id": "event-date",
+        "name": "targetDate",
+        "maxlength": "200",
+        "placeholder": "e.g. Mid November / Flexible",
+        "data-astro-cid-map3axlu": null
+      },
+      {
+        "tag": "textarea",
+        "id": "event-details",
+        "name": "details",
+        "rows": "3",
+        "maxlength": "5000",
+        "placeholder": "Tell us about the topic, format, equipment needs, or questions you have...",
+        "data-astro-cid-map3axlu": null
+      },
+      {
+        "tag": "input",
+        "type": "checkbox",
+        "id": "event-privacy",
+        "name": "privacy",
+        "required": null,
+        "data-astro-cid-map3axlu": null
+      }
+    ],
+    "inline_event_handlers": [],
+    "mixed_content_assets": []
+  },
+  "home": {
+    "url": "https://novadot.co.uk/",
+    "links": [
+      "#main-content",
+      "/",
+      "/about/",
+      "/contact/",
+      "/events/",
+      "/how-we-work/",
+      "/how-we-work/#commercial-terms",
+      "/privacy-policy/",
+      "/services/",
+      "/services/cloud-security-it-operations/",
+      "/services/software-ai-business-systems/",
+      "/services/web-mobile-digital-growth/",
+      "/terms/"
+    ],
+    "scripts": [
+      {
+        "tag": "script",
+        "type": "application/ld+json"
+      },
+      {
+        "tag": "script",
+        "defer": null,
+        "src": "https://scanner.novadot.co.uk/novadot-analytics.v1.072ff0e7fc53.js",
+        "integrity": "sha384-5sIvO4uGVSOkyWi+5uhod+c65rFwppXlcnGxsJSiig2jKQ2Vvn8YtmfbDYCnz1CG",
+        "crossorigin": "anonymous",
+        "referrerpolicy": "no-referrer",
+        "data-site": "nd_ne8NN6cbqgvgMTNvcC_zIfoY47NW8pSs",
+        "data-routes": "%2F,%2Fabout,%2Fcontact"
+      },
+      {
+        "tag": "script",
+        "type": "module"
+      },
+      {
+        "tag": "script",
+        "type": "module",
+        "src": "/_astro/ProblemDiagnostic.astro_astro_type_script_index_0_lang.D7Z4G84q.js"
+      }
+    ],
+    "iframes": [],
+    "forms": [],
+    "inline_event_handlers": [],
+    "mixed_content_assets": []
+  },
+  "how-we-work": {
+    "url": "https://novadot.co.uk/how-we-work/",
+    "links": [
+      "#main-content",
+      "/",
+      "/about/",
+      "/contact/",
+      "/contact/?topic=workflow-pilot",
+      "/events/",
+      "/how-we-work/",
+      "/privacy-policy/",
+      "/services/",
+      "/services/cloud-security-it-operations/",
+      "/services/software-ai-business-systems/",
+      "/services/web-mobile-digital-growth/",
+      "/terms/"
+    ],
+    "scripts": [
+      {
+        "tag": "script",
+        "type": "application/ld+json"
+      },
+      {
+        "tag": "script",
+        "defer": null,
+        "src": "https://scanner.novadot.co.uk/novadot-analytics.v1.072ff0e7fc53.js",
+        "integrity": "sha384-5sIvO4uGVSOkyWi+5uhod+c65rFwppXlcnGxsJSiig2jKQ2Vvn8YtmfbDYCnz1CG",
+        "crossorigin": "anonymous",
+        "referrerpolicy": "no-referrer",
+        "data-site": "nd_ne8NN6cbqgvgMTNvcC_zIfoY47NW8pSs",
+        "data-routes": "%2F,%2Fabout,%2Fcontact"
+      },
+      {
+        "tag": "script",
+        "type": "module"
+      }
+    ],
+    "iframes": [],
+    "forms": [],
+    "inline_event_handlers": [],
+    "mixed_content_assets": []
+  },
+  "privacy-policy": {
+    "url": "https://novadot.co.uk/privacy-policy/",
+    "links": [
+      "#main-content",
+      "/",
+      "/about/",
+      "/contact/",
+      "/events/",
+      "/how-we-work/",
+      "/privacy-policy/",
+      "/services/",
+      "/services/cloud-security-it-operations/",
+      "/services/software-ai-business-systems/",
+      "/services/web-mobile-digital-growth/",
+      "/terms/",
+      "https://ico.org.uk",
+      "mailto:hello@novadot.co.uk"
+    ],
+    "scripts": [
+      {
+        "tag": "script",
+        "type": "application/ld+json"
+      },
+      {
+        "tag": "script",
+        "defer": null,
+        "src": "https://scanner.novadot.co.uk/novadot-analytics.v1.072ff0e7fc53.js",
+        "integrity": "sha384-5sIvO4uGVSOkyWi+5uhod+c65rFwppXlcnGxsJSiig2jKQ2Vvn8YtmfbDYCnz1CG",
+        "crossorigin": "anonymous",
+        "referrerpolicy": "no-referrer",
+        "data-site": "nd_ne8NN6cbqgvgMTNvcC_zIfoY47NW8pSs",
+        "data-routes": "%2F,%2Fabout,%2Fcontact"
+      },
+      {
+        "tag": "script",
+        "type": "module"
+      }
+    ],
+    "iframes": [],
+    "forms": [],
+    "inline_event_handlers": [],
+    "mixed_content_assets": []
+  },
+  "services--cloud-security-it-operations": {
+    "url": "https://novadot.co.uk/services/cloud-security-it-operations/",
+    "links": [
+      "#main-content",
+      "/",
+      "/about/",
+      "/contact/",
+      "/contact/?topic=cloud-specification",
+      "/contact/?topic=support-onboarding",
+      "/events/",
+      "/how-we-work/",
+      "/privacy-policy/",
+      "/services/",
+      "/services/cloud-security-it-operations/",
+      "/services/software-ai-business-systems/",
+      "/services/web-mobile-digital-growth/",
+      "/terms/"
+    ],
+    "scripts": [
+      {
+        "tag": "script",
+        "type": "application/ld+json"
+      },
+      {
+        "tag": "script",
+        "defer": null,
+        "src": "https://scanner.novadot.co.uk/novadot-analytics.v1.072ff0e7fc53.js",
+        "integrity": "sha384-5sIvO4uGVSOkyWi+5uhod+c65rFwppXlcnGxsJSiig2jKQ2Vvn8YtmfbDYCnz1CG",
+        "crossorigin": "anonymous",
+        "referrerpolicy": "no-referrer",
+        "data-site": "nd_ne8NN6cbqgvgMTNvcC_zIfoY47NW8pSs",
+        "data-routes": "%2F,%2Fabout,%2Fcontact"
+      },
+      {
+        "tag": "script",
+        "type": "module"
+      }
+    ],
+    "iframes": [],
+    "forms": [],
+    "inline_event_handlers": [],
+    "mixed_content_assets": []
+  },
+  "services--software-ai-business-systems": {
+    "url": "https://novadot.co.uk/services/software-ai-business-systems/",
+    "links": [
+      "#main-content",
+      "/",
+      "/about/",
+      "/contact/",
+      "/contact/?topic=ai-automation",
+      "/contact/?topic=systems-specification",
+      "/events/",
+      "/how-we-work/",
+      "/privacy-policy/",
+      "/services/",
+      "/services/cloud-security-it-operations/",
+      "/services/software-ai-business-systems/",
+      "/services/web-mobile-digital-growth/",
+      "/terms/"
+    ],
+    "scripts": [
+      {
+        "tag": "script",
+        "type": "application/ld+json"
+      },
+      {
+        "tag": "script",
+        "defer": null,
+        "src": "https://scanner.novadot.co.uk/novadot-analytics.v1.072ff0e7fc53.js",
+        "integrity": "sha384-5sIvO4uGVSOkyWi+5uhod+c65rFwppXlcnGxsJSiig2jKQ2Vvn8YtmfbDYCnz1CG",
+        "crossorigin": "anonymous",
+        "referrerpolicy": "no-referrer",
+        "data-site": "nd_ne8NN6cbqgvgMTNvcC_zIfoY47NW8pSs",
+        "data-routes": "%2F,%2Fabout,%2Fcontact"
+      },
+      {
+        "tag": "script",
+        "type": "module"
+      },
+      {
+        "tag": "script",
+        "type": "module"
+      }
+    ],
+    "iframes": [],
+    "forms": [],
+    "inline_event_handlers": [],
+    "mixed_content_assets": []
+  },
+  "services--web-mobile-digital-growth": {
+    "url": "https://novadot.co.uk/services/web-mobile-digital-growth/",
+    "links": [
+      "#main-content",
+      "/",
+      "/about/",
+      "/contact/",
+      "/contact/?topic=website-audit",
+      "/contact/?topic=website-specification",
+      "/events/",
+      "/how-we-work/",
+      "/privacy-policy/",
+      "/services/",
+      "/services/cloud-security-it-operations/",
+      "/services/software-ai-business-systems/",
+      "/services/web-mobile-digital-growth/",
+      "/terms/"
+    ],
+    "scripts": [
+      {
+        "tag": "script",
+        "type": "application/ld+json"
+      },
+      {
+        "tag": "script",
+        "defer": null,
+        "src": "https://scanner.novadot.co.uk/novadot-analytics.v1.072ff0e7fc53.js",
+        "integrity": "sha384-5sIvO4uGVSOkyWi+5uhod+c65rFwppXlcnGxsJSiig2jKQ2Vvn8YtmfbDYCnz1CG",
+        "crossorigin": "anonymous",
+        "referrerpolicy": "no-referrer",
+        "data-site": "nd_ne8NN6cbqgvgMTNvcC_zIfoY47NW8pSs",
+        "data-routes": "%2F,%2Fabout,%2Fcontact"
+      },
+      {
+        "tag": "script",
+        "type": "module"
+      }
+    ],
+    "iframes": [],
+    "forms": [],
+    "inline_event_handlers": [],
+    "mixed_content_assets": []
+  },
+  "services": {
+    "url": "https://novadot.co.uk/services/",
+    "links": [
+      "#main-content",
+      "/",
+      "/about/",
+      "/contact/",
+      "/events/",
+      "/how-we-work/",
+      "/privacy-policy/",
+      "/services/",
+      "/services/cloud-security-it-operations/",
+      "/services/software-ai-business-systems/",
+      "/services/web-mobile-digital-growth/",
+      "/terms/"
+    ],
+    "scripts": [
+      {
+        "tag": "script",
+        "type": "application/ld+json"
+      },
+      {
+        "tag": "script",
+        "defer": null,
+        "src": "https://scanner.novadot.co.uk/novadot-analytics.v1.072ff0e7fc53.js",
+        "integrity": "sha384-5sIvO4uGVSOkyWi+5uhod+c65rFwppXlcnGxsJSiig2jKQ2Vvn8YtmfbDYCnz1CG",
+        "crossorigin": "anonymous",
+        "referrerpolicy": "no-referrer",
+        "data-site": "nd_ne8NN6cbqgvgMTNvcC_zIfoY47NW8pSs",
+        "data-routes": "%2F,%2Fabout,%2Fcontact"
+      },
+      {
+        "tag": "script",
+        "type": "module"
+      }
+    ],
+    "iframes": [],
+    "forms": [],
+    "inline_event_handlers": [],
+    "mixed_content_assets": []
+  },
+  "terms": {
+    "url": "https://novadot.co.uk/terms/",
+    "links": [
+      "#main-content",
+      "/",
+      "/about/",
+      "/contact/",
+      "/events/",
+      "/how-we-work/",
+      "/privacy-policy/",
+      "/services/",
+      "/services/cloud-security-it-operations/",
+      "/services/software-ai-business-systems/",
+      "/services/web-mobile-digital-growth/",
+      "/terms/"
+    ],
+    "scripts": [
+      {
+        "tag": "script",
+        "type": "application/ld+json"
+      },
+      {
+        "tag": "script",
+        "defer": null,
+        "src": "https://scanner.novadot.co.uk/novadot-analytics.v1.072ff0e7fc53.js",
+        "integrity": "sha384-5sIvO4uGVSOkyWi+5uhod+c65rFwppXlcnGxsJSiig2jKQ2Vvn8YtmfbDYCnz1CG",
+        "crossorigin": "anonymous",
+        "referrerpolicy": "no-referrer",
+        "data-site": "nd_ne8NN6cbqgvgMTNvcC_zIfoY47NW8pSs",
+        "data-routes": "%2F,%2Fabout,%2Fcontact"
+      },
+      {
+        "tag": "script",
+        "type": "module"
+      }
+    ],
+    "iframes": [],
+    "forms": [],
+    "inline_event_handlers": [],
+    "mixed_content_assets": []
+  }
+}

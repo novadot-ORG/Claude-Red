@@ -21,7 +21,7 @@
 
 ## Client testing branch
 
-Client testing work belongs on `Client-Website-Test`; shared OpenAI-compatible skill development belongs on `codex/openai-compatibility`. **Create a separate top-level folder for every new client.** See the [client testing workflow and index](CLIENT-WEBSITE-TESTS.md) for onboarding and folder structure. The [Novadot workspace](novadot/README.md) is ready for scope definition.
+Client testing work belongs on `Client-Website-Test`; shared OpenAI-compatible skill development belongs on `codex/openai-compatibility`. **Create a separate top-level folder for every new client.** See the [client testing workflow and index](CLIENT-WEBSITE-TESTS.md) for onboarding and folder structure. The [Novadot workspace](novadot/README.md) contains its initial website baseline and follow-up work.
 
 ## Overview
 

@@ -1,0 +1,16 @@
+{
+  "url_effective": "https://novadot.co.uk/api/enquiry.php",
+  "http_code": 403,
+  "content_type": "text/html",
+  "captured_at": "2026-11-02T18:09:46.247353+00:00",
+  "method": "GET",
+  "request_headers": {
+    "Accept": "application/json",
+    "Referer": "https://novadot.co.uk/contact/",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Dest": "empty"
+  },
+  "body_storage": "shape only; values not retained",
+  "cookie_values": "redacted"
+}
