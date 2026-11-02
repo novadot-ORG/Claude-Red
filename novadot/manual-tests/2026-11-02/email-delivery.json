@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T18:38:25.111547+00:00",
+  "updated_at": "2026-11-02T18:44:56.267852+00:00",
   "authorization": "User approved one labelled Contact and one Events email test and will confirm receipt. User requires Computer Use; do not use Playwright.",
   "destination": "hello@novadot.co.uk",
   "status": "passed_user_confirmed_both_delivered_once",
@@ -71,7 +71,21 @@
         "visible_received_time": "Today at 00:04",
         "reference": "504253dd-1979-4635-9643-600fc6fb5351",
         "body_verification": "Visible name, email, organisation, test marker, submitted message/fields and privacy acknowledgement match the test.",
-        "header_limit": "Actual Reply-To header and expanded recipient address are not visible."
+        "header_limit": "Actual Reply-To header and expanded recipient address are not visible.",
+        "visible_recipient_address_in_reply_quote": "hello@novadot.co.uk"
+      },
+      "reply_address_check": {
+        "status": "passed",
+        "scope": "Events email reply recipient selection in Outlook for Mac",
+        "expected_address": "website-test@example.com",
+        "observed_address": "website-test@example.com",
+        "observed_display_name": "NovaDot Website Test",
+        "evidence": [
+          "evidence/event-reply-composer.png",
+          "evidence/event-reply-recipient.png"
+        ],
+        "provenance": "User supplied reply-composer and expanded recipient screenshots.",
+        "limit": "Verifies reply destination selection, not delivery to the synthetic address."
       }
     }
   ],
@@ -81,7 +95,8 @@
     "Earlier Computer Use access blockers were resolved before submission.",
     "A Chrome Events draft was filled but not submitted; the single Events submission occurred in Brave after Chrome switched windows. Do not submit the old Chrome draft.",
     "Website success messages were observed directly. User supplied both received-email screenshots; visible subjects, sender and body fields were reviewed and request references recorded.",
-    "User confirmed both messages arrived once. Screenshots establish visible message contents but do not independently establish duplicate count, raw Reply-To headers or email authentication results."
+    "User confirmed both messages arrived once. Screenshots establish visible message contents but do not independently establish duplicate count, raw Reply-To headers or email authentication results.",
+    "Events reply recipient selection is now verified from user screenshots: NovaDot Website Test <website-test@example.com>. Contact reply selection was not separately exercised. No real reply delivery is required for this address-selection check."
   ],
   "method": "Native Computer Use: Contact in Google Chrome; Events in Brave. No Playwright submission or direct API submission.",
   "local_date": "2026-11-03",

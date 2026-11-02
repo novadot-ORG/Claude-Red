@@ -22,7 +22,7 @@ Keep all Novadot-specific work in this folder. Create these directories when nee
 
 - [2026-11-02 public assessment](assessment/2026-11-02/ASSESSMENT.md): 11 public pages and four JavaScript assets reviewed; CSP hardening confirmed. Initial Python-user-agent 403 responses resolved to HTTP 200 with a browser user agent; no outage established.
 - [2026-11-02 source review](assessment/2026-11-02/SOURCE-REVIEW.md): 51 mocked backend checks and Astro checking passed; dependency audit flags 11 packages. Production exploitability is not established. Live/source analytics differences require reconciliation.
-- [Email delivery tests](manual-tests/2026-11-02/EMAIL-DELIVERY.md): Contact and Events each showed success after one submission. The user confirmed each email arrived exactly once; received-email screenshots verify the visible message contents. Do not resend either test or submit the old Chrome Events draft.
+- [Email delivery tests](manual-tests/2026-11-02/EMAIL-DELIVERY.md): Contact and Events each showed success after one submission. The user confirmed each email arrived exactly once; received-email screenshots verify the visible message contents, and Events reply-recipient selection is verified. Do not resend either test or submit the old Chrome Events draft.
 - [Evidence summary](assessment/2026-11-02/evidence/baseline-summary.json) and [evidence checksums](assessment/2026-11-02/SHA256SUMS.txt).
 
 Preserve historical results and distinguish retests from the original assessment.
