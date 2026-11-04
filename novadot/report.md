@@ -1,8 +1,11 @@
 # NovaDot website test report
 
-**Report updated:** 4 November 2026  
-**Testing dates:** 2–3 November 2026 (Asia/Kolkata)  
-**Website:** https://novadot.co.uk/  
+**Report updated:** 4 November 2026
+
+**Testing dates:** 2–3 November 2026 (Asia/Kolkata)
+
+**Website:** https://novadot.co.uk/
+
 **Scope:** Public website, supplied Astro/TypeScript and PHP source, and Contact/Events email workflows.
 
 ## Overall result
