@@ -2,6 +2,8 @@
 
 Client workspace on `Client-Website-Test`. Follow the [client testing workflow](../CLIENT-WEBSITE-TESTS.md).
 
+Start with the [plain-language test report](report.md) for what was tested, what passed and what still needs tightening.
+
 ## Scope and status
 
 - **Status:** Initial public/source reviews complete. Two authorised email tests passed: website success and user-confirmed receipt exactly once each. Events reply-recipient selection is also verified. Website remediation is deferred until after the broader assessment.
