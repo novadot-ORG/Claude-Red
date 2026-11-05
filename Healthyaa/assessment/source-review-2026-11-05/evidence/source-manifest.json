@@ -1,0 +1,284 @@
+{
+  "captured_at_utc": "2026-11-05T11:22:18.235157+00:00",
+  "source_root": "/Users/apple/git/healthyaa-wordpress",
+  "git_metadata_present": false,
+  "snapshot_note": "Local handoff describes public_html as historical July copy, not refreshed by October migration; provenance not independently established. No live equivalence claimed.",
+  "files": [
+    {
+      "path": "public_html/wp-content/mu-plugins/healthyaa-ads-landing-pages.php",
+      "sha256": "6a243b05fd488d610975d7818e7698b3b8b8307e325e3511d4cf9dde856aa537",
+      "bytes": 32083,
+      "lines": 1115
+    },
+    {
+      "path": "public_html/wp-content/mu-plugins/healthyaa-analytics.php",
+      "sha256": "15dea8be8e0c5358da8b09b393b33804c866bbaa4944b686deb5c382452716ab",
+      "bytes": 125312,
+      "lines": 3589
+    },
+    {
+      "path": "public_html/wp-content/mu-plugins/healthyaa-analytics/assets/analytics-tracker.js",
+      "sha256": "d00f99577d3207c673b8de0c68b9f4e1f613207caead456098b9c7db37a949ea",
+      "bytes": 15105,
+      "lines": 583
+    },
+    {
+      "path": "public_html/wp-content/mu-plugins/healthyaa-cart-display-fixes.php",
+      "sha256": "9d99e9d2054377a8afe309b109f2ffa8021d86aa2e45b6247f23b3677924de16",
+      "bytes": 20757,
+      "lines": 718
+    },
+    {
+      "path": "public_html/wp-content/mu-plugins/healthyaa-checkout-refresh.php",
+      "sha256": "04285cd48e88ea97fe0a96e1a56c1122fab0f70dc37dee9864bd57f496f68df0",
+      "bytes": 16096,
+      "lines": 453
+    },
+    {
+      "path": "public_html/wp-content/mu-plugins/healthyaa-checkout-refresh/assets/checkout-refresh.js",
+      "sha256": "2b3adde4d53929a822e67d87989a4dff1398e05f2b73b723c9549e62a8069c12",
+      "bytes": 27295,
+      "lines": 929
+    },
+    {
+      "path": "public_html/wp-content/mu-plugins/healthyaa-popup-controls.php",
+      "sha256": "ad5aa2c07af007e666bda2c8f5abd0a71e3274995d8e23ecf536a995b35aae98",
+      "bytes": 3235,
+      "lines": 116
+    },
+    {
+      "path": "public_html/wp-content/mu-plugins/healthyaa-seo.php",
+      "sha256": "b89c1e442266e5312ab587d6322848b8e68fa9b1f30a0fcb0506ed861649cd54",
+      "bytes": 43252,
+      "lines": 1570
+    },
+    {
+      "path": "public_html/wp-content/plugins/healthyaa-ai-assistant/assets/js/healthyaa-ai-assistant.js",
+      "sha256": "b6b40b8356f5df6975f9b046128dfc8c9fad611d5a2e57924d3c1e2fdfd6e0ab",
+      "bytes": 14276,
+      "lines": 425
+    },
+    {
+      "path": "public_html/wp-content/plugins/healthyaa-ai-assistant/healthyaa-ai-assistant.php",
+      "sha256": "698096535b0707594685bc0cdbb6173fcfa456e8c1953a7c2cb6574299b75957",
+      "bytes": 835,
+      "lines": 22
+    },
+    {
+      "path": "public_html/wp-content/plugins/healthyaa-ai-assistant/includes/class-healthyaa-ai-assistant.php",
+      "sha256": "488609e98bb82b9c11207fcfa620714b83350f1fd5be83626f3f014a3822b282",
+      "bytes": 150500,
+      "lines": 4237
+    },
+    {
+      "path": "public_html/wp-content/plugins/healthyaa-ai-assistant/includes/class-healthyaa-ai-knowledge-base.php",
+      "sha256": "c4f62cf30657b3fd4be7ebc954f3374a8ca999b424ae51ea7352d56d47e5c11f",
+      "bytes": 31341,
+      "lines": 1169
+    },
+    {
+      "path": "public_html/wp-content/plugins/wc-thanks-redirect/src/Api.php",
+      "sha256": "07ba5c66d4c2ffbb9b88b0984da2d2fc91ebca833c85618a7504064e8bd4f553",
+      "bytes": 7339,
+      "lines": 316
+    },
+    {
+      "path": "public_html/wp-content/plugins/wc-thanks-redirect/src/Compatibility/SandBoxPaymentBlocksSupport.php",
+      "sha256": "dcefa524c62f223f4433c03315adbde7a350aa9dace7296ec4c726dc2370b8db",
+      "bytes": 2744,
+      "lines": 94
+    },
+    {
+      "path": "public_html/wp-content/plugins/wc-thanks-redirect/src/Modules/SandBoxPayment.php",
+      "sha256": "ab4247695bc04dd4221f58a9080bce27e019b13bb18333d824d646a442e7491b",
+      "bytes": 5310,
+      "lines": 174
+    },
+    {
+      "path": "public_html/wp-content/plugins/wc-thanks-redirect/wc-thanks-redirect.php",
+      "sha256": "cfd8dd9740f92d17905038e616be08597dbbbed6c694b50d9fe2489763adbd02",
+      "bytes": 8540,
+      "lines": 282
+    },
+    {
+      "path": "public_html/wp-content/plugins/woocommerce/includes/class-wc-checkout.php",
+      "sha256": "2dffab4519544bbe6d469b1f3281458fd0641cc7b7d7af7f3180e6cb6b3f5e21",
+      "bytes": 51349,
+      "lines": 1449
+    },
+    {
+      "path": "public_html/wp-content/plugins/woocommerce/includes/class-wc-form-handler.php",
+      "sha256": "c8fd3eb9cf6974f4cdf0d20b7c356a3af4debce1457a222912b856e725d1ee57",
+      "bytes": 49327,
+      "lines": 1241
+    },
+    {
+      "path": "public_html/wp-content/plugins/woocommerce/includes/class-wc-order.php",
+      "sha256": "d0e27b7303bef64081eb0d47259d96382b439cd3ab4c44abea4e70d2d82db56d",
+      "bytes": 79423,
+      "lines": 2611
+    },
+    {
+      "path": "public_html/wp-content/plugins/woocommerce/src/StoreApi/Payments/PaymentContext.php",
+      "sha256": "ec4f5994a299bd17bf00e9943a90c35dd6c53b303ab77b4eb72e72b48cc44c09",
+      "bytes": 1849,
+      "lines": 84
+    },
+    {
+      "path": "public_html/wp-content/plugins/woocommerce/src/StoreApi/Routes/V1/Checkout.php",
+      "sha256": "a7d9c453396c615833690fa01a0bbb2ba8bf80b678e4dc5ba45823ccbc7ee00c",
+      "bytes": 32888,
+      "lines": 948
+    },
+    {
+      "path": "public_html/wp-content/plugins/woocommerce/src/StoreApi/Routes/V1/CheckoutOrder.php",
+      "sha256": "f4245329ec96176b4d3dcb6bad310bb5ea9393f608cefe0d11a8bf0b1cbf13e9",
+      "bytes": 8099,
+      "lines": 283
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/functions.php",
+      "sha256": "83e59bf20740c1cf9fed31be1c00e3f0c6110ee5f333d24e07416b72029d4ffa",
+      "bytes": 63042,
+      "lines": 1878
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/add-to-wishlist-button.php",
+      "sha256": "bab11b2f4259e0066a225ef45d7cd8c87e208d249792efae804c2ccc1ce97f7a",
+      "bytes": 673,
+      "lines": 21
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/cart/mini-cart.php",
+      "sha256": "e1e06a081daa1444a3390d47622add2446fea2e9fc011866cb5787e643bedc2f",
+      "bytes": 5431,
+      "lines": 135
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/checkout/checkout-timeline.php",
+      "sha256": "c659df0dc9f931ecc3d81db9df4cc1f88136fb3b70d18c3dc049f3111e29ed19",
+      "bytes": 2070,
+      "lines": 69
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/checkout/form-multistep-checkout.php",
+      "sha256": "280df9afbd326e761674c5eb1f868443c5911567ccb1c353c5cd4ae559f59dba",
+      "bytes": 4237,
+      "lines": 102
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/content-single-product.php",
+      "sha256": "5677cf20725dc6a2ba344c057d6299e7b9db4521c769d630941224fe6972b3a9",
+      "bytes": 2550,
+      "lines": 83
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/loop/loop-start.php",
+      "sha256": "8505875357d9d357a345a1abbc02d050cb3766bafc08b135d94a45fab56eab66",
+      "bytes": 1803,
+      "lines": 50
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/loop/thumbnail/featured-image.php",
+      "sha256": "636f1a8292fa667dbff9eda512d7226b97046c7e3f338e6a093adb35a9dee7a4",
+      "bytes": 2387,
+      "lines": 100
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/loop/thumbnail/gallery-slider.php",
+      "sha256": "7d6225295fc953cc72fca03b5cafa34d0ca8d9f701fd35e9ec1825d500ed2d3b",
+      "bytes": 3295,
+      "lines": 144
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/loop/thumbnail/image-swap.php",
+      "sha256": "a8767369abddbc3bdc4c292566c4a9b218d471aa244348daf7d0b89c569dac31",
+      "bytes": 3454,
+      "lines": 131
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/owp-archive-product-hover.php",
+      "sha256": "ea4788a9ca2cbeb5d1bff2311ce269cd029abe7f4d64f3fac22e36ff885c9a49",
+      "bytes": 6096,
+      "lines": 189
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/owp-archive-product-thumbnails.php",
+      "sha256": "1a2be8420567d01b5858ff32bb401b4da6fddfe70f98a0473c337b911d22e405",
+      "bytes": 2121,
+      "lines": 92
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/owp-archive-product.php",
+      "sha256": "7fdb228f59292d8a2920f8c4ef59678cafdb4ce12ff374265e00253161f6fc79",
+      "bytes": 5424,
+      "lines": 206
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/owp-off-canvas-sidebar.php",
+      "sha256": "402079af7a614e29b8e9526f02cc98a82a8facba782c70ab22fecaa6f592c62f",
+      "bytes": 1359,
+      "lines": 32
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/owp-single-product.php",
+      "sha256": "8862ec5784a201e18855cc2b8e9b343299c54da40dd5be42a3a5b0fcc88d36dd",
+      "bytes": 2403,
+      "lines": 101
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/quick-view-content.php",
+      "sha256": "bc845dbf8bc5cf9abdc718334cd8c733bf09d72594c5774650f938e08df9a087",
+      "bytes": 509,
+      "lines": 25
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/quick-view-image.php",
+      "sha256": "eb5e211a3060a8d947b7c65612372b3c5ffab2159493980b2d8b9c933e9de6ec",
+      "bytes": 1564,
+      "lines": 63
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/quick-view.php",
+      "sha256": "42e58b1b4218800884984b46e773bfe283ade2bed443b10b79d69dc5c9214b00",
+      "bytes": 573,
+      "lines": 22
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/result-count.php",
+      "sha256": "6eca1076257b2d55b8a903a34d2ee0a36ee68aeb0365e4073a6212c15f5858cf",
+      "bytes": 2132,
+      "lines": 67
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/share.php",
+      "sha256": "029e8da558a20b6a7f3b63b2c714bad0522565b62f290e0c5a48e5cdc4367c28",
+      "bytes": 2871,
+      "lines": 46
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/single-product/product-image.php",
+      "sha256": "582a7ec74058bc41a6032f88b0eb2f12bbda0dda69c5bbaf07c383752e3620f8",
+      "bytes": 2672,
+      "lines": 63
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/single-product/title.php",
+      "sha256": "8e737706bdebdaf3c7093f58f327764b781fa42b3e2e683fd82d529da4caead0",
+      "bytes": 1092,
+      "lines": 27
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/wc-content-wrapper-end.php",
+      "sha256": "48890d609aa33d802bcdb4c2a082a98b0a3a0cc2d0cbca945af3906a7c97521b",
+      "bytes": 470,
+      "lines": 26
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/wc-content-wrapper.php",
+      "sha256": "fd39dc37328787f6dd15e83f2d4fae2542307068e1d25050af922c9dca634bd1",
+      "bytes": 548,
+      "lines": 26
+    }
+  ]
+}

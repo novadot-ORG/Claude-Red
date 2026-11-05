@@ -1,0 +1,284 @@
+{
+  "php_version": "8.5.10",
+  "node_version": "v26.10.0",
+  "checks": [
+    {
+      "path": "public_html/wp-content/mu-plugins/healthyaa-ads-landing-pages.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/mu-plugins/healthyaa-ads-landing-pages.php"
+    },
+    {
+      "path": "public_html/wp-content/mu-plugins/healthyaa-analytics.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/mu-plugins/healthyaa-analytics.php"
+    },
+    {
+      "path": "public_html/wp-content/mu-plugins/healthyaa-analytics/assets/analytics-tracker.js",
+      "check": "JavaScript syntax",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "path": "public_html/wp-content/mu-plugins/healthyaa-cart-display-fixes.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/mu-plugins/healthyaa-cart-display-fixes.php"
+    },
+    {
+      "path": "public_html/wp-content/mu-plugins/healthyaa-checkout-refresh.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/mu-plugins/healthyaa-checkout-refresh.php"
+    },
+    {
+      "path": "public_html/wp-content/mu-plugins/healthyaa-checkout-refresh/assets/checkout-refresh.js",
+      "check": "JavaScript syntax",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "path": "public_html/wp-content/mu-plugins/healthyaa-popup-controls.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/mu-plugins/healthyaa-popup-controls.php"
+    },
+    {
+      "path": "public_html/wp-content/mu-plugins/healthyaa-seo.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/mu-plugins/healthyaa-seo.php"
+    },
+    {
+      "path": "public_html/wp-content/plugins/healthyaa-ai-assistant/assets/js/healthyaa-ai-assistant.js",
+      "check": "JavaScript syntax",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "path": "public_html/wp-content/plugins/healthyaa-ai-assistant/healthyaa-ai-assistant.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/plugins/healthyaa-ai-assistant/healthyaa-ai-assistant.php"
+    },
+    {
+      "path": "public_html/wp-content/plugins/healthyaa-ai-assistant/includes/class-healthyaa-ai-assistant.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/plugins/healthyaa-ai-assistant/includes/class-healthyaa-ai-assistant.php"
+    },
+    {
+      "path": "public_html/wp-content/plugins/healthyaa-ai-assistant/includes/class-healthyaa-ai-knowledge-base.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/plugins/healthyaa-ai-assistant/includes/class-healthyaa-ai-knowledge-base.php"
+    },
+    {
+      "path": "public_html/wp-content/plugins/wc-thanks-redirect/src/Api.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/plugins/wc-thanks-redirect/src/Api.php"
+    },
+    {
+      "path": "public_html/wp-content/plugins/wc-thanks-redirect/src/Compatibility/SandBoxPaymentBlocksSupport.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/plugins/wc-thanks-redirect/src/Compatibility/SandBoxPaymentBlocksSupport.php"
+    },
+    {
+      "path": "public_html/wp-content/plugins/wc-thanks-redirect/src/Modules/SandBoxPayment.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/plugins/wc-thanks-redirect/src/Modules/SandBoxPayment.php"
+    },
+    {
+      "path": "public_html/wp-content/plugins/wc-thanks-redirect/wc-thanks-redirect.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/plugins/wc-thanks-redirect/wc-thanks-redirect.php"
+    },
+    {
+      "path": "public_html/wp-content/plugins/woocommerce/includes/class-wc-checkout.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/plugins/woocommerce/includes/class-wc-checkout.php"
+    },
+    {
+      "path": "public_html/wp-content/plugins/woocommerce/includes/class-wc-form-handler.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/plugins/woocommerce/includes/class-wc-form-handler.php"
+    },
+    {
+      "path": "public_html/wp-content/plugins/woocommerce/includes/class-wc-order.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/plugins/woocommerce/includes/class-wc-order.php"
+    },
+    {
+      "path": "public_html/wp-content/plugins/woocommerce/src/StoreApi/Payments/PaymentContext.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/plugins/woocommerce/src/StoreApi/Payments/PaymentContext.php"
+    },
+    {
+      "path": "public_html/wp-content/plugins/woocommerce/src/StoreApi/Routes/V1/Checkout.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/plugins/woocommerce/src/StoreApi/Routes/V1/Checkout.php"
+    },
+    {
+      "path": "public_html/wp-content/plugins/woocommerce/src/StoreApi/Routes/V1/CheckoutOrder.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/plugins/woocommerce/src/StoreApi/Routes/V1/CheckoutOrder.php"
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/functions.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/themes/oceanwp/functions.php"
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/add-to-wishlist-button.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/themes/oceanwp/woocommerce/add-to-wishlist-button.php"
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/cart/mini-cart.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/themes/oceanwp/woocommerce/cart/mini-cart.php"
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/checkout/checkout-timeline.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/themes/oceanwp/woocommerce/checkout/checkout-timeline.php"
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/checkout/form-multistep-checkout.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/themes/oceanwp/woocommerce/checkout/form-multistep-checkout.php"
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/content-single-product.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/themes/oceanwp/woocommerce/content-single-product.php"
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/loop/loop-start.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/themes/oceanwp/woocommerce/loop/loop-start.php"
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/loop/thumbnail/featured-image.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/themes/oceanwp/woocommerce/loop/thumbnail/featured-image.php"
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/loop/thumbnail/gallery-slider.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/themes/oceanwp/woocommerce/loop/thumbnail/gallery-slider.php"
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/loop/thumbnail/image-swap.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/themes/oceanwp/woocommerce/loop/thumbnail/image-swap.php"
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/owp-archive-product-hover.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/themes/oceanwp/woocommerce/owp-archive-product-hover.php"
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/owp-archive-product-thumbnails.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/themes/oceanwp/woocommerce/owp-archive-product-thumbnails.php"
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/owp-archive-product.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/themes/oceanwp/woocommerce/owp-archive-product.php"
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/owp-off-canvas-sidebar.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/themes/oceanwp/woocommerce/owp-off-canvas-sidebar.php"
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/owp-single-product.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/themes/oceanwp/woocommerce/owp-single-product.php"
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/quick-view-content.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/themes/oceanwp/woocommerce/quick-view-content.php"
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/quick-view-image.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/themes/oceanwp/woocommerce/quick-view-image.php"
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/quick-view.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/themes/oceanwp/woocommerce/quick-view.php"
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/result-count.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/themes/oceanwp/woocommerce/result-count.php"
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/share.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/themes/oceanwp/woocommerce/share.php"
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/single-product/product-image.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/themes/oceanwp/woocommerce/single-product/product-image.php"
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/single-product/title.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/themes/oceanwp/woocommerce/single-product/title.php"
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/wc-content-wrapper-end.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/themes/oceanwp/woocommerce/wc-content-wrapper-end.php"
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/wc-content-wrapper.php",
+      "check": "PHP syntax",
+      "exit_code": 0,
+      "output": "No syntax errors detected in SOURCE_ROOT/public_html/wp-content/themes/oceanwp/woocommerce/wc-content-wrapper.php"
+    }
+  ],
+  "passed": 46,
+  "total": 46
+}

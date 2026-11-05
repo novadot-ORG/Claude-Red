@@ -1,0 +1,390 @@
+{
+  "wordpress_local_version": "7.0",
+  "plugins": [
+    {
+      "directory": "ajax-search-for-woocommerce",
+      "entry_file": "public_html/wp-content/plugins/ajax-search-for-woocommerce/ajax-search-for-woocommerce.php",
+      "name": "FiboSearch - AJAX Search for WooCommerce",
+      "version": "1.33.0",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "bookly-addon-cart",
+      "entry_file": "public_html/wp-content/plugins/bookly-addon-cart/main.php",
+      "name": "Bookly Cart (Add-on)",
+      "version": "3.2",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "bookly-addon-custom-fields",
+      "entry_file": "public_html/wp-content/plugins/bookly-addon-custom-fields/main.php",
+      "name": "Bookly Custom Fields (Add-on)",
+      "version": "4.5",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "bookly-addon-custom-statuses",
+      "entry_file": "public_html/wp-content/plugins/bookly-addon-custom-statuses/main.php",
+      "name": "Bookly Custom Statuses (Add-on)",
+      "version": "2.5",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "bookly-addon-deposit-payments",
+      "entry_file": "public_html/wp-content/plugins/bookly-addon-deposit-payments/main.php",
+      "name": "Bookly Deposit Payments (Add-on)",
+      "version": "3.7",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "bookly-addon-invoices",
+      "entry_file": "public_html/wp-content/plugins/bookly-addon-invoices/main.php",
+      "name": "Bookly Invoices (Add-on)",
+      "version": "5.1",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "bookly-addon-pro",
+      "entry_file": "public_html/wp-content/plugins/bookly-addon-pro/main.php",
+      "name": "Bookly Pro (Add-on)",
+      "version": "8.5",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "bookly-addon-stripe",
+      "entry_file": "public_html/wp-content/plugins/bookly-addon-stripe/main.php",
+      "name": "Bookly Stripe (Add-on)",
+      "version": "4.7",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "bookly-addon-tasks",
+      "entry_file": "public_html/wp-content/plugins/bookly-addon-tasks/main.php",
+      "name": "Bookly Tasks (Add-on)",
+      "version": "2.4",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "bookly-responsive-appointment-booking-tool",
+      "entry_file": "public_html/wp-content/plugins/bookly-responsive-appointment-booking-tool/main.php",
+      "name": "Bookly",
+      "version": "27.5",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "click-to-chat-for-whatsapp",
+      "entry_file": "public_html/wp-content/plugins/click-to-chat-for-whatsapp/click-to-chat.php",
+      "name": "Click to Chat",
+      "version": "4.39",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "contact-form-7",
+      "entry_file": "public_html/wp-content/plugins/contact-form-7/wp-contact-form-7.php",
+      "name": "Contact Form 7",
+      "version": "6.1.6",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "cookie-law-info",
+      "entry_file": "public_html/wp-content/plugins/cookie-law-info/cookie-law-info.php",
+      "name": "CookieYes | GDPR Cookie Consent",
+      "version": "3.5.0",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "duplicate-page",
+      "entry_file": "public_html/wp-content/plugins/duplicate-page/duplicatepage.php",
+      "name": "Duplicate Page",
+      "version": "4.5.9",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "easy-login-woocommerce",
+      "entry_file": "public_html/wp-content/plugins/easy-login-woocommerce/xoo-el-main.php",
+      "name": "Login & Register Customizer \u2013 Popup | Slider | Inline | WooCommerce",
+      "version": "3.1.2",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "elementor",
+      "entry_file": "public_html/wp-content/plugins/elementor/elementor.php",
+      "name": "Elementor",
+      "version": "4.0.9",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "elementskit-lite",
+      "entry_file": "public_html/wp-content/plugins/elementskit-lite/elementskit-lite.php",
+      "name": "ElementsKit Lite",
+      "version": "3.9.6",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "envato-elements",
+      "entry_file": "public_html/wp-content/plugins/envato-elements/envato-elements.php",
+      "name": "Envato Elements",
+      "version": "2.0.16",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "essential-addons-for-elementor-lite",
+      "entry_file": "public_html/wp-content/plugins/essential-addons-for-elementor-lite/essential_adons_elementor.php",
+      "name": "Essential Addons for Elementor",
+      "version": "6.6.5",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "fluent-smtp",
+      "entry_file": "public_html/wp-content/plugins/fluent-smtp/fluent-smtp.php",
+      "name": "FluentSMTP",
+      "version": "2.2.95",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "header-footer-elementor",
+      "entry_file": "public_html/wp-content/plugins/header-footer-elementor/header-footer-elementor.php",
+      "name": "Ultimate Addons for Elementor (UAE)",
+      "version": "2.8.7",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "healthyaa-ai-assistant",
+      "entry_file": "public_html/wp-content/plugins/healthyaa-ai-assistant/healthyaa-ai-assistant.php",
+      "name": "Healthyaa AI Assistant",
+      "version": "0.5.3",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "healthyaa-ai-assistant.pre-2375273-2026-05-06",
+      "entry_file": "public_html/wp-content/plugins/healthyaa-ai-assistant.pre-2375273-2026-05-06/healthyaa-ai-assistant.php",
+      "name": "Healthyaa AI Assistant",
+      "version": "0.5.2",
+      "archived_copy": true,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "healthyaa-ai-assistant.pre-81562cd-2026-05-06",
+      "entry_file": "public_html/wp-content/plugins/healthyaa-ai-assistant.pre-81562cd-2026-05-06/healthyaa-ai-assistant.php",
+      "name": "Healthyaa AI Assistant",
+      "version": "0.5.1",
+      "archived_copy": true,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "healthyaa-ai-assistant.pre-db2f181-2026-05-06",
+      "entry_file": "public_html/wp-content/plugins/healthyaa-ai-assistant.pre-db2f181-2026-05-06/healthyaa-ai-assistant.php",
+      "name": "Healthyaa AI Assistant",
+      "version": "0.3.1",
+      "archived_copy": true,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "healthyaa-ai-assistant.pre-f95a831-2026-05-06",
+      "entry_file": "public_html/wp-content/plugins/healthyaa-ai-assistant.pre-f95a831-2026-05-06/healthyaa-ai-assistant.php",
+      "name": "Healthyaa AI Assistant",
+      "version": "0.5.0",
+      "archived_copy": true,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "jeg-elementor-kit",
+      "entry_file": "public_html/wp-content/plugins/jeg-elementor-kit/jeg-elementor-kit.php",
+      "name": "Jeg Kit for Elementor",
+      "version": "3.2.0",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "metform",
+      "entry_file": "public_html/wp-content/plugins/metform/metform.php",
+      "name": "MetForm",
+      "version": "4.1.4",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "ocean-extra",
+      "entry_file": "public_html/wp-content/plugins/ocean-extra/ocean-extra.php",
+      "name": "Ocean Extra",
+      "version": "2.5.6",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "order-import-export-for-woocommerce",
+      "entry_file": "public_html/wp-content/plugins/order-import-export-for-woocommerce/order-import-export-for-woocommerce.php",
+      "name": "Order Export & Order Import for WooCommerce",
+      "version": "2.7.3",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "pages-with-category-and-tag",
+      "entry_file": "public_html/wp-content/plugins/pages-with-category-and-tag/pages-with-category-and-tag.php",
+      "name": "Pages with category and tag",
+      "version": "0.9.0",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "popup-builder",
+      "entry_file": "public_html/wp-content/plugins/popup-builder/popup-builder.php",
+      "name": "Popup Builder - Create highly converting, mobile friendly marketing popups.",
+      "version": "4.4.3",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "post-smtp",
+      "entry_file": "public_html/wp-content/plugins/post-smtp/postman-smtp.php",
+      "name": "Post SMTP",
+      "version": "3.9.1",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "qi-addons-for-elementor",
+      "entry_file": "public_html/wp-content/plugins/qi-addons-for-elementor/class-qiaddonsforelementor.php",
+      "name": "Qi Addons for Elementor",
+      "version": "1.9.6",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "seo-by-rank-math",
+      "entry_file": "public_html/wp-content/plugins/seo-by-rank-math/rank-math.php",
+      "name": "Rank Math SEO",
+      "version": "1.0.270",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "sg-ai-studio",
+      "entry_file": "public_html/wp-content/plugins/sg-ai-studio/sg-ai-studio.php",
+      "name": "AI Agent by SiteGround",
+      "version": "1.2.5",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "sg-cachepress",
+      "entry_file": "public_html/wp-content/plugins/sg-cachepress/sg-cachepress.php",
+      "name": "Speed Optimizer",
+      "version": "7.7.11",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "sg-security",
+      "entry_file": "public_html/wp-content/plugins/sg-security/sg-security.php",
+      "name": "Security Optimizer",
+      "version": "1.6.2",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "shopengine",
+      "entry_file": "public_html/wp-content/plugins/shopengine/shopengine.php",
+      "name": "ShopEngine",
+      "version": "4.8.9",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "template-kit-import",
+      "entry_file": "public_html/wp-content/plugins/template-kit-import/template-kit-import.php",
+      "name": "Template Kit Import",
+      "version": "1.0.16",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "updraftplus",
+      "entry_file": "public_html/wp-content/plugins/updraftplus/updraftplus.php",
+      "name": "UpdraftPlus - Backup/Restore",
+      "version": "1.26.5",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "wc-thanks-redirect",
+      "entry_file": "public_html/wp-content/plugins/wc-thanks-redirect/wc-thanks-redirect.php",
+      "name": "Thank You Page for WooCommerce",
+      "version": "4.3.1",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "woo-order-export-lite",
+      "entry_file": "public_html/wp-content/plugins/woo-order-export-lite/woo-order-export-lite.php",
+      "name": "Advanced Order Export For WooCommerce",
+      "version": "4.0.7",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "woocommerce",
+      "entry_file": "public_html/wp-content/plugins/woocommerce/woocommerce.php",
+      "name": "WooCommerce",
+      "version": "10.7.0",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "woocommerce-gateway-stripe",
+      "entry_file": "public_html/wp-content/plugins/woocommerce-gateway-stripe/woocommerce-gateway-stripe.php",
+      "name": "WooCommerce Stripe Gateway",
+      "version": "10.7.0",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "woocommerce-payments",
+      "entry_file": "public_html/wp-content/plugins/woocommerce-payments/woocommerce-payments.php",
+      "name": "WooPayments",
+      "version": "10.8.0",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "wp-crontrol",
+      "entry_file": "public_html/wp-content/plugins/wp-crontrol/wp-crontrol.php",
+      "name": "WP Crontrol",
+      "version": "1.21.0",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    },
+    {
+      "directory": "wt-smart-coupons-for-woocommerce",
+      "entry_file": "public_html/wp-content/plugins/wt-smart-coupons-for-woocommerce/wt-smart-coupon.php",
+      "name": "Smart Coupons For WooCommerce Coupons",
+      "version": "2.3.0",
+      "archived_copy": false,
+      "active_state": "not established from source"
+    }
+  ],
+  "note": "Installed-file inventory only; not a vulnerability scan or production/activation inventory."
+}

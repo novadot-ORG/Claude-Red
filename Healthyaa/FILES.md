@@ -1,11 +1,13 @@
 # Healthyaa file inventory
 
-Publication snapshot: 29 October 2026. See [README.md](README.md) for scope, limitations and the main reports.
+Updated: 5 November 2026. Original 29 October records are preserved; the new dated folder contains the source-only review. See [README.md](README.md) for scope and report links.
+
+This listing excludes itself and the root checksum manifest.
 
 | File | Bytes |
 |---|---:|
 | [.gitattributes](.gitattributes) | 86 |
-| [README.md](README.md) | 5939 |
+| [README.md](README.md) | 6589 |
 | [assessment/2026-10-28/ASSESSMENT.md](assessment/2026-10-28/ASSESSMENT.md) | 8123 |
 | [assessment/2026-10-28/custom-access-checks.json](assessment/2026-10-28/custom-access-checks.json) | 657 |
 | [assessment/2026-10-28/custom-route-inventory.json](assessment/2026-10-28/custom-route-inventory.json) | 1317 |
@@ -16,6 +18,7 @@ Publication snapshot: 29 October 2026. See [README.md](README.md) for scope, lim
 | [assessment/2026-10-28/thankyou-api-response-shape.json](assessment/2026-10-28/thankyou-api-response-shape.json) | 250 |
 | [assessment/HEALTHYAA-LEARNING-GUIDE.md](assessment/HEALTHYAA-LEARNING-GUIDE.md) | 19990 |
 | [assessment/REVIEW.md](assessment/REVIEW.md) | 5085 |
+| [assessment/SHA256SUMS.txt](assessment/SHA256SUMS.txt) | 674 |
 | [assessment/assistant.headers](assessment/assistant.headers) | 432 |
 | [assessment/assistant.js](assessment/assistant.js) | 14281 |
 | [assessment/document-review-2026-10-29/REVIEW-AND-REPLACEMENT-TEXT.md](assessment/document-review-2026-10-29/REVIEW-AND-REPLACEMENT-TEXT.md) | 14857 |
@@ -37,6 +40,18 @@ Publication snapshot: 29 October 2026. See [README.md](README.md) for scope, lim
 | [assessment/http.headers](assessment/http.headers) | 355 |
 | [assessment/robots.headers](assessment/robots.headers) | 566 |
 | [assessment/robots.txt](assessment/robots.txt) | 321 |
+| [assessment/source-review-2026-11-05/SHA256SUMS.txt](assessment/source-review-2026-11-05/SHA256SUMS.txt) | 1055 |
+| [assessment/source-review-2026-11-05/evidence/ai-source-probes.json](assessment/source-review-2026-11-05/evidence/ai-source-probes.json) | 323 |
+| [assessment/source-review-2026-11-05/evidence/ai-source-probes.php](assessment/source-review-2026-11-05/evidence/ai-source-probes.php) | 4292 |
+| [assessment/source-review-2026-11-05/evidence/analytics-payload-probe.js](assessment/source-review-2026-11-05/evidence/analytics-payload-probe.js) | 2175 |
+| [assessment/source-review-2026-11-05/evidence/analytics-payload-probe.json](assessment/source-review-2026-11-05/evidence/analytics-payload-probe.json) | 220 |
+| [assessment/source-review-2026-11-05/evidence/check-source.py](assessment/source-review-2026-11-05/evidence/check-source.py) | 4084 |
+| [assessment/source-review-2026-11-05/evidence/component-inventory.json](assessment/source-review-2026-11-05/evidence/component-inventory.json) | 14658 |
+| [assessment/source-review-2026-11-05/evidence/local-source-probes.json](assessment/source-review-2026-11-05/evidence/local-source-probes.json) | 1361 |
+| [assessment/source-review-2026-11-05/evidence/local-source-probes.php](assessment/source-review-2026-11-05/evidence/local-source-probes.php) | 9273 |
+| [assessment/source-review-2026-11-05/evidence/source-manifest.json](assessment/source-review-2026-11-05/evidence/source-manifest.json) | 10932 |
+| [assessment/source-review-2026-11-05/evidence/syntax-checks.json](assessment/source-review-2026-11-05/evidence/syntax-checks.json) | 13168 |
+| [assessment/source-review-2026-11-05/report.md](assessment/source-review-2026-11-05/report.md) | 17735 |
 | [documents/Healthyaa Penetration Test.pages](documents/Healthyaa%20Penetration%20Test.pages) | 2257018 |
 | [learning-guide/Healthyaa_Security_Testing_Learning_Guide.docx](learning-guide/Healthyaa_Security_Testing_Learning_Guide.docx) | 50362 |
 | [learning-guide/build_guide.py](learning-guide/build_guide.py) | 30131 |

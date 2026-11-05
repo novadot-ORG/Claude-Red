@@ -1,0 +1,7 @@
+{
+  "mode": "actual payload function in synthetic JavaScript context; no requests sent",
+  "complete_url_retained": true,
+  "query_order_key_retained": true,
+  "query_email_retained": true,
+  "fragment_retained": true
+}

@@ -1,0 +1,8 @@
+{
+    "probe_type": "isolated actual methods with synthetic WordPress\/WooCommerce stubs; not a live endpoint test",
+    "private_product_returned": true,
+    "password_protected_content_indexed": true,
+    "lead_capture_disabled_but_captured": true,
+    "mock_mail_calls_when_disabled": 1,
+    "actual_mail_sent": false
+}
