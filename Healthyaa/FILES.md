@@ -1,13 +1,13 @@
 # Healthyaa file inventory
 
-Updated: 5 November 2026. Original 29 October records are preserved; the new dated folder contains the source-only review. See [README.md](README.md) for scope and report links.
+Updated: 5 November 2026. Original 29 October records are preserved; the new dated folder contains the source-only review and authorised SSH source confirmation. See [README.md](README.md) for scope and report links.
 
 This listing excludes itself and the root checksum manifest.
 
 | File | Bytes |
 |---|---:|
 | [.gitattributes](.gitattributes) | 86 |
-| [README.md](README.md) | 6589 |
+| [README.md](README.md) | 6774 |
 | [assessment/2026-10-28/ASSESSMENT.md](assessment/2026-10-28/ASSESSMENT.md) | 8123 |
 | [assessment/2026-10-28/custom-access-checks.json](assessment/2026-10-28/custom-access-checks.json) | 657 |
 | [assessment/2026-10-28/custom-route-inventory.json](assessment/2026-10-28/custom-route-inventory.json) | 1317 |
@@ -40,18 +40,23 @@ This listing excludes itself and the root checksum manifest.
 | [assessment/http.headers](assessment/http.headers) | 355 |
 | [assessment/robots.headers](assessment/robots.headers) | 566 |
 | [assessment/robots.txt](assessment/robots.txt) | 321 |
-| [assessment/source-review-2026-11-05/SHA256SUMS.txt](assessment/source-review-2026-11-05/SHA256SUMS.txt) | 1055 |
+| [assessment/source-review-2026-11-05/SHA256SUMS.txt](assessment/source-review-2026-11-05/SHA256SUMS.txt) | 1577 |
 | [assessment/source-review-2026-11-05/evidence/ai-source-probes.json](assessment/source-review-2026-11-05/evidence/ai-source-probes.json) | 323 |
 | [assessment/source-review-2026-11-05/evidence/ai-source-probes.php](assessment/source-review-2026-11-05/evidence/ai-source-probes.php) | 4292 |
 | [assessment/source-review-2026-11-05/evidence/analytics-payload-probe.js](assessment/source-review-2026-11-05/evidence/analytics-payload-probe.js) | 2175 |
 | [assessment/source-review-2026-11-05/evidence/analytics-payload-probe.json](assessment/source-review-2026-11-05/evidence/analytics-payload-probe.json) | 220 |
 | [assessment/source-review-2026-11-05/evidence/check-source.py](assessment/source-review-2026-11-05/evidence/check-source.py) | 4084 |
 | [assessment/source-review-2026-11-05/evidence/component-inventory.json](assessment/source-review-2026-11-05/evidence/component-inventory.json) | 14658 |
+| [assessment/source-review-2026-11-05/evidence/deployed-access-probe.json](assessment/source-review-2026-11-05/evidence/deployed-access-probe.json) | 536 |
+| [assessment/source-review-2026-11-05/evidence/deployed-access-probe.php](assessment/source-review-2026-11-05/evidence/deployed-access-probe.php) | 2505 |
+| [assessment/source-review-2026-11-05/evidence/deployed-local-source-probes.json](assessment/source-review-2026-11-05/evidence/deployed-local-source-probes.json) | 1265 |
+| [assessment/source-review-2026-11-05/evidence/deployed-source-checks.json](assessment/source-review-2026-11-05/evidence/deployed-source-checks.json) | 2640 |
+| [assessment/source-review-2026-11-05/evidence/deployed-source-comparison.json](assessment/source-review-2026-11-05/evidence/deployed-source-comparison.json) | 15435 |
 | [assessment/source-review-2026-11-05/evidence/local-source-probes.json](assessment/source-review-2026-11-05/evidence/local-source-probes.json) | 1361 |
 | [assessment/source-review-2026-11-05/evidence/local-source-probes.php](assessment/source-review-2026-11-05/evidence/local-source-probes.php) | 9273 |
 | [assessment/source-review-2026-11-05/evidence/source-manifest.json](assessment/source-review-2026-11-05/evidence/source-manifest.json) | 10932 |
 | [assessment/source-review-2026-11-05/evidence/syntax-checks.json](assessment/source-review-2026-11-05/evidence/syntax-checks.json) | 13168 |
-| [assessment/source-review-2026-11-05/report.md](assessment/source-review-2026-11-05/report.md) | 17735 |
+| [assessment/source-review-2026-11-05/report.md](assessment/source-review-2026-11-05/report.md) | 20522 |
 | [documents/Healthyaa Penetration Test.pages](documents/Healthyaa%20Penetration%20Test.pages) | 2257018 |
 | [learning-guide/Healthyaa_Security_Testing_Learning_Guide.docx](learning-guide/Healthyaa_Security_Testing_Learning_Guide.docx) | 50362 |
 | [learning-guide/build_guide.py](learning-guide/build_guide.py) | 30131 |

@@ -1,0 +1,14 @@
+{
+  "mode": "actual deployed-source methods with synthetic capabilities; no HTTP or WordPress bootstrap",
+  "gateway_id": "wctr-sandboxpayment",
+  "checks": {
+    "rule_read_has_permission_callback": true,
+    "anonymous_rule_read_denied": true,
+    "ordinary_customer_rule_read_denied": true,
+    "shop_management_capability_allowed": true,
+    "current_gateway_id_filtered_for_customer": true,
+    "current_gateway_id_retained_for_admin": true
+  },
+  "all_expected_observations_reproduced": true,
+  "real_orders_or_payments": false
+}

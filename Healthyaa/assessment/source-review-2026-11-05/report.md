@@ -1,6 +1,6 @@
 # Healthyaa — source code security review
 
-**Review date:** 5 November 2026 · **Status:** Completed for the bounded source scope below; remediation pending.
+**Review date:** 5 November 2026 · **Status:** Source review and read-only SSH source confirmation complete; remediation pending.
 
 **Source supplied:** `/Users/apple/git/healthyaa-wordpress/public_html/`
 
@@ -12,13 +12,19 @@
 
 Several controls worked in isolated checks, including the sandbox gateway's administrator restriction, analytics API token validation and delivery-fee validation. These positive results do not cancel the findings.
 
-This review covers source code only. Your colleague's other analysis remains separate. No live requests, accounts, orders, payments, bookings or emails were created or changed. No source fixes or deployment were performed.
+This review covers source code only. Your colleague’s other analysis remains separate. After the initial local review, the user supplied SSH access and authorised checking the server source. SSH was used only to read source files/checksums. No live HTTP tests, accounts, orders, payments, bookings or emails were created or changed. No source fixes or deployment were performed.
 
-## Important source limitation
+## Source provenance and SSH confirmation
 
-The supplied directory has **no Git metadata**. Its existing handoff describes `public_html` as a historical July copy that was not refreshed during the later migration. The local WordPress version file reports **7.0**; this is an inventory fact, not a statement about current production or a vulnerability finding.
+The supplied local directory has **no Git metadata**. Its existing handoff describes `public_html` as a historical July copy, and its WordPress version file reports **7.0**.
 
-Exact reviewed-file hashes are recorded in [source-manifest.json](evidence/source-manifest.json). Active plugin/theme state, current database settings and equivalence to the live website were not established. Every runtime impact below depends on the relevant code being active and the stated prerequisites existing. No production exploit or customer-data breach was demonstrated.
+The subsequent authorised SSH check inspected `/home/customer/www/healthyaa.co.uk/public_html` on `ssh.healthyaa.co.uk`. **37 of the 46 selected files match the local review exactly. All custom files underlying the six findings are among those exact matches.** Nine third-party files differ; the server's WordPress version file reports **7.1.4**, and its Thank You Page plugin header reports **4.3.4**.
+
+The changed Thank You Page API now requires `manage_woocommerce` for rule reads and writes. Anonymous/customer denial and management-capability acceptance were reproduced locally against the captured server code. The older snapshot's public rule-read observation is therefore **superseded for the inspected deployed source**. The sandbox gateway retains its administrator filter, with current ID `wctr-sandboxpayment`. Selected current WooCommerce checkout paths still check available gateways.
+
+[Deployed-source comparison](evidence/deployed-source-comparison.json) records timestamps, hashes, differences and per-finding source confirmation. [Original source hashes](evidence/source-manifest.json) preserve the initial baseline. Server files and the original local copy were left unchanged; selected captured files were examined in a separate temporary local directory.
+
+This establishes **code presence**, not a completed runtime exploit. Active plugin/theme state, database settings and the presence of protected records were not queried. Each finding's runtime impact still depends on its stated prerequisites. No production exploit or customer-data breach was demonstrated.
 
 ## What was examined
 
@@ -28,7 +34,7 @@ Exact reviewed-file hashes are recorded in [source-manifest.json](evidence/sourc
 | Healthyaa Analytics MU plugin and tracker | Public write endpoints, cart matching, token-protected reads, SQL handling, rate limits and collected data | **Needs tightening:** findings SRC-03, SRC-04 and SRC-05 |
 | Custom checkout and OceanWP theme additions | Delivery options/fees, consent/date fields, account creation and removal of legacy AJAX handlers | **Mixed:** useful fee protections; SRC-06 needs tightening |
 | Other custom MU plugins | Focused input/output and side-effect review of landing pages, cart display, SEO and popup controls | No additional material vulnerability established in this bounded review; lead-form abuse controls need follow-up |
-| Thank You Page sandbox gateway and REST API | Role filtering, rule-reading/writing permissions and selected WooCommerce checkout call paths | Administrator filter confirmed in isolation; no payment bypass established; public rule-read endpoint noted below |
+| Thank You Page sandbox gateway and REST API | Role filtering, rule-reading/writing permissions and selected WooCommerce checkout call paths | Administrator filter confirmed in isolation; deployed rule-read access is protected; no payment bypass established |
 | Supplied dependencies | File-header inventory: 48 plugin entries, including four archived AI copies | Inventory only; no full dependency/CVE audit or active-plugin verification |
 | Syntax | PHP lint on 43 files and JavaScript parsing on three files | **Passed: 46/46** with local PHP 8.5.10 and Node v26.10.0; not a production PHP compatibility test |
 
@@ -91,7 +97,7 @@ The limiter hashes the IP address together with the caller's User-Agent. Changin
 
 ### HYA-SRC-05 — Sensitive URL values are unnecessarily retained
 
-**Evidence:** `mu-plugins/healthyaa-analytics/assets/analytics-tracker.js:221`; `mu-plugins/healthyaa-analytics.php`, lines 216, 617–648, 1039, 1071–1082 and 1506. Supporting source: `plugins/woocommerce/includes/class-wc-order.php`, lines 1916–1943.
+**Evidence:** `mu-plugins/healthyaa-analytics/assets/analytics-tracker.js:221`; `mu-plugins/healthyaa-analytics.php`, lines 216, 617–648, 1039, 1071–1082 and 1506. Supporting source: `plugins/woocommerce/includes/class-wc-order.php`, lines 1916–1943 in the initial copy; the deployed copy appends order keys at lines 1928 and 1949.
 
 The tracker collects `window.location.href`, including the query string and fragment, and the PHP handler stores the URL without removing sensitive parameters. Cart records also retain `last_page`, which is returned through the token-protected integration API. WooCommerce's order URL helpers include order keys in payment/received URLs.
 
@@ -119,7 +125,7 @@ The custom consent validator checks only whether the field exists. The actual va
 - **AI administration/rendering:** Reviewed administrator actions use `manage_options` and action nonces; browser text/output escaping is present. The active AI generation path supplies no executable tools. No order/payment mutation path was found in that bounded review.
 - **AI session hardening:** The client session identifier is a bearer identifier and uses `Math.random()` plus a timestamp. Prefer a cryptographically strong, server-issued session identifier with appropriate binding and expiry. No practical guessing or independent cross-session compromise was demonstrated.
 - **Lead submission:** The landing-page handler has validation and a fixed recipient, but no application-level rate/deduplication control was found in that handler. The AI setting labelled “Enable lead capture prompt” disables prompts; an isolated observation that submissions still work is **not classified as a vulnerability**, because it is not labelled as a submission kill switch. No mail was sent.
-- **Third-party rules/old copies:** `wc-thanks-redirect/src/Api.php` makes rule fetching public while writes require `manage_options`; sensitive rule contents were not established from source. Four archived AI plugin copies remain in the supplied files, supporting the historical HYA-08 cleanup observation. No direct execution exploit was established.
+- **Third-party rules/old copies:** The initial local `wc-thanks-redirect/src/Api.php` made rule fetching public. The deployed version instead requires `manage_woocommerce` for reads and writes (lines 83–88 and 317–318); the old public-access observation is superseded for that code. Four archived AI plugin copies remain in the supplied local files, supporting the historical HYA-08 cleanup observation; their current server presence was not checked. No direct execution exploit was established.
 
 WordPress nonces are not authentication or ownership controls and do not guarantee one-time use; see the [official WordPress nonce guidance](https://developer.wordpress.org/apis/security/nonces/). This distinction matters for the anonymous analytics and lead paths.
 
@@ -133,8 +139,12 @@ WordPress nonces are not authentication or ownership controls and do not guarant
 | [Local source probes](evidence/local-source-probes.json) | 21 expected observations reproduced, including weaknesses; **not 21 security passes** |
 | [AI source probes](evidence/ai-source-probes.json) | Two synthetic protected-content behaviours reproduced; prompt-setting behaviour recorded separately |
 | [Analytics payload probe](evidence/analytics-payload-probe.json) | Full query/fragment retention reproduced with synthetic values |
+| [SSH source comparison](evidence/deployed-source-comparison.json) | 37/46 exact matches; all six findings’ custom code matches the deployed files |
+| [Changed deployed PHP syntax](evidence/deployed-source-checks.json) | Nine differing PHP files passed local syntax checks |
+| [Deployed access checks](evidence/deployed-access-probe.json) | Six expected capability/gateway-filter observations reproduced against captured server code |
+| [Deployed-copy local probes](evidence/deployed-local-source-probes.json) | The 21 expected observations reproduced using the assembled, hash-verified server-source copy |
 
-The PHP harnesses invoke selected actual functions/methods with synthetic WordPress/WooCommerce dependencies. The JavaScript harness evaluates the tracker in a synthetic context. They do not reproduce a full WordPress installation, database, HTTP request lifecycle or production configuration. Source findings and caveats received an independent read-only review.
+The PHP harnesses invoke selected actual functions/methods with synthetic WordPress/WooCommerce dependencies. Unchanged AI and analytics JavaScript results carry forward through exact hash matches; those tests were not unnecessarily repeated. The JavaScript harness evaluates the tracker in a synthetic context. They do not reproduce a full WordPress installation, database, HTTP request lifecycle or production configuration. Source findings and caveats received an independent read-only review.
 
 From this report's directory, with the supplied source still available:
 
@@ -144,8 +154,10 @@ php evidence/ai-source-probes.php /Users/apple/git/healthyaa-wordpress
 node evidence/analytics-payload-probe.js /Users/apple/git/healthyaa-wordpress
 ```
 
+For the changed deployed API/gateway, `php evidence/deployed-access-probe.php /path/to/isolated-server-source-copy` reproduces the six source-level access checks; it is intended for that captured version, not the older local snapshot. Current WooCommerce gate locations inspected were `class-wc-checkout.php:1061` and `:1156`, `class-wc-form-handler.php:593`, Store API `Checkout.php:973` and `CheckoutOrder.php:263`. This was a focused check of changed dependencies, not a complete new audit of them.
+
 A successful harness run means the documented behaviour was reproduced, including defective behaviour. After fixes, convert those cases to regression assertions for the corrected behaviour rather than expecting the defects to remain.
 
 Private configuration, credential storage, database dumps, customer records and migration scripts were excluded. Full third-party audits, live exploitation, network/hosting assessment and transactional testing remain outside this source-only review. No conclusion about legal compliance is made.
 
-**Next action:** Match these file hashes/code paths to the intended maintained source, fix the applicable issues in reviewed changes, and use synthetic records in an isolated environment for integration retests. Keep the colleague's broader assessment and this source report linked without treating either as a replacement for the other.
+**Next action:** The six findings’ code paths are now matched to the inspected server source. Fix the applicable issues in reviewed changes, establish any remaining activation/data prerequisites, and use synthetic records in an isolated environment for integration retests. Keep the colleague's broader assessment and this source report linked without treating either as a replacement for the other.

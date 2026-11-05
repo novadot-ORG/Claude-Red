@@ -1,0 +1,29 @@
+{
+  "mode": "isolated actual functions with synthetic stubs; true means expected observation reproduced, including weaknesses",
+  "checks": {
+    "rate_initial_requests_accepted": true,
+    "rate_same_agent_blocked_at_cap": true,
+    "finding_rate_cap_reset_by_user_agent": true,
+    "untrusted_forwarded_ip_ignored": true,
+    "finding_other_session_selects_existing_email_cart": true,
+    "different_nonempty_cart_not_merged": true,
+    "missing_analytics_api_token_denied": true,
+    "wrong_analytics_api_token_denied": true,
+    "correct_analytics_header_token_accepted": true,
+    "query_string_token_also_accepted": true,
+    "invalid_delivery_option_rejected": true,
+    "array_delivery_option_rejected": true,
+    "valid_delivery_option_accepted": true,
+    "missing_required_fee_rejected": true,
+    "legacy_anonymous_delivery_handlers_removed": true,
+    "sandbox_gateway_removed_for_nonadmin": true,
+    "sandbox_gateway_retained_for_admin": true,
+    "finding_false_consent_accepted_and_saved_no": true,
+    "missing_consent_rejected": true,
+    "finding_invalid_nonempty_date_accepted": true,
+    "empty_date_rejected": true
+  },
+  "checks_count": 21,
+  "all_expected_observations_reproduced": true,
+  "network_database_mail_order_operations": false
+}

@@ -1,0 +1,52 @@
+{
+  "mode": "Local syntax check of nine read-only SSH source captures; no remote execution of website PHP",
+  "checks": [
+    {
+      "path": "public_html/wp-content/plugins/wc-thanks-redirect/src/Api.php",
+      "exit_code": 0,
+      "output": "No syntax errors detected in DEPLOYED_SOURCE_COPY/public_html/wp-content/plugins/wc-thanks-redirect/src/Api.php"
+    },
+    {
+      "path": "public_html/wp-content/plugins/wc-thanks-redirect/src/Compatibility/SandBoxPaymentBlocksSupport.php",
+      "exit_code": 0,
+      "output": "No syntax errors detected in DEPLOYED_SOURCE_COPY/public_html/wp-content/plugins/wc-thanks-redirect/src/Compatibility/SandBoxPaymentBlocksSupport.php"
+    },
+    {
+      "path": "public_html/wp-content/plugins/wc-thanks-redirect/src/Modules/SandBoxPayment.php",
+      "exit_code": 0,
+      "output": "No syntax errors detected in DEPLOYED_SOURCE_COPY/public_html/wp-content/plugins/wc-thanks-redirect/src/Modules/SandBoxPayment.php"
+    },
+    {
+      "path": "public_html/wp-content/plugins/wc-thanks-redirect/wc-thanks-redirect.php",
+      "exit_code": 0,
+      "output": "No syntax errors detected in DEPLOYED_SOURCE_COPY/public_html/wp-content/plugins/wc-thanks-redirect/wc-thanks-redirect.php"
+    },
+    {
+      "path": "public_html/wp-content/plugins/woocommerce/includes/class-wc-checkout.php",
+      "exit_code": 0,
+      "output": "No syntax errors detected in DEPLOYED_SOURCE_COPY/public_html/wp-content/plugins/woocommerce/includes/class-wc-checkout.php"
+    },
+    {
+      "path": "public_html/wp-content/plugins/woocommerce/includes/class-wc-form-handler.php",
+      "exit_code": 0,
+      "output": "No syntax errors detected in DEPLOYED_SOURCE_COPY/public_html/wp-content/plugins/woocommerce/includes/class-wc-form-handler.php"
+    },
+    {
+      "path": "public_html/wp-content/plugins/woocommerce/includes/class-wc-order.php",
+      "exit_code": 0,
+      "output": "No syntax errors detected in DEPLOYED_SOURCE_COPY/public_html/wp-content/plugins/woocommerce/includes/class-wc-order.php"
+    },
+    {
+      "path": "public_html/wp-content/plugins/woocommerce/src/StoreApi/Routes/V1/Checkout.php",
+      "exit_code": 0,
+      "output": "No syntax errors detected in DEPLOYED_SOURCE_COPY/public_html/wp-content/plugins/woocommerce/src/StoreApi/Routes/V1/Checkout.php"
+    },
+    {
+      "path": "public_html/wp-content/plugins/woocommerce/src/StoreApi/Routes/V1/CheckoutOrder.php",
+      "exit_code": 0,
+      "output": "No syntax errors detected in DEPLOYED_SOURCE_COPY/public_html/wp-content/plugins/woocommerce/src/StoreApi/Routes/V1/CheckoutOrder.php"
+    }
+  ],
+  "passed": 9,
+  "total": 9
+}

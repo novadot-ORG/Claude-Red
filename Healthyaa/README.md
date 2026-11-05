@@ -11,7 +11,7 @@ This folder brings together the recorded Healthyaa checks, raw public-response c
 
 | Document | Purpose |
 |---|---|
-| [Source code review — 5 November 2026](assessment/source-review-2026-11-05/report.md) | Source-only review: six findings, positive controls and isolated reproduction evidence; historical source, live applicability unverified |
+| [Source code review — 5 November 2026](assessment/source-review-2026-11-05/report.md) | Source-only review: six findings, positive controls and isolated evidence; SSH confirms all six findings’ custom code matches the deployed source; runtime prerequisites remain |
 | [Interim assessment](assessment/2026-10-28/ASSESSMENT.md) | Eight findings/observations, positive controls, limitations and remaining test matrix |
 | [Review of the user's draft report](assessment/document-review-2026-10-29/REVIEW-AND-REPLACEMENT-TEXT.md) | Evidence-based status and replacement wording for the four manually documented checks |
 | [Learning guide](assessment/HEALTHYAA-LEARNING-GUIDE.md) | Explanation of the testing process and tools |
@@ -60,7 +60,7 @@ Documents and source scripts preserve some original local file paths for provena
 
 ## Remaining work
 
-The assessment's [remaining test matrix](assessment/2026-10-28/ASSESSMENT.md#remaining-test-matrix) includes customer isolation, payment integrity, gateway role enforcement, sessions, input handling and custom-code review. A bounded review of the supplied local source is now recorded in the [5 November source report](assessment/source-review-2026-11-05/report.md). It does not establish current production equivalence or replace the colleague’s other analysis. Staging isolation and synthetic accounts/data remain needed for the relevant integration cases. No completed result should be inferred from a planned test.
+The assessment's [remaining test matrix](assessment/2026-10-28/ASSESSMENT.md#remaining-test-matrix) includes customer isolation, payment integrity, gateway role enforcement, sessions, input handling and custom-code review. A bounded review of the supplied local source is now recorded in the [5 November source report](assessment/source-review-2026-11-05/report.md). A subsequent authorised SSH comparison confirms the custom code behind all six findings is present unchanged in the server webroot; activation and runtime prerequisites remain unverified. It does not replace the colleague’s other analysis. Staging isolation and synthetic accounts/data remain needed for the relevant integration cases. No completed result should be inferred from a planned test.
 
 For each new test, record the target, authentication context, timestamp/timezone, method, expected result, actual result, evidence path, assessment, limitations and retest status. Add subsequent evidence in a new dated folder rather than overwriting prior captures.
 

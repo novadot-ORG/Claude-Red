@@ -1,0 +1,424 @@
+{
+  "captured_at_utc": "2026-11-05T11:33:40.069040+00:00",
+  "host": "ssh.healthyaa.co.uk",
+  "webroot": "/home/customer/www/healthyaa.co.uk/public_html",
+  "method": "SSH read-only source checksums; no WordPress bootstrap/database access",
+  "wordpress_version_file": "7.1.4",
+  "files": [
+    {
+      "path": "public_html/wp-content/mu-plugins/healthyaa-ads-landing-pages.php",
+      "sha256": "6a243b05fd488d610975d7818e7698b3b8b8307e325e3511d4cf9dde856aa537",
+      "bytes": 32083,
+      "lines": 1115,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/mu-plugins/healthyaa-analytics.php",
+      "sha256": "15dea8be8e0c5358da8b09b393b33804c866bbaa4944b686deb5c382452716ab",
+      "bytes": 125312,
+      "lines": 3589,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/mu-plugins/healthyaa-analytics/assets/analytics-tracker.js",
+      "sha256": "d00f99577d3207c673b8de0c68b9f4e1f613207caead456098b9c7db37a949ea",
+      "bytes": 15105,
+      "lines": 583,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/mu-plugins/healthyaa-cart-display-fixes.php",
+      "sha256": "9d99e9d2054377a8afe309b109f2ffa8021d86aa2e45b6247f23b3677924de16",
+      "bytes": 20757,
+      "lines": 718,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/mu-plugins/healthyaa-checkout-refresh.php",
+      "sha256": "04285cd48e88ea97fe0a96e1a56c1122fab0f70dc37dee9864bd57f496f68df0",
+      "bytes": 16096,
+      "lines": 453,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/mu-plugins/healthyaa-checkout-refresh/assets/checkout-refresh.js",
+      "sha256": "2b3adde4d53929a822e67d87989a4dff1398e05f2b73b723c9549e62a8069c12",
+      "bytes": 27295,
+      "lines": 929,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/mu-plugins/healthyaa-popup-controls.php",
+      "sha256": "ad5aa2c07af007e666bda2c8f5abd0a71e3274995d8e23ecf536a995b35aae98",
+      "bytes": 3235,
+      "lines": 116,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/mu-plugins/healthyaa-seo.php",
+      "sha256": "b89c1e442266e5312ab587d6322848b8e68fa9b1f30a0fcb0506ed861649cd54",
+      "bytes": 43252,
+      "lines": 1570,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/plugins/healthyaa-ai-assistant/assets/js/healthyaa-ai-assistant.js",
+      "sha256": "b6b40b8356f5df6975f9b046128dfc8c9fad611d5a2e57924d3c1e2fdfd6e0ab",
+      "bytes": 14276,
+      "lines": 425,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/plugins/healthyaa-ai-assistant/healthyaa-ai-assistant.php",
+      "sha256": "698096535b0707594685bc0cdbb6173fcfa456e8c1953a7c2cb6574299b75957",
+      "bytes": 835,
+      "lines": 22,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/plugins/healthyaa-ai-assistant/includes/class-healthyaa-ai-assistant.php",
+      "sha256": "488609e98bb82b9c11207fcfa620714b83350f1fd5be83626f3f014a3822b282",
+      "bytes": 150500,
+      "lines": 4237,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/plugins/healthyaa-ai-assistant/includes/class-healthyaa-ai-knowledge-base.php",
+      "sha256": "c4f62cf30657b3fd4be7ebc954f3374a8ca999b424ae51ea7352d56d47e5c11f",
+      "bytes": 31341,
+      "lines": 1169,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/plugins/wc-thanks-redirect/src/Api.php",
+      "sha256": "5914780553b688de6bdfc2c3748f1238b3f4fe653b04a2b3bcb79e09fbf52236",
+      "bytes": 7554,
+      "lines": 320,
+      "status": "present",
+      "matches_local_review": false
+    },
+    {
+      "path": "public_html/wp-content/plugins/wc-thanks-redirect/src/Compatibility/SandBoxPaymentBlocksSupport.php",
+      "sha256": "4585417ddf49cd3300c8375ade5b62e5da408314915c9fc4ca7d6ed9b7640a6b",
+      "bytes": 2740,
+      "lines": 94,
+      "status": "present",
+      "matches_local_review": false
+    },
+    {
+      "path": "public_html/wp-content/plugins/wc-thanks-redirect/src/Modules/SandBoxPayment.php",
+      "sha256": "af7b7110a2c0b5041b99ed270ce304776fe3f70bed73edceafa0fc83642013bb",
+      "bytes": 4330,
+      "lines": 143,
+      "status": "present",
+      "matches_local_review": false
+    },
+    {
+      "path": "public_html/wp-content/plugins/wc-thanks-redirect/wc-thanks-redirect.php",
+      "sha256": "5ff216e4cadd67716f75ae133803af566e2f44d0497f924373ce8d323132bf5f",
+      "bytes": 9167,
+      "lines": 292,
+      "status": "present",
+      "matches_local_review": false
+    },
+    {
+      "path": "public_html/wp-content/plugins/woocommerce/includes/class-wc-checkout.php",
+      "sha256": "37dc2a28f4399e1cdad226b4c73e35e37be4ed7a98197f840ac15376af664a1b",
+      "bytes": 55047,
+      "lines": 1538,
+      "status": "present",
+      "matches_local_review": false
+    },
+    {
+      "path": "public_html/wp-content/plugins/woocommerce/includes/class-wc-form-handler.php",
+      "sha256": "af59e3db582ec9d5101e259bbc03325861f75fd8b6003f8ee2ef5dfa05d540b6",
+      "bytes": 57080,
+      "lines": 1410,
+      "status": "present",
+      "matches_local_review": false
+    },
+    {
+      "path": "public_html/wp-content/plugins/woocommerce/includes/class-wc-order.php",
+      "sha256": "82e7d9d5dc26bbce34a10d381d1fe1d18d3a3e16839b1524ff68920deefbfc39",
+      "bytes": 80370,
+      "lines": 2637,
+      "status": "present",
+      "matches_local_review": false
+    },
+    {
+      "path": "public_html/wp-content/plugins/woocommerce/src/StoreApi/Payments/PaymentContext.php",
+      "sha256": "ec4f5994a299bd17bf00e9943a90c35dd6c53b303ab77b4eb72e72b48cc44c09",
+      "bytes": 1849,
+      "lines": 84,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/plugins/woocommerce/src/StoreApi/Routes/V1/Checkout.php",
+      "sha256": "db2ef259e750517bf19edced3e878f8af59066587e83dce9e42dd03623f85b6f",
+      "bytes": 41990,
+      "lines": 1152,
+      "status": "present",
+      "matches_local_review": false
+    },
+    {
+      "path": "public_html/wp-content/plugins/woocommerce/src/StoreApi/Routes/V1/CheckoutOrder.php",
+      "sha256": "a4e55dfffb9c90d3f345349e3577458bbc0864ffb5a6b6011078e2f8d254f382",
+      "bytes": 8343,
+      "lines": 289,
+      "status": "present",
+      "matches_local_review": false
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/functions.php",
+      "sha256": "83e59bf20740c1cf9fed31be1c00e3f0c6110ee5f333d24e07416b72029d4ffa",
+      "bytes": 63042,
+      "lines": 1878,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/add-to-wishlist-button.php",
+      "sha256": "bab11b2f4259e0066a225ef45d7cd8c87e208d249792efae804c2ccc1ce97f7a",
+      "bytes": 673,
+      "lines": 21,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/cart/mini-cart.php",
+      "sha256": "e1e06a081daa1444a3390d47622add2446fea2e9fc011866cb5787e643bedc2f",
+      "bytes": 5431,
+      "lines": 135,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/checkout/checkout-timeline.php",
+      "sha256": "c659df0dc9f931ecc3d81db9df4cc1f88136fb3b70d18c3dc049f3111e29ed19",
+      "bytes": 2070,
+      "lines": 69,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/checkout/form-multistep-checkout.php",
+      "sha256": "280df9afbd326e761674c5eb1f868443c5911567ccb1c353c5cd4ae559f59dba",
+      "bytes": 4237,
+      "lines": 102,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/content-single-product.php",
+      "sha256": "5677cf20725dc6a2ba344c057d6299e7b9db4521c769d630941224fe6972b3a9",
+      "bytes": 2550,
+      "lines": 83,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/loop/loop-start.php",
+      "sha256": "8505875357d9d357a345a1abbc02d050cb3766bafc08b135d94a45fab56eab66",
+      "bytes": 1803,
+      "lines": 50,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/loop/thumbnail/featured-image.php",
+      "sha256": "636f1a8292fa667dbff9eda512d7226b97046c7e3f338e6a093adb35a9dee7a4",
+      "bytes": 2387,
+      "lines": 100,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/loop/thumbnail/gallery-slider.php",
+      "sha256": "7d6225295fc953cc72fca03b5cafa34d0ca8d9f701fd35e9ec1825d500ed2d3b",
+      "bytes": 3295,
+      "lines": 144,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/loop/thumbnail/image-swap.php",
+      "sha256": "a8767369abddbc3bdc4c292566c4a9b218d471aa244348daf7d0b89c569dac31",
+      "bytes": 3454,
+      "lines": 131,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/owp-archive-product-hover.php",
+      "sha256": "ea4788a9ca2cbeb5d1bff2311ce269cd029abe7f4d64f3fac22e36ff885c9a49",
+      "bytes": 6096,
+      "lines": 189,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/owp-archive-product-thumbnails.php",
+      "sha256": "1a2be8420567d01b5858ff32bb401b4da6fddfe70f98a0473c337b911d22e405",
+      "bytes": 2121,
+      "lines": 92,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/owp-archive-product.php",
+      "sha256": "7fdb228f59292d8a2920f8c4ef59678cafdb4ce12ff374265e00253161f6fc79",
+      "bytes": 5424,
+      "lines": 206,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/owp-off-canvas-sidebar.php",
+      "sha256": "402079af7a614e29b8e9526f02cc98a82a8facba782c70ab22fecaa6f592c62f",
+      "bytes": 1359,
+      "lines": 32,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/owp-single-product.php",
+      "sha256": "8862ec5784a201e18855cc2b8e9b343299c54da40dd5be42a3a5b0fcc88d36dd",
+      "bytes": 2403,
+      "lines": 101,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/quick-view-content.php",
+      "sha256": "bc845dbf8bc5cf9abdc718334cd8c733bf09d72594c5774650f938e08df9a087",
+      "bytes": 509,
+      "lines": 25,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/quick-view-image.php",
+      "sha256": "eb5e211a3060a8d947b7c65612372b3c5ffab2159493980b2d8b9c933e9de6ec",
+      "bytes": 1564,
+      "lines": 63,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/quick-view.php",
+      "sha256": "42e58b1b4218800884984b46e773bfe283ade2bed443b10b79d69dc5c9214b00",
+      "bytes": 573,
+      "lines": 22,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/result-count.php",
+      "sha256": "6eca1076257b2d55b8a903a34d2ee0a36ee68aeb0365e4073a6212c15f5858cf",
+      "bytes": 2132,
+      "lines": 67,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/share.php",
+      "sha256": "029e8da558a20b6a7f3b63b2c714bad0522565b62f290e0c5a48e5cdc4367c28",
+      "bytes": 2871,
+      "lines": 46,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/single-product/product-image.php",
+      "sha256": "582a7ec74058bc41a6032f88b0eb2f12bbda0dda69c5bbaf07c383752e3620f8",
+      "bytes": 2672,
+      "lines": 63,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/single-product/title.php",
+      "sha256": "8e737706bdebdaf3c7093f58f327764b781fa42b3e2e683fd82d529da4caead0",
+      "bytes": 1092,
+      "lines": 27,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/wc-content-wrapper-end.php",
+      "sha256": "48890d609aa33d802bcdb4c2a082a98b0a3a0cc2d0cbca945af3906a7c97521b",
+      "bytes": 470,
+      "lines": 26,
+      "status": "present",
+      "matches_local_review": true
+    },
+    {
+      "path": "public_html/wp-content/themes/oceanwp/woocommerce/wc-content-wrapper.php",
+      "sha256": "fd39dc37328787f6dd15e83f2d4fae2542307068e1d25050af922c9dca634bd1",
+      "bytes": 548,
+      "lines": 26,
+      "status": "present",
+      "matches_local_review": true
+    }
+  ],
+  "matched": 37,
+  "total": 46,
+  "finding_source_confirmation": {
+    "HYA-SRC-01": {
+      "paths": [
+        "public_html/wp-content/plugins/healthyaa-ai-assistant/includes/class-healthyaa-ai-assistant.php"
+      ],
+      "all_match_reviewed_source": true
+    },
+    "HYA-SRC-02": {
+      "paths": [
+        "public_html/wp-content/plugins/healthyaa-ai-assistant/includes/class-healthyaa-ai-assistant.php",
+        "public_html/wp-content/plugins/healthyaa-ai-assistant/includes/class-healthyaa-ai-knowledge-base.php"
+      ],
+      "all_match_reviewed_source": true
+    },
+    "HYA-SRC-03": {
+      "paths": [
+        "public_html/wp-content/mu-plugins/healthyaa-analytics.php"
+      ],
+      "all_match_reviewed_source": true
+    },
+    "HYA-SRC-04": {
+      "paths": [
+        "public_html/wp-content/mu-plugins/healthyaa-analytics.php"
+      ],
+      "all_match_reviewed_source": true
+    },
+    "HYA-SRC-05": {
+      "paths": [
+        "public_html/wp-content/mu-plugins/healthyaa-analytics.php",
+        "public_html/wp-content/mu-plugins/healthyaa-analytics/assets/analytics-tracker.js"
+      ],
+      "all_match_reviewed_source": true
+    },
+    "HYA-SRC-06": {
+      "paths": [
+        "public_html/wp-content/themes/oceanwp/functions.php"
+      ],
+      "all_match_reviewed_source": true
+    }
+  },
+  "limitations": [
+    "Code presence/hashes only; plugin activation, theme activation, runtime settings and protected records not queried.",
+    "No WordPress bootstrap, database/customer records, configuration edits or transactions.",
+    "Changed third-party source received focused access-control inspection, not a complete re-audit."
+  ]
+}
