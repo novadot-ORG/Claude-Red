@@ -1,0 +1,23 @@
+[
+  {
+    "requested": "http://novadot.co.uk/",
+    "final_url": "https://novadot.co.uk/",
+    "status": 200,
+    "noindex": false,
+    "csp_present": true
+  },
+  {
+    "requested": "https://www.novadot.co.uk/",
+    "final_url": "https://novadot.co.uk/",
+    "status": 200,
+    "noindex": false,
+    "csp_present": true
+  },
+  {
+    "requested": "https://novadot.co.uk/case-studies/",
+    "final_url": "https://novadot.co.uk/case-studies/",
+    "status": 200,
+    "noindex": true,
+    "csp_present": true
+  }
+]

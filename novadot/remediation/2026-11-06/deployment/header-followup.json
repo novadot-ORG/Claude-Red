@@ -1,0 +1,96 @@
+[
+  {
+    "path": "/404.html",
+    "status": 200,
+    "headers": {
+      "Server": "nginx",
+      "Date": "Thu, 05 Nov 2026 18:52:45 GMT",
+      "Content-Type": "text/html",
+      "Content-Length": "8741",
+      "Last-Modified": "Thu, 05 Nov 2026 18:51:45 GMT",
+      "Connection": "close",
+      "Vary": "Accept-Encoding",
+      "ETag": "\"6aecd041-2225\"",
+      "Expires": "Tue, 04 May 2027 18:52:45 GMT",
+      "Cache-Control": "max-age=15552000",
+      "Host-Header": "8441280b0c35cbc1147f8ba998a563a7",
+      "X-Proxy-Cache-Info": "DT:1",
+      "Accept-Ranges": "bytes"
+    }
+  },
+  {
+    "path": "/404.html?release=20261106",
+    "status": 200,
+    "headers": {
+      "Server": "nginx",
+      "Date": "Thu, 05 Nov 2026 18:52:46 GMT",
+      "Content-Type": "text/html",
+      "Content-Length": "8741",
+      "Last-Modified": "Thu, 05 Nov 2026 18:51:45 GMT",
+      "Connection": "close",
+      "Vary": "Accept-Encoding",
+      "ETag": "\"6aecd041-2225\"",
+      "Expires": "Tue, 04 May 2027 18:52:46 GMT",
+      "Cache-Control": "max-age=15552000",
+      "Host-Header": "8441280b0c35cbc1147f8ba998a563a7",
+      "X-Proxy-Cache-Info": "DT:1",
+      "Accept-Ranges": "bytes"
+    }
+  },
+  {
+    "path": "/about/",
+    "status": 200,
+    "headers": {
+      "Server": "nginx",
+      "Date": "Thu, 05 Nov 2026 18:52:46 GMT",
+      "Content-Type": "text/html",
+      "Content-Length": "13628",
+      "Connection": "close",
+      "Vary": "Accept-Encoding",
+      "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+      "X-Content-Type-Options": "nosniff",
+      "X-Frame-Options": "SAMEORIGIN",
+      "Referrer-Policy": "strict-origin-when-cross-origin",
+      "Content-Security-Policy": "default-src 'self'; script-src 'self' 'sha256-UXW7jTqYSMRYd+b4QAJXdjT37yknr7MuXQZhWEK06CQ=' 'sha256-b3B1G/lPZUWnX41KFp4d5mQKo82bqJES+i/60DeQ/Is=' 'sha256-hhMTSzWZCqbHblBXNf9+bJr72MAI8mN1zdNMeD9ky+U=' 'sha256-qogyGbPGJJ18sIc2x01iLqtCj1vlSyP+UXQFklDGN5g=' https://scanner.novadot.co.uk/novadot-analytics.v1.072ff0e7fc53.js; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://scanner.novadot.co.uk; base-uri 'none'; object-src 'none'; form-action 'self'; frame-ancestors 'self';",
+      "Permissions-Policy": "camera=(), microphone=(), geolocation=()",
+      "Cache-Control": "no-cache, no-store, must-revalidate",
+      "Pragma": "no-cache",
+      "Expires": "0",
+      "Last-Modified": "Thu, 05 Nov 2026 18:51:45 GMT",
+      "ETag": "\"353c-65f8bfcbf4abd\"",
+      "Accept-Ranges": "bytes",
+      "X-Httpd-Modphp": "1",
+      "Host-Header": "6b7412fb82ca5edfd0917e3957f05d89",
+      "X-Proxy-Cache": "MISS",
+      "X-Proxy-Cache-Info": "0 NC:000000 UP:"
+    }
+  },
+  {
+    "path": "/novadot-release-check-missing-page-20261106/",
+    "status": 404,
+    "headers": {
+      "Server": "nginx",
+      "Date": "Thu, 05 Nov 2026 18:52:47 GMT",
+      "Content-Type": "text/html",
+      "Content-Length": "8741",
+      "Connection": "close",
+      "Vary": "Accept-Encoding",
+      "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+      "X-Content-Type-Options": "nosniff",
+      "X-Frame-Options": "SAMEORIGIN",
+      "Referrer-Policy": "strict-origin-when-cross-origin",
+      "Content-Security-Policy": "default-src 'self'; script-src 'self' 'sha256-UXW7jTqYSMRYd+b4QAJXdjT37yknr7MuXQZhWEK06CQ=' 'sha256-b3B1G/lPZUWnX41KFp4d5mQKo82bqJES+i/60DeQ/Is=' 'sha256-hhMTSzWZCqbHblBXNf9+bJr72MAI8mN1zdNMeD9ky+U=' 'sha256-qogyGbPGJJ18sIc2x01iLqtCj1vlSyP+UXQFklDGN5g=' https://scanner.novadot.co.uk/novadot-analytics.v1.072ff0e7fc53.js; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://scanner.novadot.co.uk; base-uri 'none'; object-src 'none'; form-action 'self'; frame-ancestors 'self';",
+      "Permissions-Policy": "camera=(), microphone=(), geolocation=()",
+      "Cache-Control": "no-cache, no-store, must-revalidate",
+      "Pragma": "no-cache",
+      "Expires": "0",
+      "Last-Modified": "Thu, 05 Nov 2026 18:51:45 GMT",
+      "ETag": "\"2225-65f8bfcbf4abd\"",
+      "Accept-Ranges": "bytes",
+      "X-Httpd-Modphp": "1",
+      "Host-Header": "6b7412fb82ca5edfd0917e3957f05d89",
+      "X-Proxy-Cache": "MISS",
+      "X-Proxy-Cache-Info": "0 NC:000000 UP:"
+    }
+  }
+]

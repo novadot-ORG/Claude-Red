@@ -1,0 +1,22 @@
+{
+  "reason": "Exclude Finder metadata from generated assets and reject it during validation; document completed production deployment/hosting requirement.",
+  "changes": [
+    {
+      "path": "scripts/finalize-build.mjs",
+      "before": "ba75474a17ff0d687e86db2b7b7891ca7c175e8de12b6a2be62ad6f2f21dabd5",
+      "after": "c7e5a2f482abef74e080d87bccf745486eef67fb1882b2da6dc47cc19790286f"
+    },
+    {
+      "path": "scripts/validate-build.mjs",
+      "before": "f45b4c0714543dbdff915c1d2e4c6aaeb282960ed56f15687ad57c376a59eb4f",
+      "after": "7833c1708538ed23b30be6bfc09e3bd8339950f807f41339f4aaa679f003f656"
+    },
+    {
+      "path": "README.md",
+      "before": "021241e9720b46e4dd8a74b45d88ba8fe7e5127c984ad251dd45f0244b667365",
+      "after": "28e850d039e2cdcaa33b3fc556d8f80a34b36b2130026d7b243ab5d1ef51e250"
+    }
+  ],
+  "public_bytes": "All 67 remaining candidate files exactly match the prior tested release.",
+  "patch_application": "Applied after original source-changes.patch in isolated temporary baseline; all resulting hashes matched."
+}

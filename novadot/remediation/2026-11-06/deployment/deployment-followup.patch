@@ -1,0 +1,45 @@
+--- a/scripts/finalize-build.mjs
++++ b/scripts/finalize-build.mjs
+@@ -9,6 +9,11 @@
+   const entries = await readdir(directory, { withFileTypes: true });
+   return (await Promise.all(entries.map(entry => entry.isDirectory()
+     ? files(join(directory, entry.name)) : join(directory, entry.name)))).flat();
++}
++
++// Finder metadata is not a public website asset.
++for (const file of await files(root.pathname)) {
++  if (/(?:^|\/)(?:\.DS_Store|\._[^/]*)$/.test(file)) await rm(file);
+ }
+ 
+ if (!publication.showReviewOnlyCaseStudies) {
+--- a/scripts/validate-build.mjs
++++ b/scripts/validate-build.mjs
+@@ -25,7 +25,7 @@
+ if (policy !== buildPolicy(documents, isProduction)) failures.push('CSP differs from the exact policy for this build.');
+ if (htmlFiles.length !== 13) failures.push(`Expected 13 HTML routes, found ${htmlFiles.length}.`);
+ for (const path of buildFiles) {
+-  if (/(?:^|\/)(?:\.env(?:\.|$)|\.git(?:\/|$)|\.novadot-private(?:\/|$)|forms(?:-state)?\.json$|forms\.lock$|wp-config\.php$)|\.(?:sql|tar|tgz|zip|log|pem|key|pfx|p12)$/i.test(path)) {
++  if (/(?:^|\/)(?:\.DS_Store$|\._[^/]*$|\.env(?:\.|$)|\.git(?:\/|$)|\.novadot-private(?:\/|$)|forms(?:-state)?\.json$|forms\.lock$|wp-config\.php$)|\.(?:sql|tar|tgz|zip|log|pem|key|pfx|p12)$/i.test(path)) {
+     failures.push(`Private or backup file in public build: ${path}`);
+   }
+ }
+--- a/README.md
++++ b/README.md
+@@ -131,6 +131,14 @@
+ scenario addresses documented in its source. Astro preview alone does not
+ enforce Apache headers.
+ 
+-The November security changes are local pending an explicitly authorised
+-production deployment and live header/resource checks. Building a release is
+-not deployment approval.
++The November security release was explicitly authorised and deployed on
++6 November 2026 (5 November UTC), from
++`.release/2026-11-05T18-49-53-554Z/`. The package excludes Finder metadata;
++validation rejects `.DS_Store` and AppleDouble files. Deployment evidence is
++under `.release/security-deployment-2026-11-06/` and in the client test report.
++
++SiteGround NGINX Direct Delivery is disabled for `novadot.co.uk` so Apache
++security and cache headers apply to direct `.html` URLs as well as directory
++routes. Other hosts were untouched. The main-domain dynamic cache was flushed
++afterward; keep this hosting requirement when planning future releases.
++A future package still requires explicit production deployment instruction.

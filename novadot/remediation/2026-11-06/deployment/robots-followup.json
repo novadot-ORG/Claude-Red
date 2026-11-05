@@ -1,0 +1,19 @@
+[
+  {
+    "path": "/robots.txt",
+    "body": "User-agent: *\nAllow: /\nSitemap: https://novadot.co.uk/sitemap.xml\nCrawl-delay: 10\n",
+    "headers": {
+      "Content-Type": "text/plain",
+      "X-Proxy-Cache": "HIT"
+    }
+  },
+  {
+    "path": "/robots.txt?release=20261106-final",
+    "body": "User-agent: *\nAllow: /\nSitemap: https://novadot.co.uk/sitemap.xml\nCrawl-delay: 10\n",
+    "headers": {
+      "Content-Type": "text/plain",
+      "X-Proxy-Cache": "MISS",
+      "X-Proxy-Cache-Info": "0 NC:000000 UP:"
+    }
+  }
+]

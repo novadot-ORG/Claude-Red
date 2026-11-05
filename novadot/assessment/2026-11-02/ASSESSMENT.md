@@ -1,6 +1,6 @@
 # Novadot website — initial black-box assessment
 
-> **6 November remediation update:** The dependency, CSP and analytics-source actions below have now been implemented and verified locally. Production deployment is pending. See the [dated remediation report](../../remediation/2026-11-06/report.md). Original observations and evidence below describe the 2 November assessment.
+> **6 November remediation update:** The dependency, CSP and analytics-source actions below have now been implemented, deployed and verified for the agreed scope. See the [deployment results](../../remediation/2026-11-06/deployment/report.md). Original observations and evidence below describe the 2 November assessment.
 
 Date: 2026-11-02. Initial evidence captured between 18:07 and 18:10 UTC; user-agent follow-up at 18:13 UTC. Updated 2026-11-03 with the subsequent [source review](SOURCE-REVIEW.md) and [completed email tests](../../manual-tests/2026-11-02/EMAIL-DELIVERY.md).
 Target: `https://novadot.co.uk/`, with one HTTP request to check the HTTPS redirect.

@@ -1,0 +1,23 @@
+[
+  {
+    "path": "/index.html",
+    "status": 200,
+    "csp_present": false,
+    "cache_control": "max-age=15552000",
+    "proxy_info": "DT:1"
+  },
+  {
+    "path": "/about/index.html",
+    "status": 200,
+    "csp_present": false,
+    "cache_control": "max-age=15552000",
+    "proxy_info": "DT:1"
+  },
+  {
+    "path": "/contact/index.html",
+    "status": 200,
+    "csp_present": false,
+    "cache_control": "max-age=15552000",
+    "proxy_info": "DT:1"
+  }
+]

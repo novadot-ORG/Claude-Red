@@ -1,0 +1,385 @@
+{
+  "checked_at_utc": "2026-11-05T19:02:05.245192+00:00",
+  "release_id": "2026-11-05T18-49-53-554Z",
+  "static_files": [
+    {
+      "path": "/_astro/ArcGraphic.DOqw_ipj.css",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/_astro/contact.astro_astro_type_script_index_0_lang.DL09-K5I.js",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/_astro/contact.Cl2eb3_r.css",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/_astro/enquiry-form.CkxknFFT.js",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/_astro/index.9wx8XeJv.css",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/_astro/index.astro_astro_type_script_index_0_lang.ByOu388b.js",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/_astro/index.B1KBlvvb.css",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/_astro/index.BkIs9jjd.css",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/_astro/inter-cyrillic-ext-wght-normal.BOeWTOD4.woff2",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/_astro/inter-cyrillic-wght-normal.DqGufNeO.woff2",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/_astro/inter-greek-ext-wght-normal.DlzME5K_.woff2",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/_astro/inter-greek-wght-normal.CkhJZR-_.woff2",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/_astro/inter-latin-ext-wght-normal.DO1Apj_S.woff2",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/_astro/inter-latin-wght-normal.Dx4kXJAl.woff2",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/_astro/inter-vietnamese-wght-normal.CBcvBZtf.woff2",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/_astro/manrope-cyrillic-wght-normal.Dvxsihut.woff2",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/_astro/manrope-greek-wght-normal.DL7QRZyv.woff2",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/_astro/manrope-latin-ext-wght-normal.Ch3YOpNY.woff2",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/_astro/manrope-latin-wght-normal.DHIcAJRg.woff2",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/_astro/manrope-vietnamese-wght-normal.usUDDRr7.woff2",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/_astro/ProblemDiagnostic.astro_astro_type_script_index_0_lang.D7Z4G84q.js",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/_astro/software-ai-business-systems.DC9VjVKG.css",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/404.html",
+      "status": 200,
+      "sha256_matches": true,
+      "csp_matches": true,
+      "analytics_tag_count": 1,
+      "nosniff": true
+    },
+    {
+      "path": "/about/",
+      "status": 200,
+      "sha256_matches": true,
+      "csp_matches": true,
+      "analytics_tag_count": 1,
+      "nosniff": true
+    },
+    {
+      "path": "/brand/novadot-full-logo-dark-theme-2x.png",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/brand/novadot-full-logo-dark-theme.png",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/brand/novadot-full-logo-footer-transparent-2x.png",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/brand/novadot-full-logo-footer-transparent.png",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/brand/novadot-full-logo-hires.png",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/brand/novadot-mark.png",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/brand/novadot-share-preview.png",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/case-studies/",
+      "status": 200,
+      "sha256_matches": true,
+      "csp_matches": true,
+      "analytics_tag_count": 1,
+      "nosniff": true
+    },
+    {
+      "path": "/clients/akshayam.svg",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/clients/aspire-coco.svg",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/clients/ayurveda-herbal-clinic.svg",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/clients/dakshin.svg",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/clients/evolve-denim.svg",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/clients/global-aspire.svg",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/clients/healthyaa.svg",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/clients/leicester-tamil-academy.svg",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/clients/neuro-grove.svg",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/clients/psych-expert-witness.svg",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/clients/rise-foundation.svg",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/clients/sharman-fielding.svg",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/clients/speechtherapy-ani.svg",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/contact/",
+      "status": 200,
+      "sha256_matches": true,
+      "csp_matches": true,
+      "analytics_tag_count": 1,
+      "nosniff": true
+    },
+    {
+      "path": "/events/",
+      "status": 200,
+      "sha256_matches": true,
+      "csp_matches": true,
+      "analytics_tag_count": 1,
+      "nosniff": true
+    },
+    {
+      "path": "/how-we-work/",
+      "status": 200,
+      "sha256_matches": true,
+      "csp_matches": true,
+      "analytics_tag_count": 1,
+      "nosniff": true
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "sha256_matches": true,
+      "csp_matches": true,
+      "analytics_tag_count": 1,
+      "nosniff": true
+    },
+    {
+      "path": "/partners/google.svg",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/partners/ingram-micro.svg",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/partners/microsoft.svg",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/partners/odoo.svg",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/partners/ovhcloud.svg",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/partners/siteground.svg",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/partners/td-synnex.svg",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/privacy-policy/",
+      "status": 200,
+      "sha256_matches": true,
+      "csp_matches": true,
+      "analytics_tag_count": 1,
+      "nosniff": true
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "sha256_matches": false,
+      "hosting_transform_verified": true,
+      "note": "Server file hash matches release; HTTPS response adds only Crawl-delay: 10, including cache MISS. SiteGround documents default crawl delay. Crawl permission/sitemap preserved."
+    },
+    {
+      "path": "/services/cloud-security-it-operations/",
+      "status": 200,
+      "sha256_matches": true,
+      "csp_matches": true,
+      "analytics_tag_count": 1,
+      "nosniff": true
+    },
+    {
+      "path": "/services/",
+      "status": 200,
+      "sha256_matches": true,
+      "csp_matches": true,
+      "analytics_tag_count": 1,
+      "nosniff": true
+    },
+    {
+      "path": "/services/software-ai-business-systems/",
+      "status": 200,
+      "sha256_matches": true,
+      "csp_matches": true,
+      "analytics_tag_count": 1,
+      "nosniff": true
+    },
+    {
+      "path": "/services/web-mobile-digital-growth/",
+      "status": 200,
+      "sha256_matches": true,
+      "csp_matches": true,
+      "analytics_tag_count": 1,
+      "nosniff": true
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "sha256_matches": true
+    },
+    {
+      "path": "/terms/",
+      "status": 200,
+      "sha256_matches": true,
+      "csp_matches": true,
+      "analytics_tag_count": 1,
+      "nosniff": true
+    }
+  ],
+  "enquiry_preparation": {
+    "status": 200,
+    "nonempty_token": true,
+    "cache_control": "no-store, no-cache, must-revalidate, private, max-age=0",
+    "content_type": "application/json; charset=utf-8",
+    "method": "GET only; token value discarded; no submission"
+  },
+  "missing_page": {
+    "status": 404,
+    "custom_404_matches": true,
+    "csp_matches": true
+  },
+  "effective_csp": "default-src 'self'; script-src 'self' 'sha256-UXW7jTqYSMRYd+b4QAJXdjT37yknr7MuXQZhWEK06CQ=' 'sha256-b3B1G/lPZUWnX41KFp4d5mQKo82bqJES+i/60DeQ/Is=' 'sha256-hhMTSzWZCqbHblBXNf9+bJr72MAI8mN1zdNMeD9ky+U=' 'sha256-qogyGbPGJJ18sIc2x01iLqtCj1vlSyP+UXQFklDGN5g=' https://scanner.novadot.co.uk/novadot-analytics.v1.072ff0e7fc53.js; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://scanner.novadot.co.uk; base-uri 'none'; object-src 'none'; form-action 'self'; frame-ancestors 'self';",
+  "emails_sent": 0,
+  "result": "passed_with_documented_robots_hosting_transform",
+  "exact_public_hash_matches": 63,
+  "hosting_transformed_files": 1,
+  "robot_transform_source": "https://www.siteground.com/es/kb/crawl-delay-en-servidores"
+}

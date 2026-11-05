@@ -1,0 +1,97 @@
+{
+  "checked_at_utc": "2026-11-05T19:02:23.632270+00:00",
+  "hosting_change": "NGINX Direct Delivery disabled for novadot.co.uk only; main-domain dynamic cache flushed. Both success notifications observed through native Computer Use. Other host controls untouched.",
+  "checks": [
+    {
+      "path": "/404.html",
+      "status": 200,
+      "csp_matches": true,
+      "nosniff": true,
+      "cache_control": "no-cache, no-store, must-revalidate"
+    },
+    {
+      "path": "/about/index.html",
+      "status": 200,
+      "csp_matches": true,
+      "nosniff": true,
+      "cache_control": "no-cache, no-store, must-revalidate"
+    },
+    {
+      "path": "/case-studies/index.html",
+      "status": 200,
+      "csp_matches": true,
+      "nosniff": true,
+      "cache_control": "no-cache, no-store, must-revalidate"
+    },
+    {
+      "path": "/contact/index.html",
+      "status": 200,
+      "csp_matches": true,
+      "nosniff": true,
+      "cache_control": "no-cache, no-store, must-revalidate"
+    },
+    {
+      "path": "/events/index.html",
+      "status": 200,
+      "csp_matches": true,
+      "nosniff": true,
+      "cache_control": "no-cache, no-store, must-revalidate"
+    },
+    {
+      "path": "/how-we-work/index.html",
+      "status": 200,
+      "csp_matches": true,
+      "nosniff": true,
+      "cache_control": "no-cache, no-store, must-revalidate"
+    },
+    {
+      "path": "/index.html",
+      "status": 200,
+      "csp_matches": true,
+      "nosniff": true,
+      "cache_control": "no-cache, no-store, must-revalidate"
+    },
+    {
+      "path": "/privacy-policy/index.html",
+      "status": 200,
+      "csp_matches": true,
+      "nosniff": true,
+      "cache_control": "no-cache, no-store, must-revalidate"
+    },
+    {
+      "path": "/services/cloud-security-it-operations/index.html",
+      "status": 200,
+      "csp_matches": true,
+      "nosniff": true,
+      "cache_control": "no-cache, no-store, must-revalidate"
+    },
+    {
+      "path": "/services/index.html",
+      "status": 200,
+      "csp_matches": true,
+      "nosniff": true,
+      "cache_control": "no-cache, no-store, must-revalidate"
+    },
+    {
+      "path": "/services/software-ai-business-systems/index.html",
+      "status": 200,
+      "csp_matches": true,
+      "nosniff": true,
+      "cache_control": "no-cache, no-store, must-revalidate"
+    },
+    {
+      "path": "/services/web-mobile-digital-growth/index.html",
+      "status": 200,
+      "csp_matches": true,
+      "nosniff": true,
+      "cache_control": "no-cache, no-store, must-revalidate"
+    },
+    {
+      "path": "/terms/index.html",
+      "status": 200,
+      "csp_matches": true,
+      "nosniff": true,
+      "cache_control": "no-cache, no-store, must-revalidate"
+    }
+  ]
+}

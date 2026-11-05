@@ -1,0 +1,30 @@
+{
+  "status": "deployed_server_hashes_verified",
+  "deployed_at_utc": "2026-11-05T18:51:45.783937+00:00",
+  "root": "/home/customer/www/novadot.co.uk/public_html",
+  "backup": "/home/customer/www/novadot.co.uk/.security-release-2026-11-06/before",
+  "release_id": "2026-11-05T18-49-53-554Z",
+  "archive_sha256": "3e8a2a9a435d5004ec8fac199c9825e1fd04104eb38e3b80c15a08de3d8e9123",
+  "installed": [
+    "_astro/contact.astro_astro_type_script_index_0_lang.DL09-K5I.js",
+    "_astro/enquiry-form.CkxknFFT.js",
+    "_astro/index.astro_astro_type_script_index_0_lang.ByOu388b.js",
+    "404.html",
+    "about/index.html",
+    "case-studies/index.html",
+    "contact/index.html",
+    "events/index.html",
+    "how-we-work/index.html",
+    "index.html",
+    "privacy-policy/index.html",
+    "services/cloud-security-it-operations/index.html",
+    "services/index.html",
+    "services/software-ai-business-systems/index.html",
+    "services/web-mobile-digital-growth/index.html",
+    "terms/index.html",
+    ".htaccess"
+  ],
+  "verified_files": 67,
+  "databases_changed": false,
+  "real_emails_sent": 0
+}
