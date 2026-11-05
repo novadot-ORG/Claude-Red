@@ -1,0 +1,9 @@
+{
+  "url": "https://scanner.novadot.co.uk/novadot-analytics.v1.072ff0e7fc53.js",
+  "status": 200,
+  "bytes": 6160,
+  "integrity_matches": true,
+  "integrity": "sha384-5sIvO4uGVSOkyWi+5uhod+c65rFwppXlcnGxsJSiig2jKQ2Vvn8YtmfbDYCnz1CG",
+  "cors": "*",
+  "note": "Read-only public asset verification; no analytics events sent or service security assessment performed."
+}

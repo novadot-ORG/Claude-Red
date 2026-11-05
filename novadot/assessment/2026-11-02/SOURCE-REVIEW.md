@@ -1,5 +1,7 @@
 # Novadot website — source and dependency review
 
+> **6 November remediation update:** The dependency, CSP and analytics-source actions below have now been implemented and verified locally. Production deployment is pending. See the [dated remediation report](../../remediation/2026-11-06/report.md). Original observations and evidence below describe the 2 November assessment.
+
 Date: 2026-11-02; follow-up status updated 2026-11-03. Source: `/Users/apple/git/novadot_website`, explicitly supplied by the user. Branch: `agent/porcelain-ledger-website`; HEAD: `6148cee25534a80cc039d02c6e9710fc1e743cae`.
 
 The source already contained tracked changes and untracked implementation. This review examined the current working files, whose [SHA-256 manifest](evidence/source-manifest.json) identifies the exact versions; HEAD alone does not reproduce them. Existing implementation and dependencies were preserved. During the source-review phase, no website fixes, production changes, private credential access, SSH connections or live mail submissions were made. Later authorised browser submissions and confirmed receipt are recorded in the [email test report](../../manual-tests/2026-11-02/EMAIL-DELIVERY.md). The local handoff was updated separately.
@@ -72,4 +74,4 @@ These are source observations, not verification of the deployed PHP bytes or pri
 
 Commands and exit codes are saved in [source-checks.json](evidence/source-checks.json). Saved diagnostic text has trailing whitespace normalized. The full build/verify chain was not run: no website code was changed, and generated-build validation is required again when remediation changes are made. The test fixture used synthetic credentials in a temporary `.release/form-tests-*` directory and cleaned up after itself.
 
-Next owner action: continue the broader NovaDot assessment, with website remediation deferred as requested by the user. Keep dependency maintenance, CSP hardening and analytics-source reconciliation open for the remediation phase. Delivery tests are complete; do not resend them. Preserve the current source worktree and the historical assessment evidence.
+Next owner action: review the [locally verified remediation and release package](../../remediation/2026-11-06/report.md), then obtain explicit production deployment instruction and verify the deployed result. Delivery tests are complete; do not resend them. Preserve the existing source worktree and original assessment evidence.

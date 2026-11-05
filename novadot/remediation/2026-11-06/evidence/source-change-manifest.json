@@ -1,0 +1,70 @@
+{
+  "checked_at_utc": "2026-11-05T18:38:56.511423+00:00",
+  "source_branch": "agent/porcelain-ledger-website",
+  "source_head": "6148cee25534a80cc039d02c6e9710fc1e743cae",
+  "baseline_files": 74,
+  "unchanged_baseline_files": 65,
+  "changes": [
+    {
+      "path": "scripts/finalize-build.mjs",
+      "before": "4551c91b64c99eea8abaa0357cd1c278bb9b54d9c1c9e4a2d56faf1e856ced47",
+      "after": "ba75474a17ff0d687e86db2b7b7891ca7c175e8de12b6a2be62ad6f2f21dabd5"
+    },
+    {
+      "path": "tests/forms/serve-ui.mjs",
+      "before": "2ebc8f49ef1ceb8eb498d97cfba889b631ca24f1bea91f45eafd2c5ad933ddb6",
+      "after": "8b8c6e00f190284dee92f3b06e0570b3134b17ef4371837511b4e64bbdee6db7"
+    },
+    {
+      "path": "PROJECT_OVERVIEW.md",
+      "before": "86b4d966e36bb1bb6e1e1bea15d192970a1c1dcc89f5463eff60e849441dc0e8",
+      "after": "968f9c5025542b90d32051c58147407122bcda1e8501c7a5a83b79d0d50d8aeb"
+    },
+    {
+      "path": "README.md",
+      "before": "a76d5f1259e3a09107dde27f7c7e47986e08e8b79cbac7d4f714017634f39ce2",
+      "after": "021241e9720b46e4dd8a74b45d88ba8fe7e5127c984ad251dd45f0244b667365"
+    },
+    {
+      "path": "package-lock.json",
+      "before": "4271a4f69a4c8610bee46603f2736cb913429cadc9cee1c92448d37b3f6e7d1e",
+      "after": "36f3db67b170dba1e0d38f5072b0d4ac6e18364e51d2c86fcb4e71a8ce4a52a7"
+    },
+    {
+      "path": "package.json",
+      "before": "426a91ac5db5dec40cf1743b9ff1202263c4c605a9fd6779ba280ac9a13a2d73",
+      "after": "042713a5ac16a0f00469d397b67ccd8cc0fea616d09edc526ebbcaf16556c922"
+    },
+    {
+      "path": "public/.htaccess",
+      "before": "6a605c9877fb5d0a0288c5b46b508feeb5e68c4844bd360df64a477ccee117ea",
+      "after": "699492956561996bf2d4b0403d2e8cf24cb3bfb9541d00855f051d144f6e032a"
+    },
+    {
+      "path": "scripts/validate-build.mjs",
+      "before": "c6d405d71b35c866dd587371705cf9d627796cdc674b86c51e547cb299d8dcee",
+      "after": "f45b4c0714543dbdff915c1d2e4c6aaeb282960ed56f15687ad57c376a59eb4f"
+    },
+    {
+      "path": "src/layouts/BaseLayout.astro",
+      "before": "36f3d893ba5f66f52e246e17bdb57a0eca20a97721a2930b17f2305224bbbed0",
+      "after": "02b67d9e99f279171733f121b40f364250edccc889792fcb848fee46ed58eead"
+    },
+    {
+      "path": "config/analytics.mjs",
+      "before": null,
+      "after": "36485d0c8f3e30e0598afb2e388a4d67c8003597b7460b86c21f184f2d1a4040"
+    },
+    {
+      "path": "scripts/security-policy.mjs",
+      "before": null,
+      "after": "b514596e74de6028b9f694816b061e62b3354f4c6e3d1a8091d0649535d75de9"
+    },
+    {
+      "path": "tests/security-policy.test.mjs",
+      "before": null,
+      "after": "25fcfc5cc824f5236db00128ad58784b40f70b8839ed7d4a4d162f01e93b7063"
+    }
+  ],
+  "note": "Compared with task-start dirty worktree, not Git HEAD. Handoff updates excluded. All other inventoried files, including logos, form handler and publication switches, unchanged."
+}

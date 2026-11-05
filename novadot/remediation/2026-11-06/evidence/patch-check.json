@@ -1,0 +1,6 @@
+{
+  "result": "passed",
+  "patched_files_matched": 11,
+  "fixture": "Separate final file; before/after hashes recorded",
+  "method": "git apply --check, apply in temporary baseline copy, SHA-256 comparison"
+}

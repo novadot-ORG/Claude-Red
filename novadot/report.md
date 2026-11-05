@@ -1,8 +1,8 @@
 # NovaDot website test report
 
-**Report updated:** 4 November 2026
+**Report updated:** 6 November 2026
 
-**Testing dates:** 2–3 November 2026 (Asia/Kolkata)
+**Testing dates:** 2–3 November 2026; remediation and retests 5–6 November 2026 (Asia/Kolkata)
 
 **Website:** https://novadot.co.uk/
 
@@ -10,11 +10,11 @@
 
 ## Overall result
 
-**The checks listed as passed below succeeded. Three items remain open for improvement or investigation.** The agreed website review is complete; fixes and checks after those fixes are still pending.
+**The three website findings have been addressed in the local source and passed the checks below. Production deployment and live verification are pending.** The original assessment and email evidence remain valid for their recorded scope.
 
 Both Contact and Events test emails arrived exactly once, as confirmed by the user. The supplied screenshots show the expected message contents. Clicking Reply on the Events message selected the visitor’s submitted email address correctly.
 
-The open items are dependency updates, a tighter browser security policy, and explaining a difference between the live website and its supplied source. No website code or hosting settings were changed during testing. The user has deferred fixes until after the broader NovaDot assessment.
+The user subsequently authorised the website fixes. Astro and affected dependencies were updated, the browser security policy now uses exact script hashes, and the existing analytics integration is generated from source. Hosting settings have not been changed by this remediation. See the [remediation report and evidence](remediation/2026-11-06/report.md).
 
 “Passed” applies to the specific check performed. It does not mean every possible attack or configuration has been tested.
 
@@ -34,23 +34,23 @@ The open items are dependency updates, a tighter browser security policy, and ex
 | Click Reply on the Events email | **Passed** | Outlook selected the submitted visitor address, confirmed by the expanded recipient screenshot. |
 | Run the isolated PHP backend checks | **Passed** | All 51 checks passed. These used a simulated Microsoft mail service; actual delivery was checked separately above. |
 | Validate source files and the logo | **Passed** | The existing validator passed for 26 source files and the canonical logo. |
-| Run Astro code checks | **Passed** | 34 files checked with zero errors, warnings or hints. A full production build was not run. |
+| Run Astro code checks | **Passed** | 34 files checked with zero errors, warnings or hints. Review and production builds now also pass (13 HTML routes each). |
 | Review enquiry handling and selected browser code | **Reviewed; no confirmed vulnerability found in this scope** | Reviewed controls include form tokens, input/request restrictions, a fixed mail recipient, duplicate handling and safe display of feedback. This was a bounded review, not exhaustive attack testing. |
-| Check dependency versions for published advisories | **Needs updates and review** | The recorded audit flagged 11 packages. See item 1 below. |
-| Review Content Security Policy (CSP) | **Needs tightening** | The policy allows inline scripts and leaves some restrictions unset. See item 2 below. |
-| Compare live analytics with the supplied source | **Needs investigation** | The live website includes an analytics script absent from the reviewed layout/build source. See item 3 below. |
+| Check dependency versions for published advisories | **Passed after local update** | The fresh audit fell from 11 flagged packages to zero. This is a point-in-time advisory check. |
+| Review Content Security Policy (CSP) | **Local checks passed; deployment pending** | Generated hashes authorise known scripts. Chrome blocked unapproved inline scripts, event handlers and eval; forms and interactive controls worked. |
+| Compare live analytics with the supplied source | **Reconciled in source; deployment pending** | Earlier deployments added the tag to generated HTML. Production builds now emit the existing pinned tag; review builds omit it. Public asset SRI matched. |
 
 Public and source results: [public assessment](assessment/2026-11-02/ASSESSMENT.md) and [source review](assessment/2026-11-02/SOURCE-REVIEW.md). Email results: [delivery and reply report](manual-tests/2026-11-02/EMAIL-DELIVERY.md).
 
-## What needs tightening
+## Fixes and remaining actions
 
-| Open item | Why it matters | Required action | How to confirm completion |
+| Item | What changed | Result | Remaining action |
 |---|---|---|---|
-| **1. Dependencies — ND-DEP-001** | The recorded audit flagged 11 packages: one critical, nine high and one moderate by upstream package ratings. These are package findings; exploitation of the live website was not demonstrated. | Review applicability and update Astro and affected dependencies to compatible patched versions before the next release. | Rerun the audit, code checks, backend tests and full build; check site and form behaviour. Review any remaining advisory individually. |
-| **2. Browser security policy — ND-HARD-001** | The current CSP allows inline scripts and lacks explicit restrictions on page base URLs and form destinations. This is a **low-severity hardening gap**; no script-injection attack was demonstrated. | Tighten the policy while accommodating legitimate scripts and required services. | Test the candidate policy before enforcement; verify navigation, diagnostics and forms still work and unapproved inline scripts are blocked. |
-| **3. Live/source analytics difference — ND-OBS-002** | Rebuilding the supplied checkout may not reproduce the live website because the analytics inclusion is unexplained. | Identify and document where the analytics script is added and which source/build process is authoritative. | Compare the intended build output with the deployed pages and resolve the documentation difference. |
+| **Dependencies — ND-DEP-001** | Astro 7.2.2 → 7.4.6; compatible transitive updates; Astro checker 0.9.12. Minimum Node 22.23.4. | **Local fix verified:** zero audit findings; full review and production checks passed. | Use the updated toolchain and deploy the verified release. |
+| **Browser policy — ND-HARD-001** | Exact inline-script hashes generated from all HTML; no script `unsafe-inline` or `unsafe-eval`; explicit base, object, form and framing restrictions. | **Local fix verified:** negative CSP probes, both mock forms, navigation, diagnostic and architecture controls passed in Chrome through native Computer Use. | Deploy HTML and generated `.htaccess` together, then confirm the effective live header and normal browser behaviour. Existing inline styles remain allowed. |
+| **Analytics source — ND-OBS-002** | Existing live URL, integrity and route allowlist moved into production build configuration. No new tracking routes. | **Source discrepancy resolved:** production validates one pinned tag per HTML page; review excludes it; downloaded public script matched its integrity value. | Verify the deployed tag and browser loading after release. The analytics service itself is outside this security assessment. |
 
-All three items remain **open**. They are not marked fixed merely because the review is complete.
+The release package is prepared but **has not been uploaded or deployed**. These are local remediation results, not claims that the live website already has the new policy. The [detailed report](remediation/2026-11-06/report.md) identifies the package, checks, source changes and evidence.
 
 ## Email evidence and clarification
 
@@ -70,4 +70,4 @@ The website review also did not establish exhaustive concurrency/rate-limit beha
 
 ## Next step
 
-Continue the broader NovaDot assessment with an asset and access inventory. Keep the three website actions open for the agreed remediation phase, then record the fixes and their retest results here alongside the detailed assessments. Preserve the dated evidence so readers can distinguish the original findings from later changes.
+Obtain explicit production deployment instruction for the prepared release, check the publication gates and backup/rollback plan, then verify live headers, assets and browser behaviour. The previously completed real email tests do not need to be repeated for these changes. Broader organisation assessment can continue separately with an asset and access inventory.

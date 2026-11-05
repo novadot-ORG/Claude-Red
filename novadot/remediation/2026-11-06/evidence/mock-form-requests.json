@@ -1,0 +1,46 @@
+{
+  "startedAt": "2026-11-05T18:35:39.370Z",
+  "tokenRequests": 2,
+  "posts": [
+    {
+      "kind": "contact",
+      "request_id": "f7379737-3bd3-4268-a603-c0e7d5886d56",
+      "field_keys": [
+        "consequence",
+        "email",
+        "name",
+        "organisation",
+        "phone",
+        "preference",
+        "privacy",
+        "problem",
+        "system",
+        "timing"
+      ],
+      "unknownFieldCount": 0,
+      "attempt": 1,
+      "status": 202,
+      "code": "accepted"
+    },
+    {
+      "kind": "event",
+      "request_id": "3f620ff5-5749-4c82-a9ee-638994f5633f",
+      "field_keys": [
+        "attendees",
+        "details",
+        "email",
+        "intent",
+        "name",
+        "organisation",
+        "privacy",
+        "room",
+        "targetDate"
+      ],
+      "unknownFieldCount": 0,
+      "attempt": 1,
+      "status": 202,
+      "code": "accepted"
+    }
+  ],
+  "unexpectedNativeRequests": []
+}

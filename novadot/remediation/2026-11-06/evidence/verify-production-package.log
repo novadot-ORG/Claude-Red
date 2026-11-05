@@ -1,0 +1,90 @@
+
+> novadot-website@0.1.0 release:package
+> node scripts/package-release.mjs
+
+
+> novadot-website@0.1.0 verify:production
+> NOVADOT_BUILD_MODE=production npm run verify
+
+
+> novadot-website@0.1.0 verify
+> npm run validate && npm run test:forms && npm run test:security && npm run build && npm run validate:build
+
+
+> novadot-website@0.1.0 validate
+> node scripts/validate-site.mjs
+
+Validated 26 source files and the canonical logo asset.
+
+> novadot-website@0.1.0 test:forms
+> php -l public/api/enquiry.php && php tests/forms/backend.php
+
+No syntax errors detected in public/api/enquiry.php
+Passed 51 backend checks; all Microsoft calls mocked, no email sent.
+
+> novadot-website@0.1.0 test:security
+> node --test tests/security-policy.test.mjs
+
+✔ exact hashes permit original scripts but reject changes and injected scripts (4.159225ms)
+✔ hash collection includes noindex pages and deduplicates identical scripts (0.428812ms)
+✔ unsafe scripts, handlers, URL execution and permissive restrictions fail (1.789259ms)
+✔ production requires exactly one pinned analytics tag; review excludes it (0.572611ms)
+✔ Apache policy must exist exactly once (0.594382ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 140.61944
+
+> novadot-website@0.1.0 build
+> astro check && astro build && node scripts/finalize-build.mjs
+
+00:08:02 [types] Generated 92ms
+00:08:02 [check] Getting diagnostics for Astro files in /Users/apple/git/novadot_website...
+Result (37 files):
+- 0 errors
+- 0 warnings
+- 0 hints
+
+00:08:07 [types] Generated 71ms
+00:08:07 [build] output: "static"
+00:08:07 [build] mode: "static"
+00:08:07 [build] directory: /Users/apple/git/novadot_website/dist/
+00:08:07 [build] Collecting build info...
+00:08:07 [build] ✓ Completed in 92ms.
+00:08:07 [build] Building static entrypoints...
+00:08:08 [vite] ✓ built in 373ms
+00:08:08 [vite] ✓ built in 85ms
+00:08:08 [build] Rearranging server assets...
+
+ generating static routes
+00:08:08   ├─ /404.html (+25ms)
+00:08:08   ├─ /about/index.html (+5ms)
+00:08:08   ├─ /case-studies/index.html (+4ms)
+00:08:08   ├─ /contact/index.html (+3ms)
+00:08:08   ├─ /events/index.html (+4ms)
+00:08:08   ├─ /how-we-work/index.html (+3ms)
+00:08:08   ├─ /privacy-policy/index.html (+3ms)
+00:08:08   ├─ /services/cloud-security-it-operations/index.html (+4ms)
+00:08:08   ├─ /services/software-ai-business-systems/index.html (+4ms)
+00:08:08   ├─ /services/web-mobile-digital-growth/index.html (+3ms)
+00:08:08   ├─ /services/index.html (+2ms)
+00:08:08   ├─ /terms/index.html (+2ms)
+00:08:08   ├─ /index.html (+4ms)
+00:08:08 ✓ Completed in 81ms.
+
+00:08:08 [build] ✓ Completed in 613ms.
+00:08:08 [build] 13 page(s) built in 717ms
+00:08:08 [build] Complete!
+Finalised production build; 11 indexable routes; case studies withheld, client logos included.
+
+> novadot-website@0.1.0 validate:build
+> node scripts/validate-build.mjs
+
+Validated 13 generated HTML routes and their local links.
+Production package: /Users/apple/git/novadot_website/.release/2026-11-05T18-38-08-749Z
+SHA-256: e38510554fb33e90132c3e48e8b4fbde91d2d96d4ffd1f39c7d08d2c9ba09b8e
+No upload or deployment performed.

@@ -1,0 +1,6 @@
+{
+  "captured_at_utc": "2026-11-05T18:28:51.544986+00:00",
+  "page": "https://novadot.co.uk/",
+  "tag": "<script defer src=\"https://scanner.novadot.co.uk/novadot-analytics.v1.072ff0e7fc53.js\" integrity=\"sha384-5sIvO4uGVSOkyWi+5uhod+c65rFwppXlcnGxsJSiig2jKQ2Vvn8YtmfbDYCnz1CG\" crossorigin=\"anonymous\" referrerpolicy=\"no-referrer\" data-site=\"nd_ne8NN6cbqgvgMTNvcC_zIfoY47NW8pSs\" data-routes=\"%2F,%2Fabout,%2Fcontact\"></script>",
+  "csp": "default-src 'self'; script-src 'self' 'unsafe-inline' https://scanner.novadot.co.uk; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://scanner.novadot.co.uk;"
+}
