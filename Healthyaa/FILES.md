@@ -1,6 +1,6 @@
 # Healthyaa file inventory
 
-Updated: 5 November 2026. Original 29 October records are preserved; the new dated folder contains the source-only review and authorised SSH source confirmation. See [README.md](README.md) for scope and report links.
+Updated: 11 November 2026. SQL injection testing records added under `SQL Injection/`. Original 29 October records are preserved; the new dated folder contains the source-only review and authorised SSH source confirmation. See [README.md](README.md) for scope and report links.
 
 This listing excludes itself and the root checksum manifest.
 
@@ -84,3 +84,17 @@ This listing excludes itself and the root checksum manifest.
 | [manual-tests/2026-10-27_28/hya04-home.html](manual-tests/2026-10-27_28/hya04-home.html) | 512220 |
 | [manual-tests/2026-10-27_28/robots.headers](manual-tests/2026-10-27_28/robots.headers) | 566 |
 | [manual-tests/2026-10-27_28/robots.txt](manual-tests/2026-10-27_28/robots.txt) | 321 |
+
+## SQL injection testing records
+
+| File | Bytes |
+|---|---:|
+| [SQL Injection/COMMANDS-AND-PAYLOADS.md](SQL%20Injection/COMMANDS-AND-PAYLOADS.md) | 3448 |
+| [SQL Injection/INTERPRETATION-AND-FOLLOW-UP.md](SQL%20Injection/INTERPRETATION-AND-FOLLOW-UP.md) | 3705 |
+| [SQL Injection/README.md](SQL%20Injection/README.md) | 2729 |
+| [SQL Injection/SHA256SUMS.txt](SQL%20Injection/SHA256SUMS.txt) | 726 |
+| [SQL Injection/TEST-RESULTS.md](SQL%20Injection/TEST-RESULTS.md) | 5709 |
+| [SQL Injection/evidence/README.md](SQL%20Injection/evidence/README.md) | 2042 |
+| [SQL Injection/evidence/form-query-example.HEIC](SQL%20Injection/evidence/form-query-example.HEIC) | 3359422 |
+| [SQL Injection/evidence/terminal-excerpt.txt](SQL%20Injection/evidence/terminal-excerpt.txt) | 2496 |
+| [SQL Injection/evidence/whiteboard-example.HEIC](SQL%20Injection/evidence/whiteboard-example.HEIC) | 2429703 |

