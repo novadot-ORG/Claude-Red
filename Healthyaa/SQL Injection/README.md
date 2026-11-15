@@ -8,6 +8,8 @@ The user identified the Healthyaa staging site (`https://kaviarasank64.sg-host.c
 
 ## Contents
 
+- [White-box testing checklist](WHITE-BOX-TESTING-CHECKLIST.md): planned source, query, second-order injection, permissions, and configuration reviews (15 November 2026).
+
 - [Test results](TEST-RESULTS.md): observed outcomes, evidence, and limitations.
 - [Commands and payloads](COMMANDS-AND-PAYLOADS.md): historical examples, with execution status distinguished from suggestions.
 - [Interpretation and follow-up](INTERPRETATION-AND-FOLLOW-UP.md): validation versus injection, source review, and remaining work.
