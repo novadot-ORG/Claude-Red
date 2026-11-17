@@ -1,0 +1,80 @@
+[
+  {
+    "local_original": "console-current.png",
+    "sha256": "b49f02a3997a50bb1f9f72d6d4942d4a7401b296b96b00b9640efc3a9c8bef7e",
+    "published": false
+  },
+  {
+    "local_original": "entry-3-response.html.txt",
+    "sha256": "e5c6968e54a8d7428194483a2a36821bc03461681e49c1123866b552a0388112",
+    "published": false
+  },
+  {
+    "local_original": "entry-4-response.html.txt",
+    "sha256": "927ca86b214fd93adb547681f06c1996e4ca91268aca85a8f0650e5192252c50",
+    "published": false
+  },
+  {
+    "local_original": "entry-5-response.html.txt",
+    "sha256": "927ca86b214fd93adb547681f06c1996e4ca91268aca85a8f0650e5192252c50",
+    "published": false
+  },
+  {
+    "local_original": "entry-8-response.html.txt",
+    "sha256": "b10dcaf555c1f8156abd4348fbe3f1872a88b6104842c5f18d4c32e106e54185",
+    "published": false
+  },
+  {
+    "local_original": "healthyaa-search-evidence-2026-11-17.har",
+    "sha256": "30395a4b2852fc31996d0f3d278cbdcd9364dab0aa291429c0e9e5e80a59260b",
+    "published": false
+  },
+  {
+    "user_image": 1,
+    "sha256": "265d1d25718ea095f8c809fccc0063d95180d34046c49b5f78904217a1585fcb",
+    "local_file_available": true,
+    "published": false
+  },
+  {
+    "user_image": 2,
+    "sha256": "3e33feca0ce986c0871cb7f25f565a13e025351232b9d03c117c71f3e8b43bbb",
+    "local_file_available": true,
+    "published": false
+  },
+  {
+    "user_image": 3,
+    "sha256": "93c0faf7766c7b69cc5dcad184ba3832bc51ce37d7abf7d85953d24e1612fd8d",
+    "local_file_available": true,
+    "published": false
+  },
+  {
+    "user_image": 4,
+    "sha256": "1620b0d2cac22ce6788570172d1988c7fb2b187f03eb39a90c7c9e9869fa90d4",
+    "local_file_available": true,
+    "published": false
+  },
+  {
+    "user_image": 5,
+    "sha256": "dbdde5ba5e9bef2e35fce06a5139d137b4de8221a7f2a7d79a297bb2503a2b19",
+    "local_file_available": true,
+    "published": false
+  },
+  {
+    "user_image": 6,
+    "sha256": "d22617ac36dc6367e8c63e4fb0ae2c1e883d7bad3b851de04b1d28c2045fb240",
+    "local_file_available": true,
+    "published": false
+  },
+  {
+    "user_image": 7,
+    "sha256": "94001c74c1b6d481b904a343dfb0655a75c38cbe2b4d5beee7dd7eb550981d01",
+    "local_file_available": true,
+    "published": false
+  },
+  {
+    "user_image": 8,
+    "sha256": "8bb0cba54e26b686c1e05edf29f10e4392bfb6a108d89c467ea8853bc7e94a04",
+    "local_file_available": true,
+    "published": false
+  }
+]

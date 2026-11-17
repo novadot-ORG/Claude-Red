@@ -1,4 +1,6 @@
-# Search-term XSS procedure — planned, not executed
+# Search-term XSS procedure
+
+This document preserves the original plan. Some submission/reflection steps are now evidenced in the [captured-evidence report](evidence/2026-11-17/REPORT.md); consult the [status matrix](TEST-STATUS.csv) rather than treating all steps as completed or unexecuted.
 
 ## Preparation and tools
 
@@ -39,7 +41,7 @@ Harmless execution marker:
 <svg onload="console.log('HY-XSS-EXEC-001')"></svg>
 ```
 
-The chat also used `HY-VALIDATION-001` and `HY-XSS-CHECK` as alternative marker labels. These were proposed examples, not recorded submissions. A single HTML-context example does not test every attribute, JavaScript or URL context.
+The chat also used `HY-VALIDATION-001` and `HY-XSS-CHECK` as alternative marker labels. The SVG and HTML marker submissions are now recorded in the dated evidence report; alternative labels remain examples unless separately evidenced. A single HTML-context example does not test every attribute, JavaScript or URL context.
 
 ## Interpretation
 

@@ -11,7 +11,7 @@ This folder brings together the recorded Healthyaa checks, raw public-response c
 
 | Document | Purpose |
 |---|---|
-| [XSS — search terms, 17 November 2026](Cross-Site%20Scripting/Search%20Terms/README.md) | Consolidated inspections, historical evidence, Hacky lab review and planned tests; search XSS not demonstrated |
+| [XSS — search terms, 17 November 2026](Cross-Site%20Scripting/Search%20Terms/README.md) | Captured search requests, response contexts and screenshot review; submission/reflection confirmed, XSS execution unconfirmed |
 | [SQL injection testing — 10–11 November 2026](SQL%20Injection/README.md) | Manual staging probes, observed outcomes, commands, evidence and limitations; SQL injection not demonstrated |
 | [Source code review — 5 November 2026](assessment/source-review-2026-11-05/report.md) | Source-only review: six findings, positive controls and isolated evidence; SSH confirms all six findings’ custom code matches the deployed source; runtime prerequisites remain |
 | [Interim assessment](assessment/2026-10-28/ASSESSMENT.md) | Eight findings/observations, positive controls, limitations and remaining test matrix |

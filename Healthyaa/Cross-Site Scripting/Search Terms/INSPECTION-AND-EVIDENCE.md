@@ -1,4 +1,6 @@
-# Inspection and evidence record
+# Initial inspection and evidence record
+
+Historical record before the user supplied runtime evidence. Superseded for current test status by the [17 November captured-evidence report](evidence/2026-11-17/REPORT.md).
 
 ## 1. Public search interface
 

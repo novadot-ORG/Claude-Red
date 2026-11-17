@@ -1,7 +1,7 @@
 # Healthyaa — XSS: search terms
 
 Consolidated: 17 November 2026 (Europe/London).
-Status: **Inspection and test planning recorded; search-term XSS not demonstrated.**
+Status: **Search payload submission and response reflection confirmed; encoding observed; XSS execution not demonstrated.**
 
 ## Scope and provenance
 
@@ -11,18 +11,23 @@ The user requested publication to novadot-ORG/Claude-Red. Client records belong 
 
 ## Contents
 
+- [17 November captured search evidence and results](evidence/2026-11-17/REPORT.md)
+- [Review of all eight supplied screenshots](evidence/2026-11-17/SCREENSHOT-REVIEW.md)
+
 - [Inspection and evidence record](INSPECTION-AND-EVIDENCE.md)
 - [Search-term testing procedure and interpretation](TEST-PROCEDURE.md)
 - [Test status matrix](TEST-STATUS.csv)
 
-The supplied production URL is https://healthyaa.co.uk/. The other supplied URL, https://kaviarasank64.sg-host.com/, could not be accessed using the chat's web retrieval tool; its role as a staging copy was not confirmed. A retrieval failure does not establish that the site is down.
+The supplied production URL is https://healthyaa.co.uk/. The captured search tests target https://kaviarasank64.sg-host.com/. An earlier web-tool retrieval failed, but subsequent user screenshots and Chrome Network history establish that this host was accessible. These results apply to that deployment; parity with production and staging isolation are not established by this evidence.
 
 ## Recorded work versus remaining work
 
 Completed: public page/repository review, identification of search as an input surface, inspection of archived search-form markup, review of earlier header and assistant-script observations, preparation of a manual XSS workflow, and reading the Hacky lab title/objective.
 
-Not evidenced: submitting XSS markers to Healthyaa search, capturing a search request containing a marker, bypassing a Healthyaa client-side restriction, proving reflection or browser execution, or completing and solving the Hacky exercise. No search-specific request/response exports, execution screenshots, or console captures were supplied in this chat or found in this workspace's Healthyaa records.
+New evidence: nine search document requests exported from the existing browser session, including the full strong-tag marker and two full SVG console-marker submissions. All returned HTTP 200. The strong-tag response contains 11 inspected marker occurrences; each SVG response contains 35. The published excerpts show encoding in the inspected contexts. Screenshot observations and request/response evidence are recorded in the dated report.
 
-The next step is to run the documented checks against a confirmed authorised staging deployment and attach timestamped, redacted evidence. A lack of demonstrated XSS is not proof that search is secure.
+Still unconfirmed: browser execution, client-side validation bypass, autocomplete response safety, Hacky completion, remediation and retesting. The available console capture belongs to a later plain-marker page and cannot prove what happened during earlier SVG navigations. The proposed HY-XSS-EXEC-002 same-navigation test remains a plan, not a completed result.
+
+Next: capture a full payload request, matching response, live DOM and Console during the same navigation; assess autocomplete separately. No new payload was submitted while inspecting/exporting existing evidence or preparing this publication. A lack of demonstrated XSS is not proof that search is secure.
 
 Other input surfaces discussed (contact messages, customer profiles, orders and reviews) are outside this search-terms record. Existing SQL injection records are a separate assessment and are not evidence of XSS.

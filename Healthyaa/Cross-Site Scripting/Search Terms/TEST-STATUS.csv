@@ -1,11 +1,12 @@
 id,activity,status,result_or_limit
-HY-XS-01,Public search interface review,INSPECTED,Search inputs observed; no execution test
-HY-XS-02,Archived search form markup,INSPECTED,Historical GET form and s parameter identified
-HY-XS-03,Header and assistant evidence review,INSPECTED,Context only; does not establish search XSS
-HY-XS-04,Hacky lab title and objective,INSPECTED,Exercise did not launch; solution not verified
-HY-XS-05,Plain marker reflection,NOT EXECUTED IN AVAILABLE RECORD,No search request or response evidence
-HY-XS-06,HTML interpretation marker,NOT EXECUTED IN AVAILABLE RECORD,No rendered output evidence
-HY-XS-07,Harmless execution marker,NOT EXECUTED IN AVAILABLE RECORD,No console execution evidence
-HY-XS-08,Client-side validation bypass,NOT EXECUTED IN AVAILABLE RECORD,No actual restriction or bypass established
-HY-XS-09,Autocomplete and DOM rendering,NOT EXECUTED IN AVAILABLE RECORD,Live endpoint and rendering unverified
-HY-XS-10,Remediation and regression testing,NOT EXECUTED IN AVAILABLE RECORD,No confirmed search finding or fix
+HY-XS-01,Public search interface review,INSPECTED,Search UI observed in screenshots and browser
+HY-XS-02,Archived search form markup,INSPECTED,Historical GET form corroborated by runtime s parameter
+HY-XS-03,Header and assistant evidence review,INSPECTED,Historical context; not proof of search safety
+HY-XS-04,Hacky lab title and objective,INSPECTED,Lab completion not evidenced
+HY-XS-05,Plain marker reflection,CONFIRMED,GET request and response marker captured
+HY-XS-06,HTML interpretation marker,SUBMISSION AND ENCODING CONFIRMED,11 response contexts inspected; no injected strong element demonstrated
+HY-XS-07,Harmless execution marker,SUBMISSION CONFIRMED EXECUTION UNCONFIRMED,Two full SVG requests returned 200; 35 encoded/data contexts each; matching historical console unavailable
+HY-XS-08,Client-side validation bypass,NOT DEMONSTRATED,No actual restriction and bypass pair established
+HY-XS-09,Autocomplete and DOM rendering,PARTIAL,AJAX request URL identified in screenshot; response handling and runtime DOM safety pending
+HY-XS-10,Remediation and regression testing,NOT PERFORMED,No confirmed search XSS finding or fix
+HY-XS-11,Same-navigation EXEC-002 capture,PLANNED,No execution evidence supplied for the new test

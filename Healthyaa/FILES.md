@@ -1,18 +1,26 @@
 # Healthyaa file inventory
 
-Updated: 17 November 2026. Added the search-term XSS inspection and test-plan record. Historical evidence is preserved. See [README.md](README.md) for scope and status.
+Updated: 17 November 2026. Added captured search-term XSS evidence and revised test status. Historical evidence is preserved. See [README.md](README.md) for scope.
 
 This listing excludes itself and the root checksum manifest.
 
 | File | Bytes |
 |---|---:|
 | [.gitattributes](.gitattributes) | 86 |
-| [Cross-Site Scripting/Search Terms/INSPECTION-AND-EVIDENCE.md](Cross-Site%20Scripting/Search%20Terms/INSPECTION-AND-EVIDENCE.md) | 4020 |
-| [Cross-Site Scripting/Search Terms/README.md](Cross-Site%20Scripting/Search%20Terms/README.md) | 2476 |
-| [Cross-Site Scripting/Search Terms/TEST-PROCEDURE.md](Cross-Site%20Scripting/Search%20Terms/TEST-PROCEDURE.md) | 5488 |
-| [Cross-Site Scripting/Search Terms/TEST-STATUS.csv](Cross-Site%20Scripting/Search%20Terms/TEST-STATUS.csv) | 1057 |
+| [Cross-Site Scripting/Search Terms/INSPECTION-AND-EVIDENCE.md](Cross-Site%20Scripting/Search%20Terms/INSPECTION-AND-EVIDENCE.md) | 4203 |
+| [Cross-Site Scripting/Search Terms/README.md](Cross-Site%20Scripting/Search%20Terms/README.md) | 3297 |
+| [Cross-Site Scripting/Search Terms/TEST-PROCEDURE.md](Cross-Site%20Scripting/Search%20Terms/TEST-PROCEDURE.md) | 5818 |
+| [Cross-Site Scripting/Search Terms/TEST-STATUS.csv](Cross-Site%20Scripting/Search%20Terms/TEST-STATUS.csv) | 1267 |
+| [Cross-Site Scripting/Search Terms/evidence/2026-11-17/PROVENANCE.json](Cross-Site%20Scripting/Search%20Terms/evidence/2026-11-17/PROVENANCE.json) | 2354 |
+| [Cross-Site Scripting/Search Terms/evidence/2026-11-17/REPORT.md](Cross-Site%20Scripting/Search%20Terms/evidence/2026-11-17/REPORT.md) | 5715 |
+| [Cross-Site Scripting/Search Terms/evidence/2026-11-17/SCREENSHOT-REVIEW.md](Cross-Site%20Scripting/Search%20Terms/evidence/2026-11-17/SCREENSHOT-REVIEW.md) | 2472 |
+| [Cross-Site Scripting/Search Terms/evidence/2026-11-17/entry-3-contexts.md](Cross-Site%20Scripting/Search%20Terms/evidence/2026-11-17/entry-3-contexts.md) | 5690 |
+| [Cross-Site Scripting/Search Terms/evidence/2026-11-17/entry-4-contexts.md](Cross-Site%20Scripting/Search%20Terms/evidence/2026-11-17/entry-4-contexts.md) | 17224 |
+| [Cross-Site Scripting/Search Terms/evidence/2026-11-17/entry-5-contexts.md](Cross-Site%20Scripting/Search%20Terms/evidence/2026-11-17/entry-5-contexts.md) | 17224 |
+| [Cross-Site Scripting/Search Terms/evidence/2026-11-17/entry-8-contexts.md](Cross-Site%20Scripting/Search%20Terms/evidence/2026-11-17/entry-8-contexts.md) | 5536 |
+| [Cross-Site Scripting/Search Terms/evidence/2026-11-17/request-register.json](Cross-Site%20Scripting/Search%20Terms/evidence/2026-11-17/request-register.json) | 3575 |
 | [Cross-Site Scripting/Search Terms/evidence/search-form-excerpt.txt](Cross-Site%20Scripting/Search%20Terms/evidence/search-form-excerpt.txt) | 887 |
-| [README.md](README.md) | 7173 |
+| [README.md](README.md) | 7188 |
 | [SQL Injection/COMMANDS-AND-PAYLOADS.md](SQL%20Injection/COMMANDS-AND-PAYLOADS.md) | 3448 |
 | [SQL Injection/INTERPRETATION-AND-FOLLOW-UP.md](SQL%20Injection/INTERPRETATION-AND-FOLLOW-UP.md) | 3705 |
 | [SQL Injection/README.md](SQL%20Injection/README.md) | 2901 |
