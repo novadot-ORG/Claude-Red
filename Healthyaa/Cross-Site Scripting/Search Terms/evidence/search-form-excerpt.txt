@@ -1,0 +1,27 @@
+Source: Healthyaa/assessment/home.html
+Historical capture associated with the 26 October baseline review.
+Extracted locally on 17 November 2026; not a new HTTP response.
+
+888: 		<form class="dgwt-wcas-search-form" role="search" action="https://healthyaa.co.uk/" method="get">
+889: 		<div class="dgwt-wcas-sf-wrapp">
+890: 						<label class="screen-reader-text"
+891: 				for="dgwt-wcas-search-input-1">
+892: 				Products search			</label>
+893: 
+894: 			<input
+895: 				id="dgwt-wcas-search-input-1"
+896: 				type="search"
+897: 				class="dgwt-wcas-search-input"
+898: 				name="s"
+899: 				value=""
+900: 				placeholder="Search from 950+ Blood Tests..."
+901: 				autocomplete="off"
+902: 							/>
+921: 			<input type="hidden" name="post_type" value="product"/>
+922: 			<input type="hidden" name="dgwt_wcas" value="1"/>
+923: 
+924: 			
+925: 					</div>
+926: 	</form>
+927: </div>
+928: </div>

@@ -1,13 +1,28 @@
 # Healthyaa file inventory
 
-Updated: 15 November 2026. SQL injection testing records added under `SQL Injection/`. Original 29 October records are preserved; the new dated folder contains the source-only review and authorised SSH source confirmation. See [README.md](README.md) for scope and report links.
+Updated: 17 November 2026. Added the search-term XSS inspection and test-plan record. Historical evidence is preserved. See [README.md](README.md) for scope and status.
 
 This listing excludes itself and the root checksum manifest.
 
 | File | Bytes |
 |---|---:|
 | [.gitattributes](.gitattributes) | 86 |
-| [README.md](README.md) | 6774 |
+| [Cross-Site Scripting/Search Terms/INSPECTION-AND-EVIDENCE.md](Cross-Site%20Scripting/Search%20Terms/INSPECTION-AND-EVIDENCE.md) | 4020 |
+| [Cross-Site Scripting/Search Terms/README.md](Cross-Site%20Scripting/Search%20Terms/README.md) | 2476 |
+| [Cross-Site Scripting/Search Terms/TEST-PROCEDURE.md](Cross-Site%20Scripting/Search%20Terms/TEST-PROCEDURE.md) | 5488 |
+| [Cross-Site Scripting/Search Terms/TEST-STATUS.csv](Cross-Site%20Scripting/Search%20Terms/TEST-STATUS.csv) | 1057 |
+| [Cross-Site Scripting/Search Terms/evidence/search-form-excerpt.txt](Cross-Site%20Scripting/Search%20Terms/evidence/search-form-excerpt.txt) | 887 |
+| [README.md](README.md) | 7173 |
+| [SQL Injection/COMMANDS-AND-PAYLOADS.md](SQL%20Injection/COMMANDS-AND-PAYLOADS.md) | 3448 |
+| [SQL Injection/INTERPRETATION-AND-FOLLOW-UP.md](SQL%20Injection/INTERPRETATION-AND-FOLLOW-UP.md) | 3705 |
+| [SQL Injection/README.md](SQL%20Injection/README.md) | 2901 |
+| [SQL Injection/SHA256SUMS.txt](SQL%20Injection/SHA256SUMS.txt) | 823 |
+| [SQL Injection/TEST-RESULTS.md](SQL%20Injection/TEST-RESULTS.md) | 5709 |
+| [SQL Injection/WHITE-BOX-TESTING-CHECKLIST.md](SQL%20Injection/WHITE-BOX-TESTING-CHECKLIST.md) | 9500 |
+| [SQL Injection/evidence/README.md](SQL%20Injection/evidence/README.md) | 2042 |
+| [SQL Injection/evidence/form-query-example.HEIC](SQL%20Injection/evidence/form-query-example.HEIC) | 3359422 |
+| [SQL Injection/evidence/terminal-excerpt.txt](SQL%20Injection/evidence/terminal-excerpt.txt) | 2496 |
+| [SQL Injection/evidence/whiteboard-example.HEIC](SQL%20Injection/evidence/whiteboard-example.HEIC) | 2429703 |
 | [assessment/2026-10-28/ASSESSMENT.md](assessment/2026-10-28/ASSESSMENT.md) | 8123 |
 | [assessment/2026-10-28/custom-access-checks.json](assessment/2026-10-28/custom-access-checks.json) | 657 |
 | [assessment/2026-10-28/custom-route-inventory.json](assessment/2026-10-28/custom-route-inventory.json) | 1317 |
@@ -84,18 +99,3 @@ This listing excludes itself and the root checksum manifest.
 | [manual-tests/2026-10-27_28/hya04-home.html](manual-tests/2026-10-27_28/hya04-home.html) | 512220 |
 | [manual-tests/2026-10-27_28/robots.headers](manual-tests/2026-10-27_28/robots.headers) | 566 |
 | [manual-tests/2026-10-27_28/robots.txt](manual-tests/2026-10-27_28/robots.txt) | 321 |
-
-## SQL injection testing records
-
-| File | Bytes |
-|---|---:|
-| [SQL Injection/COMMANDS-AND-PAYLOADS.md](SQL%20Injection/COMMANDS-AND-PAYLOADS.md) | 3448 |
-| [SQL Injection/INTERPRETATION-AND-FOLLOW-UP.md](SQL%20Injection/INTERPRETATION-AND-FOLLOW-UP.md) | 3705 |
-| [SQL Injection/README.md](SQL%20Injection/README.md) | 2901 |
-| [SQL Injection/SHA256SUMS.txt](SQL%20Injection/SHA256SUMS.txt) | 823 |
-| [SQL Injection/TEST-RESULTS.md](SQL%20Injection/TEST-RESULTS.md) | 5709 |
-| [SQL Injection/evidence/README.md](SQL%20Injection/evidence/README.md) | 2042 |
-| [SQL Injection/evidence/form-query-example.HEIC](SQL%20Injection/evidence/form-query-example.HEIC) | 3359422 |
-| [SQL Injection/evidence/terminal-excerpt.txt](SQL%20Injection/evidence/terminal-excerpt.txt) | 2496 |
-| [SQL Injection/evidence/whiteboard-example.HEIC](SQL%20Injection/evidence/whiteboard-example.HEIC) | 2429703 |
-| [SQL Injection/WHITE-BOX-TESTING-CHECKLIST.md](SQL%20Injection/WHITE-BOX-TESTING-CHECKLIST.md) | 9500 |
